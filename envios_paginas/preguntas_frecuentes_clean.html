@@ -84,8 +84,8 @@
                             'blue-300': '#628ff9',
                             'blue-400': '#3570f8',
                             'blue-500': '#0950f6',
-                            'blue-700': '#063dc2',
-                            'blue-900': '#042880',
+                            'blue-500': '#063dc2',
+                            'blue-500': '#042880',
                             'blue-dark': '#063dc2',
                             'blue-light': '#e8f0fe',
                             'blue-subtle': '#f3f7ff',
@@ -147,7 +147,8 @@
             </a>
 
             <!-- Navegación Central (Desktop) -->
-            <nav class="hidden md:flex items-center gap-1 bg-white/10 p-1 rounded-full border border-white/15" aria-label="Navegación principal">
+            <nav class="hidden md:flex items-center gap-1 bg-white/10 p-1 rounded-full border border-white/15"
+                aria-label="Navegación principal">
                 <a class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-white hover:text-brand-yellow transition-colors"
                     href="home_clean.html">INICIO</a>
 
@@ -157,11 +158,14 @@
                         class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-white group-hover:text-brand-yellow flex items-center gap-1 transition-colors"
                         aria-expanded="false" aria-haspopup="true">
                         <span>SERVICIOS</span>
-                        <span class="material-symbols-outlined text-sm leading-none transition-transform group-hover:rotate-180">expand_more</span>
+                        <span
+                            class="material-symbols-outlined text-sm leading-none transition-transform group-hover:rotate-180">expand_more</span>
                     </button>
                     <!-- Menú flotante -->
-                    <div class="absolute left-0 top-full pt-2 w-64 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
-                        <div class="bg-brand-blue border border-white/20 rounded-2xl shadow-2xl p-2 space-y-1 font-sans text-xs">
+                    <div
+                        class="absolute left-0 top-full pt-2 w-64 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                        <div
+                            class="bg-brand-blue border border-white/20 rounded-2xl shadow-2xl p-2 space-y-1 font-sans text-xs">
                             <a class="flex items-center gap-2 px-3 py-2 rounded-xl text-white hover:bg-brand-yellow hover:text-brand-blue font-semibold transition-colors"
                                 href="home_clean.html#servicios">
                                 <span class="material-symbols-outlined text-base">apps</span>
@@ -197,11 +201,14 @@
                         class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-yellow bg-white/10 flex items-center gap-1 transition-colors"
                         aria-expanded="false" aria-haspopup="true">
                         <span>NOSOTROS</span>
-                        <span class="material-symbols-outlined text-sm leading-none transition-transform group-hover:rotate-180">expand_more</span>
+                        <span
+                            class="material-symbols-outlined text-sm leading-none transition-transform group-hover:rotate-180">expand_more</span>
                     </button>
                     <!-- Menú flotante -->
-                    <div class="absolute left-0 top-full pt-2 w-56 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
-                        <div class="bg-brand-blue border border-white/20 rounded-2xl shadow-2xl p-2 space-y-1 font-sans text-xs">
+                    <div
+                        class="absolute left-0 top-full pt-2 w-56 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                        <div
+                            class="bg-brand-blue border border-white/20 rounded-2xl shadow-2xl p-2 space-y-1 font-sans text-xs">
                             <a class="flex items-center gap-2 px-3 py-2 rounded-xl text-white hover:bg-brand-yellow hover:text-brand-blue font-semibold transition-colors"
                                 href="sobre_nosotros_clean.html">
                                 <span class="material-symbols-outlined text-base">groups</span>
@@ -249,47 +256,66 @@
         </div>
 
         <!-- Menú Móvil Desplegable (Drawer Accesible) -->
-        <div id="mobile-drawer" class="fixed inset-0 bg-brand-blue-dark/80 backdrop-blur-md z-50 hidden transition-opacity">
-            <div class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-brand-blue border-l border-white/20 p-6 flex flex-col justify-between overflow-y-auto shadow-2xl">
+        <div id="mobile-drawer"
+            class="fixed inset-0 bg-brand-blue-dark/80 backdrop-blur-md z-50 hidden transition-opacity">
+            <div
+                class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-brand-blue border-l border-white/20 p-6 flex flex-col justify-between overflow-y-auto shadow-2xl">
                 <div class="space-y-6">
                     <div class="flex items-center justify-between border-b border-white/15 pb-4">
                         <div class="flex items-center gap-2">
                             <img src="logo_.png" alt="Logo" class="w-8 h-8 rounded-full object-contain">
-                            <span class="font-display text-lg text-white uppercase"><span class="text-white">ENVÍOS</span> <span class="text-brand-yellow">DOSRUEDAS</span></span>
+                            <span class="font-display text-lg text-white uppercase"><span
+                                    class="text-white">ENVÍOS</span> <span
+                                    class="text-brand-yellow">DOSRUEDAS</span></span>
                         </div>
-                        <button id="mobile-close-btn" aria-label="Cerrar menú" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20">
+                        <button id="mobile-close-btn" aria-label="Cerrar menú"
+                            class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20">
                             <span class="material-symbols-outlined text-xl">close</span>
                         </button>
                     </div>
 
                     <!-- Enlaces del Drawer -->
                     <div class="space-y-1 font-sans text-sm">
-                        <a class="block px-3 py-2 rounded-xl font-bold uppercase text-white hover:bg-white/10" href="home_clean.html">Inicio</a>
+                        <a class="block px-3 py-2 rounded-xl font-bold uppercase text-white hover:bg-white/10"
+                            href="home_clean.html">Inicio</a>
                         <div class="pt-2">
-                            <p class="px-3 text-[11px] font-mono uppercase tracking-wider text-brand-yellow font-bold">Servicios</p>
+                            <p class="px-3 text-[11px] font-mono uppercase tracking-wider text-brand-yellow font-bold">
+                                Servicios</p>
                             <div class="mt-1 space-y-1 pl-2">
-                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs" href="home_clean.html#servicios">Todos los Servicios</a>
-                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs" href="home_clean.html#servicios">Envíos Express</a>
-                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs" href="home_clean.html#servicios">Envíos LowCost</a>
-                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs" href="home_clean.html#servicios">Envíos Flex (MeLi)</a>
+                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs"
+                                    href="home_clean.html#servicios">Todos los Servicios</a>
+                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs"
+                                    href="home_clean.html#servicios">Envíos Express</a>
+                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs"
+                                    href="home_clean.html#servicios">Envíos LowCost</a>
+                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs"
+                                    href="home_clean.html#servicios">Envíos Flex (MeLi)</a>
                             </div>
                         </div>
                         <div class="pt-2 border-t border-white/10">
-                            <p class="px-3 text-[11px] font-mono uppercase tracking-wider text-brand-yellow font-bold">Nosotros</p>
+                            <p class="px-3 text-[11px] font-mono uppercase tracking-wider text-brand-yellow font-bold">
+                                Nosotros</p>
                             <div class="mt-1 space-y-1 pl-2">
-                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs" href="sobre_nosotros_clean.html">Sobre Nosotros</a>
-                                <a class="block px-3 py-1.5 rounded-lg text-brand-yellow bg-white/10 font-bold text-xs" href="preguntas_frecuentes_clean.html">Preguntas Frecuentes</a>
-                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs" href="nuestras_redes_clean.html">Nuestras Redes</a>
+                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs"
+                                    href="sobre_nosotros_clean.html">Sobre Nosotros</a>
+                                <a class="block px-3 py-1.5 rounded-lg text-brand-yellow bg-white/10 font-bold text-xs"
+                                    href="preguntas_frecuentes_clean.html">Preguntas Frecuentes</a>
+                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs"
+                                    href="nuestras_redes_clean.html">Nuestras Redes</a>
                             </div>
                         </div>
-                        <a class="block px-3 py-2 rounded-xl font-bold uppercase text-white hover:bg-white/10 pt-2 border-t border-white/10" href="contacto_clean.html">Contacto</a>
+                        <a class="block px-3 py-2 rounded-xl font-bold uppercase text-white hover:bg-white/10 pt-2 border-t border-white/10"
+                            href="contacto_clean.html">Contacto</a>
                     </div>
                 </div>
 
                 <div class="border-t border-white/15 pt-6 space-y-3 font-mono text-xs text-white/80">
                     <p class="text-white font-bold">BASE CENTRAL MAR DEL PLATA</p>
-                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-brand-yellow text-sm">location_on</span> Friuli 1972, MDP</p>
-                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-brand-yellow text-sm">call</span> +54 223 660-2699</p>
+                    <p class="flex items-center gap-2"><span
+                            class="material-symbols-outlined text-brand-yellow text-sm">location_on</span> Friuli 1972,
+                        MDP</p>
+                    <p class="flex items-center gap-2"><span
+                            class="material-symbols-outlined text-brand-yellow text-sm">call</span> +54 223 660-2699</p>
                 </div>
             </div>
         </div>
@@ -302,45 +328,63 @@
         <section id="faq-hero"
             aria-label="Preguntas frecuentes de Envíos DosRuedas en Mar del Plata: 22 respuestas sobre servicios, tiempos, tarifas y confianza"
             class="relative isolate flex min-h-[85dvh] w-full flex-col overflow-hidden bg-brand-blue text-white">
-            
+
             <!-- Patrón de fondo sutil -->
-            <div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+            <div
+                class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px]">
+            </div>
 
             <div class="relative flex-1 flex items-center overflow-hidden">
                 <!-- Firma visual: Gráfico de barras proporcionales según cantidad de preguntas -->
                 <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-28 sm:h-36 lg:h-44 pointer-events-none">
-                    <ul class="mx-auto flex h-full max-w-3xl items-end justify-center gap-4 px-6 pt-2 sm:gap-8 sm:pt-3 lg:pt-4">
+                    <ul
+                        class="mx-auto flex h-full max-w-3xl items-end justify-center gap-4 px-6 pt-2 sm:gap-8 sm:pt-3 lg:pt-4">
                         <!-- Servicios (8 preguntas) -->
                         <li class="flex h-full w-14 flex-col items-center gap-1.5 sm:w-16">
-                            <span class="font-mono text-2xs uppercase tracking-[0.18em] text-white/85 tabular-nums">8</span>
+                            <span
+                                class="font-mono text-2xs uppercase tracking-[0.18em] text-white/85 tabular-nums">8</span>
                             <span class="flex w-full flex-1 flex-col justify-end">
-                                <span class="w-full h-full origin-bottom rounded-t-sm bg-white/35 animate-pulse" style="transform: scaleY(0.86);"></span>
+                                <span class="w-full h-full origin-bottom rounded-t-sm bg-white/35 animate-pulse"
+                                    style="transform: scaleY(0.86);"></span>
                             </span>
-                            <span class="font-subheading text-[10px] sm:text-xs uppercase tracking-wider text-brand-yellow">Servicios</span>
+                            <span
+                                class="font-subheading text-[10px] sm:text-xs uppercase tracking-wider text-brand-yellow">Servicios</span>
                         </li>
                         <!-- Tiempos (5 preguntas) -->
                         <li class="flex h-full w-14 flex-col items-center gap-1.5 sm:w-16">
-                            <span class="font-mono text-2xs uppercase tracking-[0.18em] text-white/85 tabular-nums">5</span>
+                            <span
+                                class="font-mono text-2xs uppercase tracking-[0.18em] text-white/85 tabular-nums">5</span>
                             <span class="flex w-full flex-1 flex-col justify-end">
-                                <span class="w-full h-full origin-bottom rounded-t-sm bg-white/35 animate-pulse [animation-delay:0.16s]" style="transform: scaleY(0.53);"></span>
+                                <span
+                                    class="w-full h-full origin-bottom rounded-t-sm bg-white/35 animate-pulse [animation-delay:0.16s]"
+                                    style="transform: scaleY(0.53);"></span>
                             </span>
-                            <span class="font-subheading text-[10px] sm:text-xs uppercase tracking-wider text-brand-yellow">Tiempos</span>
+                            <span
+                                class="font-subheading text-[10px] sm:text-xs uppercase tracking-wider text-brand-yellow">Tiempos</span>
                         </li>
                         <!-- Precios (5 preguntas) -->
                         <li class="flex h-full w-14 flex-col items-center gap-1.5 sm:w-16">
-                            <span class="font-mono text-2xs uppercase tracking-[0.18em] text-white/85 tabular-nums">5</span>
+                            <span
+                                class="font-mono text-2xs uppercase tracking-[0.18em] text-white/85 tabular-nums">5</span>
                             <span class="flex w-full flex-1 flex-col justify-end">
-                                <span class="w-full h-full origin-bottom rounded-t-sm bg-white/35 animate-pulse [animation-delay:0.32s]" style="transform: scaleY(0.53);"></span>
+                                <span
+                                    class="w-full h-full origin-bottom rounded-t-sm bg-white/35 animate-pulse [animation-delay:0.32s]"
+                                    style="transform: scaleY(0.53);"></span>
                             </span>
-                            <span class="font-subheading text-[10px] sm:text-xs uppercase tracking-wider text-brand-yellow">Precios</span>
+                            <span
+                                class="font-subheading text-[10px] sm:text-xs uppercase tracking-wider text-brand-yellow">Precios</span>
                         </li>
                         <!-- Confianza (4 preguntas) -->
                         <li class="flex h-full w-14 flex-col items-center gap-1.5 sm:w-16">
-                            <span class="font-mono text-2xs uppercase tracking-[0.18em] text-white/85 tabular-nums">4</span>
+                            <span
+                                class="font-mono text-2xs uppercase tracking-[0.18em] text-white/85 tabular-nums">4</span>
                             <span class="flex w-full flex-1 flex-col justify-end">
-                                <span class="w-full h-full origin-bottom rounded-t-sm bg-white/35 animate-pulse [animation-delay:0.48s]" style="transform: scaleY(0.43);"></span>
+                                <span
+                                    class="w-full h-full origin-bottom rounded-t-sm bg-white/35 animate-pulse [animation-delay:0.48s]"
+                                    style="transform: scaleY(0.43);"></span>
                             </span>
-                            <span class="font-subheading text-[10px] sm:text-xs uppercase tracking-wider text-brand-yellow">Confianza</span>
+                            <span
+                                class="font-subheading text-[10px] sm:text-xs uppercase tracking-wider text-brand-yellow">Confianza</span>
                         </li>
                     </ul>
                 </div>
@@ -348,18 +392,24 @@
                 <!-- Contenido Central Hero -->
                 <div class="relative z-10 mx-auto w-full max-w-7xl px-6 lg:px-8 pt-12 sm:pt-16 pb-28 sm:pb-36 lg:pb-44">
                     <div class="mx-auto flex max-w-3xl flex-col items-center gap-6 text-center sm:gap-7">
-                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-yellow text-brand-blue font-bold text-xs sm:text-sm font-subheading uppercase tracking-widest shadow-glow-yellow transform -rotate-1">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-yellow text-brand-blue font-bold text-xs sm:text-sm font-subheading uppercase tracking-widest shadow-glow-yellow transform -rotate-1">
                             <span class="material-symbols-outlined text-sm">help</span>
                             <span>Centro de ayuda · Mar del Plata</span>
                         </div>
 
-                        <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display uppercase tracking-[-0.03em] leading-[0.92] text-white">
+                        <h1
+                            class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display uppercase tracking-[-0.03em] leading-[0.92] text-white">
                             <span class="block">¿Tenés dudas?</span>
-                            <span class="inline-block px-3 py-1 bg-brand-yellow text-brand-blue rounded-xl transform -rotate-1 shadow-glow-yellow my-1">acá las respondemos</span>
+                            <span
+                                class="inline-block px-3 py-1 bg-brand-yellow text-brand-blue rounded-xl transform -rotate-1 shadow-glow-yellow my-1">acá
+                                las respondemos</span>
                         </h1>
 
                         <p class="text-base sm:text-lg font-sans text-white/90 max-w-[56ch] leading-relaxed font-light">
-                            22 respuestas sobre servicios, tiempos, tarifas y confianza, escritas por el equipo que opera en Mar del Plata. Buscá por palabra o elegí un tema; si tu duda no está, consultanos y te la respondemos en minutos.
+                            22 respuestas sobre servicios, tiempos, tarifas y confianza, escritas por el equipo que
+                            opera en Mar del Plata. Buscá por palabra o elegí un tema; si tu duda no está, consultanos y
+                            te la respondemos en minutos.
                         </p>
 
                         <div class="flex flex-col items-center gap-4 sm:flex-row sm:gap-6 pt-2">
@@ -393,7 +443,8 @@
                 <div class="relative max-w-2xl mx-auto">
                     <label for="faq-search-input" class="sr-only">Buscar en preguntas frecuentes</label>
                     <div class="relative">
-                        <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-brand-blue text-xl pointer-events-none">search</span>
+                        <span
+                            class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-brand-blue text-xl pointer-events-none">search</span>
                         <input id="faq-search-input" type="text"
                             placeholder="Buscar por palabra clave (ej: MercadoLibre, tarifas, cobertura)..."
                             class="w-full h-12 pl-12 pr-12 bg-white border-2 border-brand-blue-100 focus:border-brand-blue rounded-2xl text-base font-sans text-brand-blue placeholder:text-brand-blue/50 outline-none shadow-sm transition-all focus:ring-4 focus:ring-brand-blue/10">
@@ -410,14 +461,17 @@
                     <button type="button" data-category="servicios"
                         class="category-pill active group relative text-left p-4 sm:p-5 rounded-2xl border transition-all duration-300 min-h-13 cursor-pointer bg-brand-blue border-brand-blue text-white shadow-lg scale-[1.02] transform -rotate-1">
                         <div class="flex items-center justify-between mb-3">
-                            <div class="pill-icon-box w-10 h-10 rounded-xl flex items-center justify-center bg-brand-yellow text-brand-blue shadow-glow-yellow">
+                            <div
+                                class="pill-icon-box w-10 h-10 rounded-xl flex items-center justify-center bg-brand-yellow text-brand-blue shadow-glow-yellow">
                                 <span class="material-symbols-outlined text-xl">two_wheeler</span>
                             </div>
-                            <span class="pill-badge text-xs font-mono font-bold px-2.5 py-0.5 rounded-full tabular-nums bg-brand-yellow/10 text-brand-yellow border border-brand-yellow/40">
+                            <span
+                                class="pill-badge text-xs font-mono font-bold px-2.5 py-0.5 rounded-full tabular-nums bg-brand-yellow/10 text-brand-yellow border border-brand-yellow/40">
                                 8 Qs
                             </span>
                         </div>
-                        <h3 class="pill-title font-subheading text-lg tracking-wide uppercase leading-snug mb-1 text-white">
+                        <h3
+                            class="pill-title font-subheading text-lg tracking-wide uppercase leading-snug mb-1 text-white">
                             Servicios y Envíos
                         </h3>
                         <p class="pill-desc text-xs line-clamp-2 leading-relaxed font-sans text-white/90">
@@ -429,14 +483,17 @@
                     <button type="button" data-category="tiempos"
                         class="category-pill group relative text-left p-4 sm:p-5 rounded-2xl border transition-all duration-300 min-h-13 cursor-pointer bg-white border-brand-blue-100 text-brand-blue hover:border-brand-blue hover:bg-brand-blue-50/40">
                         <div class="flex items-center justify-between mb-3">
-                            <div class="pill-icon-box w-10 h-10 rounded-xl flex items-center justify-center bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                            <div
+                                class="pill-icon-box w-10 h-10 rounded-xl flex items-center justify-center bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                 <span class="material-symbols-outlined text-xl">schedule</span>
                             </div>
-                            <span class="pill-badge text-xs font-mono font-bold px-2.5 py-0.5 rounded-full tabular-nums bg-brand-blue-50 text-brand-blue">
+                            <span
+                                class="pill-badge text-xs font-mono font-bold px-2.5 py-0.5 rounded-full tabular-nums bg-brand-blue-50 text-brand-blue">
                                 5 Qs
                             </span>
                         </div>
-                        <h3 class="pill-title font-subheading text-lg tracking-wide uppercase leading-snug mb-1 text-brand-blue">
+                        <h3
+                            class="pill-title font-subheading text-lg tracking-wide uppercase leading-snug mb-1 text-brand-blue">
                             Tiempos y Operatoria
                         </h3>
                         <p class="pill-desc text-xs line-clamp-2 leading-relaxed font-sans text-brand-blue/80">
@@ -448,14 +505,17 @@
                     <button type="button" data-category="precios"
                         class="category-pill group relative text-left p-4 sm:p-5 rounded-2xl border transition-all duration-300 min-h-13 cursor-pointer bg-white border-brand-blue-100 text-brand-blue hover:border-brand-blue hover:bg-brand-blue-50/40">
                         <div class="flex items-center justify-between mb-3">
-                            <div class="pill-icon-box w-10 h-10 rounded-xl flex items-center justify-center bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                            <div
+                                class="pill-icon-box w-10 h-10 rounded-xl flex items-center justify-center bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                 <span class="material-symbols-outlined text-xl">payments</span>
                             </div>
-                            <span class="pill-badge text-xs font-mono font-bold px-2.5 py-0.5 rounded-full tabular-nums bg-brand-blue-50 text-brand-blue">
+                            <span
+                                class="pill-badge text-xs font-mono font-bold px-2.5 py-0.5 rounded-full tabular-nums bg-brand-blue-50 text-brand-blue">
                                 5 Qs
                             </span>
                         </div>
-                        <h3 class="pill-title font-subheading text-lg tracking-wide uppercase leading-snug mb-1 text-brand-blue">
+                        <h3
+                            class="pill-title font-subheading text-lg tracking-wide uppercase leading-snug mb-1 text-brand-blue">
                             Precios y Pagos
                         </h3>
                         <p class="pill-desc text-xs line-clamp-2 leading-relaxed font-sans text-brand-blue/80">
@@ -467,14 +527,17 @@
                     <button type="button" data-category="confianza"
                         class="category-pill group relative text-left p-4 sm:p-5 rounded-2xl border transition-all duration-300 min-h-13 cursor-pointer bg-white border-brand-blue-100 text-brand-blue hover:border-brand-blue hover:bg-brand-blue-50/40">
                         <div class="flex items-center justify-between mb-3">
-                            <div class="pill-icon-box w-10 h-10 rounded-xl flex items-center justify-center bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                            <div
+                                class="pill-icon-box w-10 h-10 rounded-xl flex items-center justify-center bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                 <span class="material-symbols-outlined text-xl">verified_user</span>
                             </div>
-                            <span class="pill-badge text-xs font-mono font-bold px-2.5 py-0.5 rounded-full tabular-nums bg-brand-blue-50 text-brand-blue">
+                            <span
+                                class="pill-badge text-xs font-mono font-bold px-2.5 py-0.5 rounded-full tabular-nums bg-brand-blue-50 text-brand-blue">
                                 4 Qs
                             </span>
                         </div>
-                        <h3 class="pill-title font-subheading text-lg tracking-wide uppercase leading-snug mb-1 text-brand-blue">
+                        <h3
+                            class="pill-title font-subheading text-lg tracking-wide uppercase leading-snug mb-1 text-brand-blue">
                             Confianza y Diferenciación
                         </h3>
                         <p class="pill-desc text-xs line-clamp-2 leading-relaxed font-sans text-brand-blue/80">
@@ -487,13 +550,16 @@
                 <div class="rounded-[28px] p-2 sm:p-2.5 bg-white border border-brand-blue-100 shadow-float">
                     <div class="rounded-[20px] bg-white p-6 sm:p-8 space-y-6">
                         <!-- Header del Grupo Activo o Búsqueda -->
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-6 border-b border-brand-blue-100">
+                        <div
+                            class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-6 border-b border-brand-blue-100">
                             <div class="flex items-center gap-3">
-                                <div id="group-icon-header" class="w-10 h-10 rounded-xl bg-brand-yellow text-brand-blue flex items-center justify-center shrink-0">
+                                <div id="group-icon-header"
+                                    class="w-10 h-10 rounded-xl bg-brand-yellow text-brand-blue flex items-center justify-center shrink-0">
                                     <span class="material-symbols-outlined text-2xl">two_wheeler</span>
                                 </div>
                                 <div>
-                                    <h2 id="group-title-header" class="font-display text-2xl sm:text-3xl text-brand-blue uppercase tracking-tight">
+                                    <h2 id="group-title-header"
+                                        class="font-display text-2xl sm:text-3xl text-brand-blue uppercase tracking-tight">
                                         Servicios y Envíos
                                     </h2>
                                     <p id="group-desc-header" class="text-xs sm:text-sm text-brand-blue/80 font-sans">
@@ -501,7 +567,8 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex items-center gap-1.5 text-xs font-mono font-semibold text-brand-blue self-start sm:self-center bg-brand-blue-50 px-3 py-1.5 rounded-full border border-brand-blue-100">
+                            <div
+                                class="flex items-center gap-1.5 text-xs font-mono font-semibold text-brand-blue self-start sm:self-center bg-brand-blue-50 px-3 py-1.5 rounded-full border border-brand-blue-100">
                                 <span class="material-symbols-outlined text-sm text-brand-blue">verified</span>
                                 <span class="tabular-nums">Mar del Plata 2026</span>
                             </div>
@@ -509,7 +576,8 @@
 
                         <!-- Estado Vacío (Sin Resultados de Búsqueda) -->
                         <div id="faq-empty-state" class="hidden text-center py-12">
-                            <span class="material-symbols-outlined text-5xl text-brand-blue/40 mx-auto mb-3 block">help</span>
+                            <span
+                                class="material-symbols-outlined text-5xl text-brand-blue/40 mx-auto mb-3 block">help</span>
                             <h3 class="font-subheading text-xl uppercase text-brand-blue">
                                 No encontramos respuestas exactas para esa búsqueda
                             </h3>
@@ -525,422 +593,652 @@
                         <!-- Lista de Acordeones -->
                         <div id="faq-accordion-list" class="space-y-3">
                             <!-- Pregunta 1 (Servicios) -->
-                            <div class="faq-item border rounded-xl border-brand-blue bg-brand-blue-50/40 shadow-xs overflow-hidden" data-category="servicios" data-search="servicios soluciones logisticas mar del plata flex mercadolibre express lowcost cadeteria contrarreembolso deposito fulfillment">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="true">
+                            <div class="faq-item border rounded-xl border-brand-blue bg-brand-blue-50/40 shadow-xs overflow-hidden"
+                                data-category="servicios"
+                                data-search="servicios soluciones logisticas mar del plata flex mercadolibre express lowcost cadeteria contrarreembolso deposito fulfillment">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="true">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue text-brand-yellow">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue text-brand-yellow">
                                             <span class="material-symbols-outlined text-sm">help</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Qué tipo de servicios y soluciones logísticas realizan en Mar del Plata?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 rotate-180 bg-brand-yellow text-brand-blue transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 rotate-180 bg-brand-yellow text-brand-blue transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Ofrecemos mensajería urbana y paquetería especializada en e-commerce: Envíos Flex para MercadoLibre con 100% cumplimiento en el día, Envíos Express prioritarios en franja horaria de 3 hs a elección, reparto LowCost económico antes de las 19:00 hs, cadetería corporativa, cobro contrarreembolso y servicio integral de depósito & fulfillment (picking, packing y despacho).</p>
+                                <div
+                                    class="faq-content px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Ofrecemos mensajería urbana y paquetería especializada en e-commerce: Envíos Flex
+                                        para MercadoLibre con 100% cumplimiento en el día, Envíos Express prioritarios
+                                        en franja horaria de 3 hs a elección, reparto LowCost económico antes de las
+                                        19:00 hs, cadetería corporativa, cobro contrarreembolso y servicio integral de
+                                        depósito & fulfillment (picking, packing y despacho).</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 2 (Servicios) -->
-                            <div class="faq-item border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="servicios" data-search="horario puntual especifico rango franjas 3 horas espaciado rutas viales optimizar">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="servicios"
+                                data-search="horario puntual especifico rango franjas 3 horas espaciado rutas viales optimizar">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">help</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Se puede entregar en un horario puntual específico?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>No, únicamente trabajamos con rangos horarios de entrega de 3 horas de espaciado (por ejemplo de 10:00 a 13:00 hs o de 14:00 a 17:00 hs). Esta metodología permite a nuestros repartidores optimizar las rutas viales en Mar del Plata y garantizar que tu entrega se cumpla sin demoras imprevistas.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>No, únicamente trabajamos con rangos horarios de entrega de 3 horas de espaciado
+                                        (por ejemplo de 10:00 a 13:00 hs o de 14:00 a 17:00 hs). Esta metodología
+                                        permite a nuestros repartidores optimizar las rutas viales en Mar del Plata y
+                                        garantizar que tu entrega se cumpla sin demoras imprevistas.</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 3 (Servicios) -->
-                            <div class="faq-item border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="servicios" data-search="elegir horario envios lowcost franja horaria jornada 19:00 hs tarifa mas economica">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="servicios"
+                                data-search="elegir horario envios lowcost franja horaria jornada 19:00 hs tarifa mas economica">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">help</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Se puede elegir horario en los envíos LowCost?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>No, las entregas LowCost no admiten elección de franja horaria. Los paquetes se entregan a lo largo de la jornada antes de las 19:00 hs. Esto nos permite consolidar volumen de envíos en la misma zona y ofrecerte la tarifa más económica de la ciudad.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>No, las entregas LowCost no admiten elección de franja horaria. Los paquetes se
+                                        entregan a lo largo de la jornada antes de las 19:00 hs. Esto nos permite
+                                        consolidar volumen de envíos en la misma zona y ofrecerte la tarifa más
+                                        económica de la ciudad.</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 4 (Servicios) -->
-                            <div class="faq-item border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="servicios" data-search="minimo de envios vendedores mercado libre flex paquete retiro domicilio beneficios tarifas reducidas">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="servicios"
+                                data-search="minimo de envios vendedores mercado libre flex paquete retiro domicilio beneficios tarifas reducidas">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">help</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Tienen mínimo de envíos para vendedores de Mercado Libre Flex?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>No tenemos ningún mínimo de envíos diarios: retiramos desde 1 solo paquete en tu domicilio o local comercial. Retiramos varias veces al día si es necesario. A mayor cantidad de envíos diarios coordinados, obtenés mejores beneficios y tarifas reducidas por volumen.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>No tenemos ningún mínimo de envíos diarios: retiramos desde 1 solo paquete en tu
+                                        domicilio o local comercial. Retiramos varias veces al día si es necesario. A
+                                        mayor cantidad de envíos diarios coordinados, obtenés mejores beneficios y
+                                        tarifas reducidas por volumen.</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 5 (Servicios) -->
-                            <div class="faq-item border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="servicios" data-search="deposito fulfillment e-commerce 3pl stock friuli 1972 empaquetado etiquetado despacho drop-off">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="servicios"
+                                data-search="deposito fulfillment e-commerce 3pl stock friuli 1972 empaquetado etiquetado despacho drop-off">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">help</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Cómo funciona el depósito y fulfillment (Servicio E-Commerce / 3PL)?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Almacenamos tu stock en nuestra base logística de Friuli 1972. Cuando concretás una venta online o por redes, nosotros nos encargamos del empaquetado, etiquetado y despacho directo en el día (Same-Day). También disponemos de modalidad Drop-Off: traés tus envíos listos a nuestro depósito y obtenés un 20% de descuento sobre la tarifa final.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Almacenamos tu stock en nuestra base logística de Friuli 1972. Cuando concretás
+                                        una venta online o por redes, nosotros nos encargamos del empaquetado,
+                                        etiquetado y despacho directo en el día (Same-Day). También disponemos de
+                                        modalidad Drop-Off: traés tus envíos listos a nuestro depósito y obtenés un 20%
+                                        de descuento sobre la tarifa final.</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 6 (Servicios) -->
-                            <div class="faq-item border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="servicios" data-search="zonas de cobertura mar del plata centro guemes puerto mogotes constitucion san juan la perla camet 10 km 20 km">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="servicios"
+                                data-search="zonas de cobertura mar del plata centro guemes puerto mogotes constitucion san juan la perla camet 10 km 20 km">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">help</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Cuáles son las zonas de cobertura?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Llegamos a todo Mar del Plata: Centro, Güemes, Puerto, Mogotes, Constitución, San Juan, La Perla, Camet y el resto de los barrios. Más allá de los 10 km de ruta, la tarifa se calcula por kilómetro: hasta 20 km la calcula el cotizador en el momento y más allá la coordinamos con el equipo.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Llegamos a todo Mar del Plata: Centro, Güemes, Puerto, Mogotes, Constitución, San
+                                        Juan, La Perla, Camet y el resto de los barrios. Más allá de los 10 km de ruta,
+                                        la tarifa se calcula por kilómetro: hasta 20 km la calcula el cotizador en el
+                                        momento y más allá la coordinamos con el equipo.</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 7 (Servicios) -->
-                            <div class="faq-item border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="servicios" data-search="limites de peso y tamano por paquete 5 kg 40x40 bulto adicional">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="servicios"
+                                data-search="limites de peso y tamano por paquete 5 kg 40x40 bulto adicional">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">help</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Cuáles son los límites de peso y tamaño por paquete?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Operamos con una flota propia de motos. La capacidad estándar sin recargo es de hasta 5 kg o dimensiones de hasta 40 x 40 x 30 cm por bulto. Paquetes mayores se transportan coordinando previamente con recargo por bulto especial.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Operamos con una flota propia de motos. La capacidad estándar sin recargo es de
+                                        hasta 5 kg o dimensiones de hasta 40 x 40 x 30 cm por bulto. Paquetes mayores se
+                                        transportan coordinando previamente con recargo por bulto especial.</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 8 (Servicios) -->
-                            <div class="faq-item border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="servicios" data-search="entregas contrarreembolso comision cobro efectivo destinatario">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="servicios"
+                                data-search="entregas contrarreembolso comision cobro efectivo destinatario">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">help</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Realizan entregas a contrarreembolso? ¿Cobran comisión extra?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Sí, realizamos el cobro en efectivo en mano al destinatario en el momento de la entrega. Lo más importante: no cobramos ningún extra ni porcentaje de comisión por este servicio. El dinero recaudado se rinde en el día, al día siguiente o semanal, según lo acordado.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Sí, realizamos el cobro en efectivo en mano al destinatario en el momento de la
+                                        entrega. Lo más importante: no cobramos ningún extra ni porcentaje de comisión
+                                        por este servicio. El dinero recaudado se rinde en el día, al día siguiente o
+                                        semanal, según lo acordado.</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 9 (Tiempos) -->
-                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="tiempos" data-search="horarios de corte entregas mismo dia lowcost 13:00 express 15:00 flex 20:00">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="tiempos"
+                                data-search="horarios de corte entregas mismo dia lowcost 13:00 express 15:00 flex 20:00">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">schedule</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Cuáles son los horarios de corte para entregas en el mismo día?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Nuestros horarios de corte son: Reparto LowCost: solicitar antes de las 13:00 hs (entregas antes de las 19:00 hs). Envíos Express: solicitar antes de las 15:00 hs con mínimo 2 hs de anticipación (franja de 3 hs). Mercado Envíos Flex: corte a las 15:00 hs con entregas aseguradas antes de las 20:00 hs.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Nuestros horarios de corte son: Reparto LowCost: solicitar antes de las 13:00 hs
+                                        (entregas antes de las 19:00 hs). Envíos Express: solicitar antes de las 15:00
+                                        hs con mínimo 2 hs de anticipación (franja de 3 hs). Mercado Envíos Flex: corte
+                                        a las 15:00 hs con entregas aseguradas antes de las 20:00 hs.</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 10 (Tiempos) -->
-                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="tiempos" data-search="horarios de atencion base friuli 1972 lunes a viernes 09:00 a 18:00 sabados 10:00 a 15:00 drop-off">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="tiempos"
+                                data-search="horarios de atencion base friuli 1972 lunes a viernes 09:00 a 18:00 sabados 10:00 a 15:00 drop-off">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">schedule</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Cuáles son sus horarios de atención en base Friuli 1972?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Nuestra base de operaciones atiende de lunes a viernes de 09:00 a 18:00 hs y los sábados de 10:00 a 15:00 hs. Podés acercarte para dejar paquetes (Drop-Off) o retirar correspondencia y mercadería.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Nuestra base de operaciones atiende de lunes a viernes de 09:00 a 18:00 hs y los
+                                        sábados de 10:00 a 15:00 hs. Podés acercarte para dejar paquetes (Drop-Off) o
+                                        retirar correspondencia y mercadería.</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 11 (Tiempos) -->
-                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="tiempos" data-search="servicio express prioritario tramites repuestos franja 3 hs anticipacion 2 horas">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="tiempos"
+                                data-search="servicio express prioritario tramites repuestos franja 3 hs anticipacion 2 horas">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">schedule</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Cómo funciona el Servicio Express prioritario?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>El Servicio Express cuenta con prioridad inmediata de cadetería. Es ideal para trámites urgentes, repuestos o mandados donde necesitás franja acotada de 3 hs a elección. Podés pedirlo antes de las 15:00 hs con al menos 2 horas de anticipación.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>El Servicio Express cuenta con prioridad inmediata de cadetería. Es ideal para
+                                        trámites urgentes, repuestos o mandados donde necesitás franja acotada de 3 hs a
+                                        elección. Podés pedirlo antes de las 15:00 hs con al menos 2 horas de
+                                        anticipación.</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 12 (Tiempos) -->
-                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="tiempos" data-search="seguimiento de mi envio whatsapp identificador foto firma acuse">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="tiempos"
+                                data-search="seguimiento de mi envio whatsapp identificador foto firma acuse">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">schedule</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Cómo realizo el seguimiento de mi envío?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Centralizamos la gestión de forma ágil y directa vía WhatsApp (+54 223 660-2699). Cada cotización genera un identificador de seguimiento. Te mantenemos informado del estado del paquete y te confirmamos la entrega con foto o firma en el acto.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Centralizamos la gestión de forma ágil y directa vía WhatsApp (+54 223 660-2699).
+                                        Cada cotización genera un identificador de seguimiento. Te mantenemos informado
+                                        del estado del paquete y te confirmamos la entrega con foto o firma en el acto.
+                                    </p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 13 (Tiempos) -->
-                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="tiempos" data-search="destinatario no esta ausente rechaza producto segundo intento coordinacion">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="tiempos"
+                                data-search="destinatario no esta ausente rechaza producto segundo intento coordinacion">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">schedule</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
-                                            ¿Qué sucede si el destinatario no está en el domicilio o rechaza el producto?
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                            ¿Qué sucede si el destinatario no está en el domicilio o rechaza el
+                                            producto?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Te contactamos en el momento por WhatsApp para intentar coordinar con el comprador o vecino. Si el paquete no puede entregarse y debe regresar a tu local o a nuestra base, la devolución o segundo intento se coordina de inmediato cuidando tu mercadería.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Te contactamos en el momento por WhatsApp para intentar coordinar con el
+                                        comprador o vecino. Si el paquete no puede entregarse y debe regresar a tu local
+                                        o a nuestra base, la devolución o segundo intento se coordina de inmediato
+                                        cuidando tu mercadería.</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 14 (Precios) -->
-                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="precios" data-search="tarifas vigentes 2026 express lowcost precio kilometro tramos">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="precios"
+                                data-search="tarifas vigentes 2026 express lowcost precio kilometro tramos">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">payments</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Cuáles son las tarifas vigentes 2026 de Envíos DosRuedas?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Nuestras tarifas base 2026 son transparentes: Express: 0-3km $3.700, 3-5km $4.600, 5-7km $6.100, 7-10km $8.200. LowCost: 0-3km $3.000, 3-5km $4.000, 5-7km $5.300, 7-10km $7.000. Superados los 10 km, el cálculo es lineal directo por distancia multiplicada por el precio por km ($1.000/km en Express, $700/km en LowCost).</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Nuestras tarifas base 2026 son transparentes: Express: 0-3km $3.700, 3-5km
+                                        $4.600, 5-7km $6.100, 7-10km $8.200. LowCost: 0-3km $3.000, 3-5km $4.000, 5-7km
+                                        $5.300, 7-10km $7.000. Superados los 10 km, el cálculo es lineal directo por
+                                        distancia multiplicada por el precio por km ($1.000/km en Express, $700/km en
+                                        LowCost).</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 15 (Precios) -->
-                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="precios" data-search="calculo distancias superiores a 10 km hasta 20 km lineal por kilometro">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="precios"
+                                data-search="calculo distancias superiores a 10 km hasta 20 km lineal por kilometro">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">payments</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Cómo se calcula el precio para distancias de más de 10 km?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Para el tramo lineal de 10 km hasta 20 km, se realiza el cálculo directo: distancia en kilómetros multiplicada por la tarifa unitaria por km ($1.000/km en Express o $700/km en LowCost). Distancias mayores a 20 km se derivan a atención personalizada para cotización a medida.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Para el tramo lineal de 10 km hasta 20 km, se realiza el cálculo directo:
+                                        distancia en kilómetros multiplicada por la tarifa unitaria por km ($1.000/km en
+                                        Express o $700/km en LowCost). Distancias mayores a 20 km se derivan a atención
+                                        personalizada para cotización a medida.</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 16 (Precios) -->
-                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="precios" data-search="formas de pago aceptadas transferencia cbu cvu alias mercado pago efectivo">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="precios"
+                                data-search="formas de pago aceptadas transferencia cbu cvu alias mercado pago efectivo">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">payments</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Cuáles son las formas de pago aceptadas?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Aceptamos transferencias bancarias (CBU / CVU / alias), dinero en cuenta de Mercado Pago y efectivo en mano tanto en el retiro como en destino al entregar.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Aceptamos transferencias bancarias (CBU / CVU / alias), dinero en cuenta de
+                                        Mercado Pago y efectivo en mano tanto en el retiro como en destino al entregar.
+                                    </p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 17 (Precios) -->
-                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="precios" data-search="emiten factura comprobante fiscal habitual cuenta corriente">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="precios"
+                                data-search="emiten factura comprobante fiscal habitual cuenta corriente">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">payments</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Emiten comprobante por el servicio logístico?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Sí, la empresa emite comprobantes oficiales según su encuadre fiscal habitual para todos nuestros servicios comerciales y corporativos (ideal empresas con cuenta corriente quincenal).</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Sí, la empresa emite comprobantes oficiales según su encuadre fiscal habitual
+                                        para todos nuestros servicios comerciales y corporativos (ideal empresas con
+                                        cuenta corriente quincenal).</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 18 (Precios) -->
-                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="precios" data-search="descuentos comercios cuenta corriente quincenal volumen diario bonificado">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="precios"
+                                data-search="descuentos comercios cuenta corriente quincenal volumen diario bonificado">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">payments</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Tienen descuentos para comercios y cuentas corrientes?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Sí, contamos con el servicio para Empresas con Cuenta Corriente: liquidación quincenal unificada, tarifas bonificadas por volumen diario recurrente y atención preferencial vía WhatsApp.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Sí, contamos con el servicio para Empresas con Cuenta Corriente: liquidación
+                                        quincenal unificada, tarifas bonificadas por volumen diario recurrente y
+                                        atención preferencial vía WhatsApp.</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 19 (Confianza) -->
-                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="confianza" data-search="diferencia apps delivery mensajerias informales cara humana friuli 1972 7 anos trayectoria">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="confianza"
+                                data-search="diferencia apps delivery mensajerias informales cara humana friuli 1972 7 anos trayectoria">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">verified_user</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
-                                            ¿Qué diferencia a Envíos DosRuedas de las apps de delivery o mensajerías informales?
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                            ¿Qué diferencia a Envíos DosRuedas de las apps de delivery o mensajerías
+                                            informales?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Brindamos logística con cara humana y responsabilidad real: flota de cadetes de confianza, base física establecida en Friuli 1972, comunicación directa por WhatsApp sin bots automatizados impersonales, y más de 7 años de trayectoria en las calles de Mar del Plata con calificación 5 estrellas.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Brindamos logística con cara humana y responsabilidad real: flota de cadetes de
+                                        confianza, base física establecida en Friuli 1972, comunicación directa por
+                                        WhatsApp sin bots automatizados impersonales, y más de 7 años de trayectoria en
+                                        las calles de Mar del Plata con calificación 5 estrellas.</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 20 (Confianza) -->
-                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="confianza" data-search="politica imprevistos sobrecarga demanda preferimos decir que no podemos a fallar clima lluvia">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="confianza"
+                                data-search="politica imprevistos sobrecarga demanda preferimos decir que no podemos a fallar clima lluvia">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">verified_user</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Cuál es la política de la empresa ante imprevistos o sobrecarga de demanda?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>"Preferimos decir que no podemos, a fallar". Si por factores climáticos adversos o saturación de flota no podemos garantizar la entrega en el tiempo pactado, te avisamos de inmediato con total transparencia. Jamás prometemos lo que no podemos cumplir.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>"Preferimos decir que no podemos, a fallar". Si por factores climáticos adversos
+                                        o saturación de flota no podemos garantizar la entrega en el tiempo pactado, te
+                                        avisamos de inmediato con total transparencia. Jamás prometemos lo que no
+                                        podemos cumplir.</p>
                                 </div>
                             </div>
 
                             <!-- Pregunta 21 (Confianza) -->
-                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden" data-category="confianza" data-search="solicitar un envio en este momento cotizar web whatsapp cadete al instante">
-                                <button type="button" class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group" aria-expanded="false">
+                            <div class="faq-item hidden border rounded-xl border-brand-blue-100 bg-white hover:border-brand-blue/50 overflow-hidden"
+                                data-category="confianza"
+                                data-search="solicitar un envio en este momento cotizar web whatsapp cadete al instante">
+                                <button type="button"
+                                    class="faq-toggle w-full min-h-12 text-left p-4 sm:p-5 flex items-start justify-between gap-4 cursor-pointer group"
+                                    aria-expanded="false">
                                     <div class="flex items-start gap-3 sm:gap-4">
-                                        <div class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
+                                        <div
+                                            class="faq-badge-icon p-1.5 rounded-lg shrink-0 mt-0.5 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100">
                                             <span class="material-symbols-outlined text-sm">verified_user</span>
                                         </div>
-                                        <h3 class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
+                                        <h3
+                                            class="faq-title text-base sm:text-lg font-subheading uppercase tracking-wide leading-snug text-brand-blue">
                                             ¿Cómo puedo solicitar un envío en este momento?
                                         </h3>
                                     </div>
-                                    <div class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
+                                    <div
+                                        class="faq-chevron p-1.5 rounded-full shrink-0 bg-brand-blue-50 text-brand-blue group-hover:bg-brand-blue-100 transition-transform duration-300">
                                         <span class="material-symbols-outlined text-sm">expand_more</span>
                                     </div>
                                 </button>
-                                <div class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
-                                    <p>Podés cotizar de forma inmediata en nuestra web o enviarnos un mensaje por WhatsApp al 223 660-2699 con las direcciones de retiro y entrega. Te asignamos cadete al instante.</p>
+                                <div
+                                    class="faq-content hidden px-4 pb-5 pt-1 sm:px-5 sm:pb-6 text-sm sm:text-base text-brand-blue/90 font-sans leading-relaxed border-t border-brand-blue-100 bg-white/70">
+                                    <p>Podés cotizar de forma inmediata en nuestra web o enviarnos un mensaje por
+                                        WhatsApp al 223 660-2699 con las direcciones de retiro y entrega. Te asignamos
+                                        cadete al instante.</p>
                                 </div>
                             </div>
                         </div>
@@ -955,18 +1253,23 @@
         <section id="faq-cta" class="py-24 bg-brand-blue text-white relative overflow-hidden border-t border-white/10">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="rounded-[28px] p-2 sm:p-2.5 bg-white/10 border border-white/20 backdrop-blur-md shadow-2xl">
-                    <div class="bg-brand-blue p-8 sm:p-12 rounded-[20px] border border-white/20 text-white text-center relative overflow-hidden">
+                    <div
+                        class="bg-brand-blue p-8 sm:p-12 rounded-[20px] border border-white/20 text-white text-center relative overflow-hidden">
                         <div class="max-w-2xl mx-auto space-y-6 relative z-10 flex flex-col items-center">
-                            <span class="px-4 py-1.5 bg-brand-yellow text-brand-blue font-bold rounded-full text-xs font-subheading uppercase tracking-widest inline-block shadow-glow-yellow transform -rotate-1">
+                            <span
+                                class="px-4 py-1.5 bg-brand-yellow text-brand-blue font-bold rounded-full text-xs font-subheading uppercase tracking-widest inline-block shadow-glow-yellow transform -rotate-1">
                                 SOPORTE HUMANO EN MDP
                             </span>
 
-                            <h3 class="text-3xl sm:text-4xl font-display uppercase tracking-tight leading-[1.1] text-white">
+                            <h3
+                                class="text-3xl sm:text-4xl font-display uppercase tracking-tight leading-[1.1] text-white">
                                 ¿NO ENCONTRASTE LO QUE BUSCABAS?
                             </h3>
 
                             <p class="text-sm sm:text-base text-white/90 leading-relaxed font-sans">
-                                No te preocupes. Nuestro equipo de soporte está listo para ayudarte de inmediato con cualquier consulta específica que tengas sobre nuestros servicios de mensajería y última milla.
+                                No te preocupes. Nuestro equipo de soporte está listo para ayudarte de inmediato con
+                                cualquier consulta específica que tengas sobre nuestros servicios de mensajería y última
+                                milla.
                             </p>
 
                             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 w-full">
@@ -993,27 +1296,32 @@
         <!-- ========================================================================= -->
         <section class="py-24 bg-brand-blue text-white relative z-10 border-t border-b border-white/10" id="comunidad">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-14">
-                
+
                 <div class="space-y-3 max-w-2xl mx-auto">
-                    <span class="inline-block px-4 py-1 bg-brand-yellow text-brand-blue rounded-full text-xs font-subheading uppercase tracking-widest font-bold shadow-glow-yellow">
+                    <span
+                        class="inline-block px-4 py-1 bg-brand-yellow text-brand-blue rounded-full text-xs font-subheading uppercase tracking-widest font-bold shadow-glow-yellow">
                         NUESTRA COMUNIDAD DIGITAL
                     </span>
                     <h2 class="text-4xl sm:text-5xl font-display uppercase tracking-tight text-white leading-none">
                         SEGUÍ NUESTRO <span class="text-brand-yellow">MOVIMIENTO</span>
                     </h2>
                     <p class="text-blue-100 font-sans text-sm sm:text-base">
-                        Sumate a nuestros canales digitales y enterate al toque de todas las novedades operativas en Mar del Plata.
+                        Sumate a nuestros canales digitales y enterate al toque de todas las novedades operativas en Mar
+                        del Plata.
                     </p>
                 </div>
 
                 <!-- 3 Tarjetas de Redes con Gradientes Oficiales -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-                    
+
                     <!-- Facebook -->
-                    <div class="p-7 rounded-3xl bg-gradient-to-br from-[#1877F2] to-[#0A4BB3] text-white shadow-xl flex flex-col justify-between space-y-6 border border-white/20">
+                    <div
+                        class="p-7 rounded-3xl bg-gradient-to-br from-[#1877F2] to-[#0A4BB3] text-white shadow-xl flex flex-col justify-between space-y-6 border border-white/20">
                         <div class="space-y-3">
                             <div class="flex items-center justify-between">
-                                <span class="font-mono text-2xs uppercase tracking-wider bg-white/20 px-3 py-1 rounded-full font-bold">FACEBOOK OFICIAL</span>
+                                <span
+                                    class="font-mono text-2xs uppercase tracking-wider bg-white/20 px-3 py-1 rounded-full font-bold">FACEBOOK
+                                    OFICIAL</span>
                                 <span class="material-symbols-outlined text-2xl">thumb_up</span>
                             </div>
                             <h3 class="font-display text-3xl uppercase tracking-tight">FACEBOOK</h3>
@@ -1030,10 +1338,13 @@
                     </div>
 
                     <!-- Instagram -->
-                    <div class="p-7 rounded-3xl bg-gradient-to-br from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white shadow-xl flex flex-col justify-between space-y-6 border border-white/20">
+                    <div
+                        class="p-7 rounded-3xl bg-gradient-to-br from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white shadow-xl flex flex-col justify-between space-y-6 border border-white/20">
                         <div class="space-y-3">
                             <div class="flex items-center justify-between">
-                                <span class="font-mono text-2xs uppercase tracking-wider bg-white/20 px-3 py-1 rounded-full font-bold">INSTAGRAM MDQ</span>
+                                <span
+                                    class="font-mono text-2xs uppercase tracking-wider bg-white/20 px-3 py-1 rounded-full font-bold">INSTAGRAM
+                                    MDQ</span>
                                 <span class="material-symbols-outlined text-2xl">photo_camera</span>
                             </div>
                             <h3 class="font-display text-3xl uppercase tracking-tight">INSTAGRAM</h3>
@@ -1050,10 +1361,13 @@
                     </div>
 
                     <!-- WhatsApp -->
-                    <div class="p-7 rounded-3xl bg-gradient-to-br from-[#25D366] to-[#0E8A42] text-white shadow-xl flex flex-col justify-between space-y-6 border border-white/20">
+                    <div
+                        class="p-7 rounded-3xl bg-gradient-to-br from-[#25D366] to-[#0E8A42] text-white shadow-xl flex flex-col justify-between space-y-6 border border-white/20">
                         <div class="space-y-3">
                             <div class="flex items-center justify-between">
-                                <span class="font-mono text-2xs uppercase tracking-wider bg-white/20 px-3 py-1 rounded-full font-bold">WHATSAPP DIRECTO</span>
+                                <span
+                                    class="font-mono text-2xs uppercase tracking-wider bg-white/20 px-3 py-1 rounded-full font-bold">WHATSAPP
+                                    DIRECTO</span>
                                 <span class="material-symbols-outlined text-2xl">chat</span>
                             </div>
                             <h3 class="font-display text-3xl uppercase tracking-tight">WHATSAPP</h3>
@@ -1079,12 +1393,13 @@
     <!-- 5. PIE DE PÁGINA GLOBAL (OptimizedFooter Oficial de 3 Columnas)           -->
     <!-- ========================================================================= -->
     <footer class="bg-brand-blue text-white border-t border-white/20 relative select-none" id="contacto">
-        
+
         <!-- Banner Superior de Operaciones Activas -->
-        <div class="border-b border-white/15 bg-brand-blue-900/60 py-8">
+        <div class="border-b border-white/15 bg-brand-blue-500/60 py-8">
             <div class="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="space-y-1 text-center md:text-left">
-                    <span class="font-mono text-[11px] font-bold uppercase tracking-wider text-brand-yellow flex items-center gap-1.5 justify-center md:justify-start">
+                    <span
+                        class="font-mono text-[11px] font-bold uppercase tracking-wider text-brand-yellow flex items-center gap-1.5 justify-center md:justify-start">
                         <span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse"></span>
                         OPERACIONES ACTIVAS MAR DEL PLATA 2026
                     </span>
@@ -1112,10 +1427,11 @@
         <!-- Contenido Principal Footer (3 Columnas) -->
         <div class="max-w-7xl mx-auto px-4 lg:px-8 py-16">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
-                
+
                 <!-- Columna 1: Identidad, Misión y Canales Oficiales -->
                 <div class="lg:col-span-5 space-y-5 text-left">
-                    <a class="flex items-center gap-2.5 group" href="home_clean.html" aria-label="Inicio Envíos DosRuedas">
+                    <a class="flex items-center gap-2.5 group" href="home_clean.html"
+                        aria-label="Inicio Envíos DosRuedas">
                         <img src="logo_.png" alt="Logo Envíos DosRuedas"
                             class="w-10 h-10 rounded-full object-contain shadow-sm group-hover:scale-105 transition-transform">
                         <span class="text-2xl font-display uppercase tracking-normal">
@@ -1126,21 +1442,26 @@
                         TU SOLUCIÓN CONFIABLE · MAR DEL PLATA
                     </p>
                     <p class="text-xs text-white/80 leading-relaxed font-normal max-w-sm">
-                        Con más de 7 años de trayectoria en Mar del Plata, transformamos el despacho de tus productos en un motor de crecimiento para emprendedores, PyMEs y comercios locales con flota propia y compromiso humano.
+                        Con más de 7 años de trayectoria en Mar del Plata, transformamos el despacho de tus productos en
+                        un motor de crecimiento para emprendedores, PyMEs y comercios locales con flota propia y
+                        compromiso humano.
                     </p>
                     <div class="space-y-2">
                         <p class="font-mono text-[10px] uppercase font-bold text-white/60">CANALES OFICIALES</p>
                         <div class="flex items-center gap-2">
                             <a class="w-8 h-8 rounded-full bg-white/10 hover:bg-brand-yellow hover:text-brand-blue flex items-center justify-center transition-colors"
-                                href="https://instagram.com/enviosdosruedas" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                href="https://instagram.com/enviosdosruedas" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram">
                                 <span class="material-symbols-outlined text-base">photo_camera</span>
                             </a>
                             <a class="w-8 h-8 rounded-full bg-white/10 hover:bg-brand-yellow hover:text-brand-blue flex items-center justify-center transition-colors"
-                                href="https://facebook.com/enviosdosruedas" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                href="https://facebook.com/enviosdosruedas" target="_blank" rel="noopener noreferrer"
+                                aria-label="Facebook">
                                 <span class="material-symbols-outlined text-base">thumb_up</span>
                             </a>
                             <a class="w-8 h-8 rounded-full bg-brand-yellow text-brand-blue flex items-center justify-center transition-colors shadow-sm"
-                                href="https://wa.me/542236602699" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                href="https://wa.me/542236602699" target="_blank" rel="noopener noreferrer"
+                                aria-label="WhatsApp">
                                 <span class="material-symbols-outlined text-base">chat</span>
                             </a>
                         </div>
@@ -1212,7 +1533,8 @@
                     </p>
                     <div class="space-y-3 font-mono text-xs">
                         <div class="flex items-start gap-2.5">
-                            <span class="material-symbols-outlined text-brand-yellow text-base mt-0.5">location_on</span>
+                            <span
+                                class="material-symbols-outlined text-brand-yellow text-base mt-0.5">location_on</span>
                             <div>
                                 <p class="text-white font-bold">CENTRO DE DISTRIBUCIÓN</p>
                                 <p class="text-white/70">Friuli 1972, Mar del Plata</p>
@@ -1222,22 +1544,26 @@
                             <span class="material-symbols-outlined text-brand-yellow text-base mt-0.5">call</span>
                             <div>
                                 <p class="text-white font-bold">LÍNEA DIRECTA Y WHATSAPP</p>
-                                <a class="text-brand-yellow font-bold underline" href="tel:+542236602699">+54 223 660-2699</a>
+                                <a class="text-brand-yellow font-bold underline" href="tel:+542236602699">+54 223
+                                    660-2699</a>
                             </div>
                         </div>
                         <div class="flex items-start gap-2.5">
                             <span class="material-symbols-outlined text-brand-yellow text-base mt-0.5">mail</span>
                             <div>
                                 <p class="text-white font-bold">ATENCIÓN COMERCIAL</p>
-                                <a class="text-white/70 hover:text-brand-yellow underline transition-colors" href="mailto:matiascejas@enviosdosruedas.com">matiascejas@enviosdosruedas.com</a>
+                                <a class="text-white/70 hover:text-brand-yellow underline transition-colors"
+                                    href="mailto:matiascejas@enviosdosruedas.com">matiascejas@enviosdosruedas.com</a>
                             </div>
                         </div>
                         <div class="flex items-start gap-2.5 pt-2 border-t border-white/10">
                             <span class="material-symbols-outlined text-brand-yellow text-base mt-0.5">schedule</span>
                             <div>
                                 <p class="text-white font-bold">HORARIOS DE DESPACHO EN BASE CENTRAL</p>
-                                <p class="text-white/80">Lunes a Viernes: <span class="text-brand-yellow font-bold">08:00 a 19:00 hs</span></p>
-                                <p class="text-white/80">Sábados: <span class="text-brand-yellow font-bold">10:00 a 15:00 hs</span></p>
+                                <p class="text-white/80">Lunes a Viernes: <span
+                                        class="text-brand-yellow font-bold">08:00 a 19:00 hs</span></p>
+                                <p class="text-white/80">Sábados: <span class="text-brand-yellow font-bold">10:00 a
+                                        15:00 hs</span></p>
                             </div>
                         </div>
                     </div>
@@ -1246,7 +1572,8 @@
             </div>
 
             <!-- Barra de Copyright Inferior y Marco Legal -->
-            <div class="border-t border-white/15 pt-8 mt-12 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-[11px] text-white/60">
+            <div
+                class="border-t border-white/15 pt-8 mt-12 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-[11px] text-white/60">
                 <div>
                     © 2026 Envíos DosRuedas · Mar del Plata, Argentina.
                 </div>
@@ -1255,13 +1582,15 @@
                     <span>·</span>
                     <a class="hover:text-white transition-colors" href="servicios_clean.html">Cobertura</a>
                     <span>·</span>
-                    <a class="hover:text-white transition-colors" href="enviosflex_clean.html">Guía MercadoLibre Flex</a>
+                    <a class="hover:text-white transition-colors" href="enviosflex_clean.html">Guía MercadoLibre
+                        Flex</a>
                     <span>·</span>
                     <a class="hover:text-white transition-colors" href="sobre_nosotros_clean.html">Nosotros</a>
                     <span>·</span>
                     <a class="hover:text-white transition-colors" href="sobre_nosotros_clean.html">Sobre Nosotros</a>
                     <span>·</span>
-                    <a class="hover:text-white transition-colors" href="preguntas_frecuentes_clean.html">Preguntas Frecuentes</a>
+                    <a class="hover:text-white transition-colors" href="preguntas_frecuentes_clean.html">Preguntas
+                        Frecuentes</a>
                     <span>·</span>
                     <a class="hover:text-white transition-colors" href="nuestras_redes_clean.html">Nuestras Redes</a>
                     <span>·</span>

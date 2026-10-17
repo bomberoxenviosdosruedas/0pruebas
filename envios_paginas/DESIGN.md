@@ -1,151 +1,218 @@
+---
+name: envios-dosruedas-mdq
+description: Sistema de diseño de alta velocidad para logística urbana, mensajería en moto y e-commerce en Mar del Plata.
+colors:
+  primary: "#0950f6"
+  primary_dark: "#0950f6"
+  accent: "#ffec01"
+  accent_hover: "#fff240"
+  accent_light: "#fffde6"
+  surface: "#ffffff"
+  surface_subtle: "#f0f5ff"
+  surface_ice: "#e0ebff"
+  text_primary: "#0950f6"
+  text_on_primary: "#ffffff"
+  text_on_accent: "#0950f6"
+typography:
+  display: "Anton, Impact, sans-serif"
+  body: "Outfit, sans-serif"
+  code: "Geist Mono, monospace"
+---
+
 # Sistema de Diseño: Envíos DosRuedas (Mar del Plata)
 **Identificador del Proyecto:** `envios-dosruedas-mdq`  
-**Referencia Técnica:** [home_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/home_clean.html) · [servicios_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/servicios_clean.html) · [enviosflex_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/enviosflex_clean.html) · [envios_lowcost_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/envios_lowcost_clean.html) · [envios_express_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/envios_express_clean.html) · [deposito_fulfillment_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/deposito_fulfillment_clean.html) · [cotizar_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/cotizar_clean.html) · [contacto_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/contacto_clean.html) · [sobre_nosotros_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/sobre_nosotros_clean.html) · [preguntas_frecuentes_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/preguntas_frecuentes_clean.html) · [nuestras_redes_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/nuestras_redes_clean.html) · [SECCIONES.md](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/SECCIONES.md)  
-**Entorno Operativo:** Logística e-commerce urbana, mensajería en moto, envíos en el día y cadetería inteligente en Mar del Plata.
+**Entorno Operativo:** Logística urbana de última milla, paquetería e-commerce, mensajería en moto y fulfillment en Mar del Plata.  
+**Archivos Fuente de Referencia:**  
+1. [home_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/home_clean.html) (Home Principal)  
+2. [contacto_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/contacto_clean.html) (Contacto y Canales Directos)  
+3. [cotizar_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/cotizar_clean.html) (Cotizador Interactivo con Mapa Leaflet)  
+4. [nuestras_redes_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/nuestras_redes_clean.html) (Comunidad y Redes Sociales)  
+5. [preguntas_frecuentes_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/preguntas_frecuentes_clean.html) (Centro de Ayuda y FAQ)  
+6. [sobre_nosotros_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/sobre_nosotros_clean.html) (Trayectoria, Base Friuli y Flota)  
+7. [servicios_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/servicios_clean.html) (Hub de Servicios Logísticos)  
+8. [deposito_fulfillment_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/deposito_fulfillment_clean.html) (Depósito, Almacenamiento y Picking)  
+9. [empresas_cuenta_corriente_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/empresas_cuenta_corriente_clean.html) (Servicios Corporativos B2B)  
+10. [envios_contrareembolso_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/envios_contrareembolso_clean.html) (Cobro en Destino y Rendición)  
+11. [envios_express_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/envios_express_clean.html) (Envíos Express Franja 3 hs)  
+12. [envios_lowcost_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/envios_lowcost_clean.html) (Envíos Económicos en el Día)  
+13. [enviosflex_clean.html](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/enviosflex_clean.html) (Mercado Envíos Flex "Llega Hoy")  
+**Catálogo Maestro:** [CATALOGO_PAGINAS.md](file:///C:/Users/prest/proyectos/0pruebas/envios_paginas/CATALOGO_PAGINAS.md)
 
 ---
 
 ## 1. Atmósfera Visual y Filosofía de Diseño
-La interfaz proyecta la energía vibrante, ágil y de alta confiabilidad de un servicio logístico de última milla propio en las calles de Mar del Plata. Es una estética **Brutalista Deportiva / Urban Utilitarian**, donde la velocidad y la puntualidad se comunican mediante:
-- **Contraste de Alto Impacto:** Diálogo constante entre un Azul Eléctrico Ultramar y un Amarillo Fluorescente de Alta Visibilidad, evocando chalecos reflectivos, asfalto y dinamismo en ruta.
-- **Tipografía Monumental Condensada:** Títulos en caja alta que transmiten solidez física y compromiso innegociable, combinados con micro-copys en tipografía monoespaciada que recuerdan remitos y telemetría de ruteo.
-- **Geometría Híbrida Orgánica:** Botones en píldora suavemente redondeados contrastados con tarjetas modulares tipo visor digital (*app cards*) con radios amplios de hasta 36px y micro-rotaciones lúdicas de 1° a 2° que rompen la rigidez del lienzo tradicional.
-- **Micro-movimiento y Telemetría:** Marquesinas continuas (*tickers*), radares con pulsos interactivos y tarjetas elevadas mediante sombras profundas tintadas al azul.
+
+La interfaz de Envíos DosRuedas proyecta la velocidad, precisión y confiabilidad de la logística urbana moderna en Mar del Plata. Su lenguaje visual se inscribe en el estilo **Brutalista Deportivo / Utilitario Urbano**, articulando la señalética vial y la alta visibilidad reflectiva con el rigor de la telemetría digital de ruteo.
+
+La experiencia visual está pensada para ser ágil, directa y transparente. A diferencia de las interfaces corporativas tradicionales que recurren a grises apagados o fondos oscuros pesados, Envíos DosRuedas utiliza contrastes enérgicos entre **Azul Corporativo Ultramar (`#0950F6`)**, **Amarillo Vial Reflectivo (`#FFEC01`)** y **Blanco Puro (`#FFFFFF`)**. La profundidad no se construye con sombras sucias ni fondos negros, sino mediante capas translúcidas tipo vidrio arquitectónico (*glassmorphism*), marcos perimetrales nítidos de 4px y esquinas suavemente redondeadas que emulan la ergonomía de terminales móviles y teléfonos de reparto.
 
 ---
 
-## 2. Paleta de Colores Calibrada (Tokens Semánticos)
+## 2. Paleta de Colores y Roles Funcionales (ADR 02: Ley de Tres Colores de Marca)
 
-Todos los colores están calibrados para mantener coherencia estricta sin fluctuación térmica:
+El sistema cromático respeta taxativamente el **ADR 02**: **el color `#0950F6` es el techo máximo de oscuridad de toda la aplicación**. Queda formalmente desterrado el uso de cualquier azul noche oscuro (`blue-900`, `blue-950`, `brand-blue-900`, `#041F5E`, `#021033`), negros puros (`#000000`) o escalas de grises neutros (`slate`, `gray`, `zinc`, `neutral`).
 
-### 2.1. Colores Primarios y de Fondo
-* **Azul Eléctrico Ultramar (`#0950f6` / `brand.blue`):**  
-  *Rol Funcional:* Color de identidad central de la marca. Fondo de secciones troncales (Hero, Catálogo, Footer), texto principal sobre superficies blancas y bordes interactivos destacados.
-* **Azul Noche Profundo (`#063dc2` / `brand.blue-dark`):**  
-  *Rol Funcional:* Superficie de contraste en subcontenedores oscuros, fondos de tarjetas dentro de secciones azules, estados hover de elementos primarios y fondo del drawer móvil.
+```
++---------------------------------------------------------------------------------------+
+|  AZUL CORPORATIVO (#0950F6)  |  AMARILLO VIAL (#FFEC01)  |  BLANCO SEÑAL (#FFFFFF)   |
+|  Techo máximo de oscuridad   |  Acentos de acción (<=15%) |  Lienzo, textos y tarjetas |
++---------------------------------------------------------------------------------------+
+```
+
+### 2.1. Base Primaria y Superficies
+* **Azul Corporativo Institucional (`#0950f6` / `brand-blue` / `brand-blue-500`):**  
+  *Rol Funcional:* Identidad troncal y tope de oscuridad absoluta. Se utiliza como fondo para bloques de alto impacto (Hero principal, cabecera fija, banners de operaciones activas, marquesinas continuas, footer institucional y contenedores destacados en `cotizar_clean.html` y `deposito_fulfillment_clean.html`).
 * **Blanco Señal Puro (`#ffffff`):**  
-  *Rol Funcional:* Fondo de lienzo limpio para secciones de servicios y testimonios, relleno de tarjetas elevadas y texto de alto contraste sobre fondos oscuros.
+  *Rol Funcional:* Lienzo luminoso para secciones de contenido, fondo de tarjetas elevadas en grillas de servicios, cajas de formulario y texto de máximo contraste accesible sobre fondos azules.
 
-### 2.2. Acentos y Alta Visibilidad
-* **Amarillo Tránsito / Racing Yellow (`#ffec01` / `brand.yellow`):**  
-  *Rol Funcional:* Acento primario de máxima jerarquía. Botones de acción clave (*Call to Action* "Cotizá tu envío"), badges de flota propia, rotulaciones inclinadas en titulares, estrellas de calificación y acentos de radar.
-* **Amarillo Luminoso Hover (`#fff240` / `brand.yellow-hover`):**  
-  *Rol Funcional:* Estado activo e interacción hover sobre botones y enlaces de acento amarillo.
-* **Crema Sutil Acaramelado (`#fffde6` / `brand.yellow-light`):**  
-  *Rol Funcional:* Fondo sutil para tarjetas destacadas (como MercadoLibre Flex) y cápsulas de estado secundario.
+### 2.2. Acentos y Alta Visibilidad (Máximo 15% del Área Visual)
+* **Amarillo Vial Reflectivo (`#ffec01` / `brand-yellow-500`):**  
+  *Rol Funcional:* Botones de acción principal (CTAs como "Cotizá tu envío" o "Escribinos por WhatsApp"), badges de verificación y flota propia, rótulos inclinados (`-rotate-1`) en titulares destacados, estrellas de calificación y pines de origen en mapas.
+* **Amarillo Luminoso Hover (`#fff240` / `brand-yellow-400`):**  
+  *Rol Funcional:* Transición reactiva ante hover y estados de foco en botones de acción.
+* **Amarillo Sutil Acaramelado (`#fffde6` / `brand-yellow-50`):**  
+  *Rol Funcional:* Fondo tenue para módulos destacados de Mercado Envíos Flex y alertas operativas.
 
-### 2.3. Tonos de Apoyo y Superficies Tenues
-* **Azul Glaciar Tenue (`#f3f7ff` / `brand.blue-subtle`):**  
-  *Rol Funcional:* Relleno de campos de formulario (inputs), cápsulas de métricas técnicas internas y fondos de tarjetas de baja jerarquía.
-* **Azul Hielo Claro (`#e8f0fe` / `brand.blue-light`):**  
-  *Rol Funcional:* Bordes sutiles de tarjetas sobre fondo blanco y badges informativos de paquetería estándar.
+### 2.3. Superficies Claras y Graduación Luminosa
+* **Azul Glaciar Tenue (`#f0f5ff` / `#f3f7ff` / `brand-blue-50`):**  
+  *Rol Funcional:* Relleno de campos de formulario (inputs y selects), contenedores de métricas en tres columnas y paneles de tarjetas secundarias sobre lienzo blanco.
+* **Azul Hielo Claro (`#e0ebff` / `#e8f0fe` / `brand-blue-100`):**  
+  *Rol Funcional:* Bordes perimetrales sutiles (`border-brand-blue-100` o `border-brand-blue/15`) y pastillas de metadatos operativos en tarjetas claras.
 
-### 2.4. Transparencias y Vidrio Arquitectónico (Glassmorphism)
-* **Borde Sutil Translúcido (`rgba(255, 255, 255, 0.15)`):** Líneas divisoras y marcos de 1px sobre superficies azules.
-* **Velo Glassmorphic (`rgba(9, 80, 246, 0.95)` con `backdrop-blur-md`):** Barra de navegación fija y paneles flotantes.
-* **Tinte Divisor Claro (`rgba(9, 80, 246, 0.10)`):** Bordes separadores sobre fondo blanco puro.
+### 2.4. Construcción de Profundidad sin Azules Oscuros (Técnica de Capas Translúcidas)
+Para resolver la jerarquía y el anidamiento dentro de secciones con fondo azul (`#0950F6`), **en lugar de usar fondos oscuros como `blue-900` o `brand-blue-900`**, el sistema recurre exclusivamente a superposiciones translúcidas y bordes de alta definición:
+* **Sub-tarjetas y Módulos sobre Azul:** `bg-brand-blue-500` con `border border-white/10` o `border border-white/20`, o velos tenues como `bg-brand-blue-50/20` y `bg-white/5` a `bg-white/10` con `backdrop-blur-md`.
+* **Bordes Divisorios sobre Azul:** `border-white/10` y `border-white/15` para grillas, separadores de menú y tablas comparativas.
+* **Textos sobre Azul:** Blanco puro (`#ffffff`) para titulares y datos clave; blanco atenuado al 80% o 85% (`text-white/80`) para párrafos y descripciones complementarias.
+* **Textos sobre Blanco:** Azul corporativo (`#0950f6`) para títulos y etiquetas; azul con opacidad (`text-brand-blue/70` a `text-brand-blue/80`) para textos secundarios, preservando siempre la tonalidad de marca sin recurrir a grises neutros.
 
 ---
 
 ## 3. Arquitectura Tipográfica
 
-El sistema utiliza tres familias complementarias que diferencian jerarquía narrativa, lectura funcional y telemetría de datos:
+El sistema tipográfico se articula en tres familias bien diferenciadas según su función semántica:
 
-| Rol | Familia | Pesos Utilizados | Transformación / Tracking | Aplicación |
+| Rol Semántico | Familia Tipográfica | Pesos Empleados | Transformación y Tracking | Aplicación en Interfaz |
 | :--- | :--- | :--- | :--- | :--- |
-| **Display / Titulares** | `Anton`, `Impact`, `sans-serif` | 400 (Heavy) | `uppercase`, `tracking-tight`, `leading-[0.92]` a `leading-none` | H1, H2, H3, llamadas de atención, marcas y CTAs principales |
-| **Interfaz / Lectura** | `Outfit`, `sans-serif` | 400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold) | `normal`, `tracking-normal`, `leading-relaxed` | Párrafos descriptivos, etiquetas de formulario, navegación, testimonios |
-| **Telemetría / Datos** | `Geist Mono`, `monospace` | 500, 600, 700 | `uppercase`, `tracking-wider`, `text-[10px]` a `text-xs` | Horarios de corte, insignias operativas, tramos en KM, coordenadas, metadatos |
-| **Iconografía** | `Material Symbols Outlined` | 400, con `FILL 1` para estrellas | Inline simétrico alineado verticalmente | Indicadores de servicio, flechas, teléfonos, pines de radar |
+| **Titulares Monumentales (Display)** | `Anton`, `Impact`, `sans-serif` | 400 (Heavy) | `uppercase`, `tracking-tight`, `leading-[0.92]` a `leading-none` | H1 de páginas, títulos de secciones H2/H3, números de impacto, lemas en tickers y texto de botones de acción |
+| **Cuerpo y Lectura (Interface)** | `Outfit`, `sans-serif` | 400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold) | `normal`, `tracking-normal`, `leading-relaxed` | Párrafos narrativos, preguntas frecuentes, descripciones de servicio, inputs de formulario y navegación |
+| **Telemetría y Datos (Technical Mono)** | `Geist Mono`, `monospace` | 500, 600, 700 | `uppercase`, `tracking-wider`, `text-[10px]` a `text-xs` | Horarios de corte (15:00 hs, 13:00 hs), distancias en km, etiquetas técnicas, tarifas y remitos |
+| **Iconografía Vectorial** | `Material Symbols Outlined` | 400 (`FILL 1` en acentos) | Inline alineado verticalmente con texto | Iconos de transporte, flechas, checks, teléfonos, pines y estrellas de calificación |
 
 ---
 
 ## 4. Estilo y Comportamiento de Componentes
 
 ### 4.1. Botones de Acción (CTAs)
-* **Primario ("Cotizá tu envío"):** Forma de píldora completa (`rounded-full`), relleno en Amarillo Tránsito (`#ffec01`), texto en Azul Eléctrico (`#0950f6`), tipografía `Anton` en mayúsculas, tamaño mediano/grande (`px-8 py-3.5`), flecha hacia la derecha con desplazamiento reactivo al hover (`group-hover:translate-x-1 transition-transform`).
-* **Secundario ("Ver servicios"):** Forma de píldora (`rounded-full`), contorno fino o texto blanco con hover hacia el Amarillo Tránsito, acompañado de flecha direccional.
-* **Acciones en Tarjetas:** Botón ancho completo (`w-full`), altura compacta (`py-2.5` a `py-3`), fuente display o semibold, con icono `arrow_forward` al extremo derecho.
+* **Botón Primario ("Cotizá tu envío" / "Solicitar servicio"):**
+  - Forma: Píldora completa (`rounded-full`).
+  - Fondo: Amarillo Vial (`#ffec01`) con transición hover a `#fff240`.
+  - Tipografía: Azul Corporativo (`#0950f6`), fuente `Anton`, mayúsculas sostenidas, `tracking-wider`.
+  - Icono reactivo: Flecha hacia la derecha (`arrow_forward`) con desplazamiento dinámico (`group-hover:translate-x-1.5 transition-transform duration-200`).
+* **Botón Secundario Transparente / Reversa:**
+  - Forma: Píldora (`rounded-full`).
+  - Fondo: Translúcido con borde perimetral blanco (`border-2 border-white`) sobre fondo azul, o borde azul (`border-2 border-brand-blue`) sobre fondo blanco.
+  - Hover: Fondo Amarillo Vial (`#ffec01`) con texto en Azul Corporativo.
+* **Botón Flotante de WhatsApp:**
+  - Acceso directo y fijo en esquinas inferiores con enlace dinámico codificado hacia `https://wa.me/549223...` con mensaje predeterminado contextual.
 
-### 4.2. Tarjetas y Fichas de Producto / Servicio
-* **Forma y Bordes:** Esquinas generosamente redondeadas (`rounded-3xl` de 24px hasta `rounded-[36px]` de 36px) que simulan la estética física de terminales móviles y teléfonos de reparto.
-* **Borde Físico Distintivo:** Marco sólido de 4px (`border-4`) en blanco o amarillo que recorta la tarjeta con nitidez sobre fondos saturados.
-* **Elevación e Iluminación (`card-phone-shadow`):**  
-  `box-shadow: 0 30px 60px -12px rgba(0, 20, 100, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.15);`  
-  Una sombra profunda tintada al azul que otorga peso y presencia tridimensional flotante.
-* **Métrica en 3 Columnas:** Grilla interna compacta (`grid-cols-3`) con celdas redondeadas (`rounded-2xl`) en fondo suave para destacar: `TRAMO`, `VENTANA`, `PESO` o `CORTE`, `ENTREGA`, `TARIFA`.
+### 4.2. Tarjetas y Contenedores (Phone-Like Cards)
+* **Geometría Ergonómica:** Radios pronunciados de `rounded-3xl` (24px) a `rounded-[36px]` (36px) simulando terminales móviles de reparto.
+* **Borde Físico Distintivo:** Marco perimetral sólido de 4px (`border-4 border-white` en tarjetas oscuras; `border-4 border-brand-yellow` en tarjetas destacadas de Flex o Fulfillment; `border-2 border-brand-blue/15` en tarjetas claras).
+* **Elevación con Sombra Azul Profunda (`card-phone-shadow`):**  
+  `box-shadow: 0 30px 60px -12px rgba(0, 20, 100, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.15);`
+* **Métrica en Tres Columnas:** Grilla interna compacta (`grid-cols-3 gap-2`) con cápsulas redondeadas (`rounded-2xl bg-brand-blue-50 p-2.5 text-center`) que exponen: `CORTE` (ej. 15:00 hs), `ENTREGA` (ej. Franja 3 hs), `TARIFA` (ej. Desde $3.700).
 
-### 4.3. Insignias e Indicadores de Estado (Badges)
-* **Insignia Operativa Clásica:** Píldora (`rounded-full`) en `font-mono text-xs font-bold uppercase` con icono de rayo (`⚡`), punto de radar activo o check.
-* **Rótulos de Título Inclinados:** Caja contenedora en Amarillo Tránsito con leve rotación negativa (`-rotate-1`) colocada directamente sobre palabras clave del encabezado ("ÚLTIMA MILLA", "VENDEN Y ENVÍAN").
+### 4.3. Componentes de Dominio Específico
 
-### 4.4. Formularios y Captura de Leads
-* **Inputs y Selects:** Esquinas suavizadas (`rounded-xl`), fondo blanco o azul tenue (`#f3f7ff`), borde fino de 1px (`border-brand-blue/20`), iconos identificadores en el flanco izquierdo (persona, tienda, paquete), foco limpio en azul corporativo sin halos exagerados.
-* **Etiquetas:** Situadas arriba del campo, en `font-mono text-xs font-bold uppercase tracking-wider`.
+#### A. Selector de Franja y Modalidad de Entrega (Cotizador)
+* Tarjetas interactivas tipo radio-card para comparar **Envíos Express** vs. **Envíos LowCost**.
+* Línea de tiempo diaria de 9:00 a 19:00 hs con marcas visuales de corte (13:00 hs para LowCost, 15:00 hs para Express) y selector táctil de franja de 3 horas.
+* Desglose instantáneo con cálculo tarifario lineal (sin `Math.ceil`) y desglose transparente de recargos operativos.
 
-### 4.5. Marquesinas y Tickers de Diferenciales
-* **Estructura:** Doble marquesina continua infinita (`animate-marquee` y `animate-marquee-reverse`) con pausa accesible en `hover` o vía botón conmutable.
-* **Separadores Tipográficos:** Rombo sólido (`◆`) o estrella de cuatro puntas (`✦`) en Amarillo Tránsito entre lemas.
+#### B. Picking Rack y Circuito de Fulfillment
+* Módulo visual interactivo con códigos de rack (`RACK-A1`, `RACK-B2`) representando el depósito de Base Friuli 1972.
+* Diagrama secuencial de 4 fases: *Recepción en base → Almacenamiento & Stock → Picking & Embalaje → Despacho Express / Flex*.
+
+#### C. Línea de Tiempo para Contra Reembolso y Cobro en Destino
+* Flujo secuencial de 3 pasos con conectores visuales punteados:  
+  1. *Retiro de mercadería* con remito digital.  
+  2. *Cobro en destino* (efectivo o transferencia bancaria inmediata).  
+  3. *Rendición acordada* (transferencia en el día o reintegro físico en base).
+
+#### D. Selector Segmentado de Rubros y Cuenta Corriente B2B
+* Formulario corporativo con selectores tipo píldora para rubros (Indumentaria, Gastronomía, Farmacia, Repuestos, Tecnología) y rangos de volumen mensual (20 a 50, 50 a 150, más de 150 envíos).
+
+#### E. Marquesinas Continuas (`CarruselRedes` & Marquee Infinito)
+* Doble cinta horizontal con traslación infinita continua (`animate-marquee` y `animate-marquee-reverse`).
+* Separador tipográfico constante: Rombo amarillo sólido (`◆`) o estrella (`✦`) entre lemas operativos.
+* Control conmutable para pausar la animación ante interacción o foco accesible.
+
+#### F. Operaciones Banner (Monitoreo de Flota Activa)
+* Barra institucional con dot pulsante (`animate-ping bg-brand-yellow-500`): *"OPERACIONES ACTIVAS EN MAR DEL PLATA - DESPACHOS Y RUTAS EN TIEMPO REAL"*.
 
 ---
 
 ## 5. Principios de Maquetación y Grilla
 
-1. **Ritmo Vertical por Bloques de Alto Contraste:**  
-   Alternancia estratégica de bloques:  
-   `Azul Eléctrico (#0950f6)` → `Blanco Puro (#ffffff)` → `Azul Eléctrico (#0950f6)` → `Blanco Puro (#ffffff)`.  
-   Esta alternancia mantiene la vigilia visual y evita la fatiga de lectura.
-2. **Contenedor Maestro:**  
-   Ancho máximo estándar de `max-w-7xl` (1280px) con relleno horizontal responsivo `px-4 lg:px-8`. Los formularios de cotización se concentran en `max-w-6xl` para enfocar la conversión.
+1. **Ritmo Vertical por Alternancia de Secciones:**  
+   `Azul Corporativo (#0950f6)` → `Blanco Puro (#ffffff)` → `Azul Corporativo (#0950f6)` → `Blanco Puro (#ffffff)`.  
+   Mantiene el impacto visual sin generar fatiga de lectura y organiza la jerarquía de contenidos.
+2. **Contenedor Maestro y Anchos Máximos:**  
+   - Ancho estándar institucional: `max-w-7xl` (1280px) con espaciado responsivo `px-4 sm:px-6 lg:px-8`.  
+   - Ancho enfocado para conversión (Cotizador y Formularios): `max-w-5xl` o `max-w-4xl`.
 3. **Composición Asimétrica del Hero:**  
-   Columna izquierda (7 columnas en desktop) reservada a la narrativa monumental y botones de acción; columna derecha (5 columnas) dedicada a la interfaz de telemetría y mapa isométrico con radar activo.
-4. **Bento Grid para Soluciones Empresariales:**  
-   Distribución asimétrica 7:5 combinando un módulo amplio de Cuenta Corriente con dos tarjetas apiladas de alta jerarquía (Flex y Corporativo).
-5. **Comportamiento Móvil (< 768px):**  
-   - Todas las grillas colapsan estrictamente a 1 columna.  
-   - Los carruseles permiten deslizamiento horizontal nativo táctil (`overflow-x-auto` con `scroll-smooth`).  
-   - La cabecera despliega un menú lateral *Drawer* accesible (`#mobile-drawer`) con cierre por botón o backdrop.
+   - Desktop (>= 1024px): 7 columnas para narrativa institucional y CTAs; 5 columnas para módulo de telemetría y mapa interactivo.  
+   - Mobile (< 768px): Colapso estricto a 1 columna apilada verticalmente.
+4. **Bento Grid Modular:**  
+   Tarjetas en rejillas de 2 y 3 columnas con alturas armonizadas mediante `h-full flex flex-col justify-between`.
 
 ---
 
-## 6. Bloque de Instrucciones de Diseño para Generación en Stitch (Requerido)
+## 6. Instrucciones de Generación para Stitch (Stitch Prompting Guidelines)
 
-> Copiar este bloque completo en la sección de diseño de cualquier prompt de Stitch o en `.stitch/next-prompt.md`:
+> Al redactar prompts para Stitch o alimentar `.stitch/next-prompt.md`, incorporar el siguiente bloque de especificaciones obligatorias:
 
 ```markdown
-**DESIGN SYSTEM (REQUIRED - ENVIOS DOSRUEDAS MAR DEL PLATA):**
-- **Atmosphere:** Urban high-speed logistics and e-commerce delivery interface. Confident, brutalist-athletic, utilitarian, clean, ultra-reliable. Strong contrast between Royal Blue and Racing Yellow.
-- **Color Palette:**
-  - Primary Brand Blue: #0950f6 (Hero backgrounds, primary headers, high-contrast borders)
-  - Deep Navy Blue: #063dc2 (Hover states, deep card surfaces, mobile drawer)
-  - Crisp Canvas White: #ffffff (Page surfaces, light section backgrounds, elevated card containers)
-  - Signal Racing Yellow: #ffec01 (Primary CTAs, active status badges, highlight tags, stars)
-  - Subtle Blue Tint: #f3f7ff (Form fields, metric boxes, subtle card backgrounds)
-  - Soft Ice Blue: #e8f0fe (Card borders, secondary badges)
-- **Typography:**
-  - Display & Big Titles: 'Anton', 'Impact', sans-serif (UPPERCASE, tracking-tight, leading-[0.92], bold impact)
-  - Body & User Interface: 'Outfit', sans-serif (Clean geometric sans, leading-relaxed, weights 400/600/700)
-  - Technical / Telemetry / Labels: 'Geist Mono', monospace (UPPERCASE, tracking-wider, text-xs, cut-off hours, KM, stats)
+**DESIGN SYSTEM (ENVIOS DOSRUEDAS MAR DEL PLATA - MANDATORY SPEC):**
+- **Atmosphere:** High-speed urban motorcycle courier & e-commerce logistics in Mar del Plata. Confident, athletic-utilitarian, crisp, ultra-reliable. High-contrast Royal Blue (#0950f6) and Signal Yellow (#ffec01).
+- **Color Tokens (Max Darkness Cap = #0950f6):**
+  - Brand Royal Blue: #0950f6 (Hero backgrounds, heavy headers, dark card surfaces, footer)
+  - Signal Yellow: #ffec01 (Primary CTAs, status badges, highlighted title tags, star ratings)
+  - Signal Yellow Hover: #fff240
+  - Pure Canvas White: #ffffff (Page background, light cards, high-contrast text on blue)
+  - Subtle Blue Surface: #f0f5ff / #f3f7ff (Inputs, table stripes, metric cards)
+  - Soft Ice Border: #e0ebff / #e8f0fe / rgba(9,80,246,0.15)
+  - Translucent Layering on Blue: Use bg-brand-blue-500 with border-white/10 or border-white/20, or bg-white/5 to bg-white/10 with backdrop-blur-md.
+  - STRICTLY BANNED COLORS: Zero blue-900, zero blue-950, zero brand-blue-900 (#041F5E), zero navy, zero pure black (#000000), zero neutral gray/slate classes (text-slate-*, text-gray-*). Subdued copy on light backgrounds must use text-brand-blue/70 or text-brand-blue/80.
+- **Typography Rules:**
+  - Display Titles: 'Anton', 'Impact', sans-serif (UPPERCASE, tracking-tight, leading-[0.92], impactful)
+  - Interface & Body: 'Outfit', sans-serif (Clean geometric sans, regular/semibold/bold, leading-relaxed)
+  - Data / Telemetry: 'Geist Mono', monospace (UPPERCASE, tracking-wider, text-xs, cutoffs, KM, prices)
   - Icons: Google Material Symbols Outlined
-- **Component Geometry & Radii:**
-  - Buttons & Badges: Pill-shaped (rounded-full). Primary buttons have #ffec01 background with #0950f6 Anton text and an arrow icon.
+- **Component Geometry:**
+  - Action Buttons: Pill-shaped (rounded-full). Primary buttons have #ffec01 background, #0950f6 Anton text, and an arrow icon that slides on hover.
   - Feature Cards: Phone-like heavily rounded corners (rounded-3xl or rounded-[36px]), 4px borders (border-4 border-white or border-brand-yellow), and deep blue shadows: box-shadow 0 30px 60px -12px rgba(0,20,100,0.45).
   - Tilted Tags: Inline title badges with slight rotation (-rotate-1 or rotate-1) on yellow backgrounds.
-  - Form Inputs: Rounded-xl, background #ffffff or #f3f7ff, 1px subtle blue border, icons inside left.
-- **Layout Architecture:**
-  - Alternating full-width section blocks: High-contrast Electric Blue sections alternating with pure White sections.
-  - Containment: Centered max-w-7xl with px-4 lg:px-8.
-  - Responsive: Single column stack on mobile (<768px), horizontal smooth carousels with visible pagination dots.
-- **Banned AI Patterns:** No generic purple/neon gradients, no generic Inter font, no centered bland hero layouts, no emojis, no fake round stats.
+  - Form Fields: Rounded-xl, white or #f0f5ff background, subtle 1px blue border, focus ring in #0950f6.
+  - Domain Modules: Interactive radio-cards for delivery slots (9-19 hs), picking rack visualizer for fulfillment, 3-step timeline for cash-on-delivery.
+- **Layout & Structure:**
+  - Alternating section blocks: Electric Blue sections alternating with crisp White sections.
+  - Max width: max-w-7xl with px-4 lg:px-8.
+  - Responsive: Single-column stack on mobile (<768px), horizontal touch sliders for cards.
+- **Banned Patterns:** No generic purple/pink gradients, no Inter font, no emojis as icons, no Math.ceil for distance pricing, no Factura A references.
 ```
 
 ---
 
-## 7. Anti-Patrones y Reglas de Exclusión (Lo que NUNCA debe hacerse)
+## 7. Anti-Patrones y Reglas de Exclusión Absoluta
 
-* ❌ **Prohibido el uso de la tipografía `Inter` o fuentes Serif genéricas:** Solo está permitido el trío `Anton` + `Outfit` + `Geist Mono`.
-* ❌ **Prohibidos los degradados fluorescentes violáceos o cian ("AI Neon Gradients"):** La paleta se basa en colores planos y contundentes (`#0950f6` y `#ffec01`).
-* ❌ **Prohibido el uso de Negro Puro (`#000000`):** Toda la oscuridad y contraste profundo se resuelve mediante Azul Noche (`#063dc2`) o Azul Eléctrico (`#0950f6`).
-* ❌ **Prohibidos los emojis como iconos:** Emplear exclusivamente glifos vectoriales de `Material Symbols Outlined`.
-* ❌ **Prohibidas las tarjetas con esquinas angulosas o genéricas:** Todo contenedor principal debe respetar los radios suaves (`rounded-2xl`, `rounded-3xl` o `rounded-[36px]`).
-* ❌ **Prohibida la invención de estadísticas vacías:** Nunca colocar métricas inventadas tipo "99.9% Uptime" o "5000+ horas"; utilizar datos y garantías reales del servicio local (Base Friuli 1972, corte 15:00 hs, franjas de 3 hs, flota propia).
+* ❌ **Prohibido el uso de `blue-900`, `blue-950`, `brand-blue-900` (`#041F5E`) o cualquier tono más oscuro que `#0950F6`:** Toda la profundidad y el anidamiento de tarjetas dentro de secciones azules se resuelve exclusivamente con velos translúcidos (`border-white/10`, `border-white/20`, `bg-brand-blue-50/20`, `bg-white/10` y `backdrop-blur-md`). La introducción de azules noche rompe la vibrancia deportiva y viola el ADR 02.
+* ❌ **Prohibido el uso de Negro Puro (`#000000`) o Grises Neutros (`slate`, `gray`, `zinc`, `neutral`):** Todo contraste profundo y texto secundario se resuelve en la gama del Azul Corporativo (`#0950F6`), ya sea pleno o con opacidades (`text-brand-blue/80`).
+* ❌ **Prohibidos los degradados fluorescentes violáceos o cian ("AI Neon Gradients"):** La paleta se fundamenta en bloques de color planos, sólidos y de alto impacto vial (`#0950F6` y `#FFEC01`).
+* ❌ **Prohibido el uso de tipografías genéricas (`Inter`, `Roboto`, fuentes Serif clásicas):** Se respeta estrictamente la terna identitaria `Anton` + `Outfit` + `Geist Mono`.
+* ❌ **Prohibido el uso de emojis en lugar de iconos:** Se emplean exclusivamente glifos vectoriales de `Material Symbols Outlined`.
+* ❌ **Prohibidas las esquinas angulosas en tarjetas principales:** Todo contenedor central debe presentar radios de curvatura suaves (`rounded-2xl`, `rounded-3xl` o `rounded-[36px]`).
+* ❌ **Prohibido `Math.ceil` en distancias y tarifas (ADR 01):** La tarifa por kilómetro excedente (10 a 20 km) es estrictamente lineal (`distancia * precioPorKm`).
+* ❌ **Prohibida la promesa de Factura A:** La empresa emite comprobantes conforme a su encuadre fiscal estándar, sin emisión de Factura A.
+* ❌ **Prohibidas las promesas horarias antirreglamentarias:** Envíos Express siempre se ofrece en franjas de 3 hs solicitadas con 2 hs de anticipación (corte 15:00 hs); LowCost se entrega hasta las 19:00 hs (corte 13:00 hs). Nunca prometer "en 2 horas" o calificar a LowCost como servicio "agrupado".

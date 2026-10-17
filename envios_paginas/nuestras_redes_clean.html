@@ -62,8 +62,8 @@
                             'blue-300': '#628ff9',
                             'blue-400': '#3570f8',
                             'blue-500': '#0950f6',
-                            'blue-700': '#063dc2',
-                            'blue-900': '#042880',
+                            'blue-500': '#063dc2',
+                            'blue-500': '#042880',
                             'blue-dark': '#063dc2',
                             'blue-light': '#e8f0fe',
                             'blue-subtle': '#f3f7ff',
@@ -125,7 +125,8 @@
             </a>
 
             <!-- Navegación Central (Desktop) -->
-            <nav class="hidden md:flex items-center gap-1 bg-white/10 p-1 rounded-full border border-white/15" aria-label="Navegación principal">
+            <nav class="hidden md:flex items-center gap-1 bg-white/10 p-1 rounded-full border border-white/15"
+                aria-label="Navegación principal">
                 <a class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-white hover:text-brand-yellow transition-colors"
                     href="home_clean.html">INICIO</a>
 
@@ -135,11 +136,14 @@
                         class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-white group-hover:text-brand-yellow flex items-center gap-1 transition-colors"
                         aria-expanded="false" aria-haspopup="true">
                         <span>SERVICIOS</span>
-                        <span class="material-symbols-outlined text-sm leading-none transition-transform group-hover:rotate-180">expand_more</span>
+                        <span
+                            class="material-symbols-outlined text-sm leading-none transition-transform group-hover:rotate-180">expand_more</span>
                     </button>
                     <!-- Menú flotante -->
-                    <div class="absolute left-0 top-full pt-2 w-64 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
-                        <div class="bg-brand-blue border border-white/20 rounded-2xl shadow-2xl p-2 space-y-1 font-sans text-xs">
+                    <div
+                        class="absolute left-0 top-full pt-2 w-64 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                        <div
+                            class="bg-brand-blue border border-white/20 rounded-2xl shadow-2xl p-2 space-y-1 font-sans text-xs">
                             <a class="flex items-center gap-2 px-3 py-2 rounded-xl text-white hover:bg-brand-yellow hover:text-brand-blue font-semibold transition-colors"
                                 href="home_clean.html#servicios">
                                 <span class="material-symbols-outlined text-base">apps</span>
@@ -175,11 +179,14 @@
                         class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-yellow bg-white/10 flex items-center gap-1 transition-colors"
                         aria-expanded="false" aria-haspopup="true">
                         <span>NOSOTROS</span>
-                        <span class="material-symbols-outlined text-sm leading-none transition-transform group-hover:rotate-180">expand_more</span>
+                        <span
+                            class="material-symbols-outlined text-sm leading-none transition-transform group-hover:rotate-180">expand_more</span>
                     </button>
                     <!-- Menú flotante -->
-                    <div class="absolute left-0 top-full pt-2 w-56 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
-                        <div class="bg-brand-blue border border-white/20 rounded-2xl shadow-2xl p-2 space-y-1 font-sans text-xs">
+                    <div
+                        class="absolute left-0 top-full pt-2 w-56 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                        <div
+                            class="bg-brand-blue border border-white/20 rounded-2xl shadow-2xl p-2 space-y-1 font-sans text-xs">
                             <a class="flex items-center gap-2 px-3 py-2 rounded-xl text-white hover:bg-brand-yellow hover:text-brand-blue font-semibold transition-colors"
                                 href="sobre_nosotros_clean.html">
                                 <span class="material-symbols-outlined text-base">groups</span>
@@ -227,47 +234,66 @@
         </div>
 
         <!-- Menú Móvil Desplegable (Drawer Accesible) -->
-        <div id="mobile-drawer" class="fixed inset-0 bg-brand-blue-dark/80 backdrop-blur-md z-50 hidden transition-opacity">
-            <div class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-brand-blue border-l border-white/20 p-6 flex flex-col justify-between overflow-y-auto shadow-2xl">
+        <div id="mobile-drawer"
+            class="fixed inset-0 bg-brand-blue-dark/80 backdrop-blur-md z-50 hidden transition-opacity">
+            <div
+                class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-brand-blue border-l border-white/20 p-6 flex flex-col justify-between overflow-y-auto shadow-2xl">
                 <div class="space-y-6">
                     <div class="flex items-center justify-between border-b border-white/15 pb-4">
                         <div class="flex items-center gap-2">
                             <img src="logo_.png" alt="Logo" class="w-8 h-8 rounded-full object-contain">
-                            <span class="font-display text-lg text-white uppercase"><span class="text-white">ENVÍOS</span> <span class="text-brand-yellow">DOSRUEDAS</span></span>
+                            <span class="font-display text-lg text-white uppercase"><span
+                                    class="text-white">ENVÍOS</span> <span
+                                    class="text-brand-yellow">DOSRUEDAS</span></span>
                         </div>
-                        <button id="mobile-close-btn" aria-label="Cerrar menú" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20">
+                        <button id="mobile-close-btn" aria-label="Cerrar menú"
+                            class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20">
                             <span class="material-symbols-outlined text-xl">close</span>
                         </button>
                     </div>
 
                     <!-- Enlaces del Drawer -->
                     <div class="space-y-1 font-sans text-sm">
-                        <a class="block px-3 py-2 rounded-xl font-bold uppercase text-white hover:bg-white/10" href="home_clean.html">Inicio</a>
+                        <a class="block px-3 py-2 rounded-xl font-bold uppercase text-white hover:bg-white/10"
+                            href="home_clean.html">Inicio</a>
                         <div class="pt-2">
-                            <p class="px-3 text-[11px] font-mono uppercase tracking-wider text-brand-yellow font-bold">Servicios</p>
+                            <p class="px-3 text-[11px] font-mono uppercase tracking-wider text-brand-yellow font-bold">
+                                Servicios</p>
                             <div class="mt-1 space-y-1 pl-2">
-                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs" href="home_clean.html#servicios">Todos los Servicios</a>
-                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs" href="home_clean.html#servicios">Envíos Express</a>
-                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs" href="home_clean.html#servicios">Envíos LowCost</a>
-                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs" href="home_clean.html#servicios">Envíos Flex (MeLi)</a>
+                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs"
+                                    href="home_clean.html#servicios">Todos los Servicios</a>
+                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs"
+                                    href="home_clean.html#servicios">Envíos Express</a>
+                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs"
+                                    href="home_clean.html#servicios">Envíos LowCost</a>
+                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs"
+                                    href="home_clean.html#servicios">Envíos Flex (MeLi)</a>
                             </div>
                         </div>
                         <div class="pt-2 border-t border-white/10">
-                            <p class="px-3 text-[11px] font-mono uppercase tracking-wider text-brand-yellow font-bold">Nosotros</p>
+                            <p class="px-3 text-[11px] font-mono uppercase tracking-wider text-brand-yellow font-bold">
+                                Nosotros</p>
                             <div class="mt-1 space-y-1 pl-2">
-                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs" href="sobre_nosotros_clean.html">Sobre Nosotros</a>
-                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs" href="preguntas_frecuentes_clean.html">Preguntas Frecuentes</a>
-                                <a class="block px-3 py-1.5 rounded-lg text-brand-yellow bg-white/10 font-bold text-xs" href="nuestras_redes_clean.html">Nuestras Redes</a>
+                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs"
+                                    href="sobre_nosotros_clean.html">Sobre Nosotros</a>
+                                <a class="block px-3 py-1.5 rounded-lg text-white hover:bg-white/10 text-xs"
+                                    href="preguntas_frecuentes_clean.html">Preguntas Frecuentes</a>
+                                <a class="block px-3 py-1.5 rounded-lg text-brand-yellow bg-white/10 font-bold text-xs"
+                                    href="nuestras_redes_clean.html">Nuestras Redes</a>
                             </div>
                         </div>
-                        <a class="block px-3 py-2 rounded-xl font-bold uppercase text-white hover:bg-white/10 pt-2 border-t border-white/10" href="contacto_clean.html">Contacto</a>
+                        <a class="block px-3 py-2 rounded-xl font-bold uppercase text-white hover:bg-white/10 pt-2 border-t border-white/10"
+                            href="contacto_clean.html">Contacto</a>
                     </div>
                 </div>
 
                 <div class="border-t border-white/15 pt-6 space-y-3 font-mono text-xs text-white/80">
                     <p class="text-white font-bold">BASE CENTRAL MAR DEL PLATA</p>
-                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-brand-yellow text-sm">location_on</span> Friuli 1972, MDP</p>
-                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-brand-yellow text-sm">call</span> +54 223 660-2699</p>
+                    <p class="flex items-center gap-2"><span
+                            class="material-symbols-outlined text-brand-yellow text-sm">location_on</span> Friuli 1972,
+                        MDP</p>
+                    <p class="flex items-center gap-2"><span
+                            class="material-symbols-outlined text-brand-yellow text-sm">call</span> +54 223 660-2699</p>
                 </div>
             </div>
         </div>
@@ -280,66 +306,97 @@
         <section id="networks-hero"
             aria-label="Canales oficiales de Envíos DosRuedas en redes sociales: Instagram, Facebook, WhatsApp para seguir las rutas y la operativa en Mar del Plata"
             class="relative isolate flex min-h-[85dvh] w-full flex-col overflow-hidden bg-brand-blue text-white">
-            
+
             <!-- Patrón de fondo ambiental -->
-            <div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+            <div
+                class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px]">
+            </div>
 
             <div class="relative flex-1 flex items-center overflow-hidden">
                 <!-- Firma visual: La Constelación (Líneas convergentes SVG) -->
                 <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-16 sm:h-20 lg:h-24 pointer-events-none">
                     <div class="relative mx-auto h-full w-full max-w-7xl px-6 lg:px-8">
-                        <svg class="absolute inset-0 h-full w-full opacity-40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 96" preserveAspectRatio="none">
-                            <line x1="280" y1="48" x2="1136" y2="48" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="4 10" />
-                            <path d="M 300 22 C 450 22, 980 48, 1136 48" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="5 9" />
-                            <path d="M 372 74 C 522 74, 980 48, 1136 48" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="5 9" />
-                            <path d="M 448 46 C 598 46, 980 48, 1136 48" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="5 9" />
-                            <path d="M 524 14 C 674 14, 980 48, 1136 48" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="5 9" />
-                            <path d="M 596 82 C 746 82, 980 48, 1136 48" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="5 9" />
-                            <path d="M 668 58 C 818 58, 980 48, 1136 48" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="5 9" />
+                        <svg class="absolute inset-0 h-full w-full opacity-40" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1200 96" preserveAspectRatio="none">
+                            <line x1="280" y1="48" x2="1136" y2="48" stroke="#FFFFFF" stroke-width="1"
+                                stroke-dasharray="4 10" />
+                            <path d="M 300 22 C 450 22, 980 48, 1136 48" fill="none" stroke="#FFFFFF" stroke-width="1"
+                                stroke-dasharray="5 9" />
+                            <path d="M 372 74 C 522 74, 980 48, 1136 48" fill="none" stroke="#FFFFFF" stroke-width="1"
+                                stroke-dasharray="5 9" />
+                            <path d="M 448 46 C 598 46, 980 48, 1136 48" fill="none" stroke="#FFFFFF" stroke-width="1"
+                                stroke-dasharray="5 9" />
+                            <path d="M 524 14 C 674 14, 980 48, 1136 48" fill="none" stroke="#FFFFFF" stroke-width="1"
+                                stroke-dasharray="5 9" />
+                            <path d="M 596 82 C 746 82, 980 48, 1136 48" fill="none" stroke="#FFFFFF" stroke-width="1"
+                                stroke-dasharray="5 9" />
+                            <path d="M 668 58 C 818 58, 980 48, 1136 48" fill="none" stroke="#FFFFFF" stroke-width="1"
+                                stroke-dasharray="5 9" />
                         </svg>
 
                         <!-- Nodos parpadeantes de la constelación -->
-                        <span class="absolute h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/80 animate-pulse" style="left: 25%; top: 23%;"></span>
-                        <span class="absolute h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/80 animate-pulse [animation-delay:0.14s]" style="left: 31%; top: 77%;"></span>
-                        <span class="absolute h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/80 animate-pulse [animation-delay:0.28s]" style="left: 37.3%; top: 48%;"></span>
-                        <span class="absolute h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/80 animate-pulse [animation-delay:0.42s]" style="left: 43.6%; top: 15%;"></span>
-                        <span class="absolute h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/80 animate-pulse [animation-delay:0.56s]" style="left: 49.6%; top: 85%;"></span>
-                        <span class="absolute h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/80 animate-pulse [animation-delay:0.7s]" style="left: 55.6%; top: 60%;"></span>
+                        <span
+                            class="absolute h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/80 animate-pulse"
+                            style="left: 25%; top: 23%;"></span>
+                        <span
+                            class="absolute h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/80 animate-pulse [animation-delay:0.14s]"
+                            style="left: 31%; top: 77%;"></span>
+                        <span
+                            class="absolute h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/80 animate-pulse [animation-delay:0.28s]"
+                            style="left: 37.3%; top: 48%;"></span>
+                        <span
+                            class="absolute h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/80 animate-pulse [animation-delay:0.42s]"
+                            style="left: 43.6%; top: 15%;"></span>
+                        <span
+                            class="absolute h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/80 animate-pulse [animation-delay:0.56s]"
+                            style="left: 49.6%; top: 85%;"></span>
+                        <span
+                            class="absolute h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/80 animate-pulse [animation-delay:0.7s]"
+                            style="left: 55.6%; top: 60%;"></span>
 
                         <!-- Nodo de convergencia en amarillo -->
                         <span class="absolute -translate-x-1/2 -translate-y-1/2" style="left: 94.6%; top: 50%;">
-                            <span class="absolute -inset-2.5 rounded-full border border-brand-yellow/60 animate-ping"></span>
+                            <span
+                                class="absolute -inset-2.5 rounded-full border border-brand-yellow/60 animate-ping"></span>
                             <span class="relative block h-3 w-3 rounded-full bg-brand-yellow"></span>
                         </span>
 
-                        <span class="absolute left-6 top-1/2 -translate-y-1/2 font-subheading text-[10px] sm:text-xs uppercase tracking-[0.18em] text-brand-yellow lg:left-8">
+                        <span
+                            class="absolute left-6 top-1/2 -translate-y-1/2 font-subheading text-[10px] sm:text-xs uppercase tracking-[0.18em] text-brand-yellow lg:left-8">
                             3 canales oficiales
                         </span>
                     </div>
                 </div>
 
                 <!-- Grilla Central Hero -->
-                <div class="relative z-10 mx-auto w-full max-w-7xl px-6 lg:px-8 pt-14 sm:pt-20 lg:pt-24 pb-16 sm:pb-24 lg:pb-28">
+                <div
+                    class="relative z-10 mx-auto w-full max-w-7xl px-6 lg:px-8 pt-14 sm:pt-20 lg:pt-24 pb-16 sm:pb-24 lg:pb-28">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
                         <!-- LEFT 7: Copy + CTA -->
                         <div class="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left">
-                            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-yellow text-brand-blue font-bold text-xs sm:text-sm font-subheading uppercase tracking-widest shadow-glow-yellow transform -rotate-1">
+                            <div
+                                class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-yellow text-brand-blue font-bold text-xs sm:text-sm font-subheading uppercase tracking-widest shadow-glow-yellow transform -rotate-1">
                                 <span class="material-symbols-outlined text-sm">share</span>
                                 <span>Comunidad DosRuedas</span>
                             </div>
 
-                            <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display uppercase tracking-[-0.03em] leading-[0.92] text-white">
+                            <h1
+                                class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display uppercase tracking-[-0.03em] leading-[0.92] text-white">
                                 <span class="block">Comunidad en</span>
-                                <span class="inline-block px-3 py-1 bg-brand-yellow text-brand-blue rounded-xl transform -rotate-1 shadow-glow-yellow my-1">línea</span>
+                                <span
+                                    class="inline-block px-3 py-1 bg-brand-yellow text-brand-blue rounded-xl transform -rotate-1 shadow-glow-yellow my-1">línea</span>
                             </h1>
 
-                            <p class="text-base sm:text-lg font-sans text-white/90 max-w-[56ch] mx-auto lg:mx-0 leading-relaxed font-light">
+                            <p
+                                class="text-base sm:text-lg font-sans text-white/90 max-w-[56ch] mx-auto lg:mx-0 leading-relaxed font-light">
                                 Rutas en vivo, entregas de la flota y novedades de la operativa diaria, publicadas en
                                 nuestros canales oficiales de Mar del Plata.
                             </p>
 
-                            <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center lg:justify-start pt-1">
-                                <a href="https://www.instagram.com/enviosdosruedas/" target="_blank" rel="noopener noreferrer"
+                            <div
+                                class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center lg:justify-start pt-1">
+                                <a href="https://www.instagram.com/enviosdosruedas/" target="_blank"
+                                    rel="noopener noreferrer"
                                     class="inline-flex items-center gap-3 bg-brand-yellow hover:bg-brand-yellow-hover text-brand-blue font-display text-base uppercase tracking-wider px-8 py-3.5 rounded-full border-2 border-brand-yellow transition-all shadow-glow-yellow group">
                                     <span class="material-symbols-outlined text-xl">photo_camera</span>
                                     <span>Seguinos en Instagram</span>
@@ -354,37 +411,47 @@
 
                         <!-- RIGHT 5: Mosaico y Handle Oficial -->
                         <div class="relative flex w-full flex-col items-center justify-center gap-4 lg:col-span-5">
-                            <div class="w-full max-w-md rounded-[28px] p-2 sm:p-2.5 bg-white/10 border border-white/20 backdrop-blur-md shadow-2xl">
+                            <div
+                                class="w-full max-w-md rounded-[28px] p-2 sm:p-2.5 bg-white/10 border border-white/20 backdrop-blur-md shadow-2xl">
                                 <div class="rounded-[20px] bg-brand-blue-dark/60 p-5 space-y-4 border border-white/10">
                                     <div class="flex items-center gap-2">
-                                        <span class="h-2.5 w-2.5 rounded-full bg-brand-yellow animate-pulse" aria-hidden="true"></span>
-                                        <span class="font-subheading text-xs sm:text-sm tracking-widest text-brand-yellow uppercase">
+                                        <span class="h-2.5 w-2.5 rounded-full bg-brand-yellow animate-pulse"
+                                            aria-hidden="true"></span>
+                                        <span
+                                            class="font-subheading text-xs sm:text-sm tracking-widest text-brand-yellow uppercase">
                                             Canales oficiales
                                         </span>
                                     </div>
 
                                     <!-- Mockup Visual de Redes / Celular -->
-                                    <div class="relative aspect-square w-full overflow-hidden rounded-xl border border-white/20 bg-brand-blue-900/50 flex flex-col items-center justify-center p-6 text-center">
-                                        <div class="w-16 h-16 rounded-full bg-brand-yellow text-brand-blue flex items-center justify-center mb-4 shadow-glow-yellow">
+                                    <div
+                                        class="relative aspect-square w-full overflow-hidden rounded-xl border border-white/20 bg-brand-blue-500/50 flex flex-col items-center justify-center p-6 text-center">
+                                        <div
+                                            class="w-16 h-16 rounded-full bg-brand-yellow text-brand-blue flex items-center justify-center mb-4 shadow-glow-yellow">
                                             <span class="material-symbols-outlined text-3xl font-bold">smartphone</span>
                                         </div>
                                         <h3 class="font-display text-2xl uppercase text-white mb-1">
                                             Envíos DosRuedas
                                         </h3>
-                                        <p class="font-mono text-xs text-brand-yellow font-bold uppercase tracking-wider mb-4">
+                                        <p
+                                            class="font-mono text-xs text-brand-yellow font-bold uppercase tracking-wider mb-4">
                                             Mar del Plata · Flota Propia
                                         </p>
                                         <div class="flex items-center gap-3">
-                                            <span class="px-2.5 py-1 rounded-lg bg-white/10 text-white font-mono text-xs">Instagram</span>
-                                            <span class="px-2.5 py-1 rounded-lg bg-white/10 text-white font-mono text-xs">Facebook</span>
-                                            <span class="px-2.5 py-1 rounded-lg bg-white/10 text-white font-mono text-xs">WhatsApp</span>
+                                            <span
+                                                class="px-2.5 py-1 rounded-lg bg-white/10 text-white font-mono text-xs">Instagram</span>
+                                            <span
+                                                class="px-2.5 py-1 rounded-lg bg-white/10 text-white font-mono text-xs">Facebook</span>
+                                            <span
+                                                class="px-2.5 py-1 rounded-lg bg-white/10 text-white font-mono text-xs">WhatsApp</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Celda Amarilla Handle -->
-                            <div class="w-full max-w-md rounded-2xl bg-brand-yellow px-5 py-4 shadow-glow-yellow text-brand-blue">
+                            <div
+                                class="w-full max-w-md rounded-2xl bg-brand-yellow px-5 py-4 shadow-glow-yellow text-brand-blue">
                                 <p class="font-mono text-base font-bold tracking-tight">
                                     @enviosdosruedas
                                 </p>
@@ -405,14 +472,17 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <!-- Header Section -->
                 <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                    <span class="px-4 py-1.5 bg-brand-yellow text-brand-blue font-bold rounded-full text-xs sm:text-sm font-subheading uppercase tracking-widest inline-block shadow-glow-yellow transform -rotate-1">
+                    <span
+                        class="px-4 py-1.5 bg-brand-yellow text-brand-blue font-bold rounded-full text-xs sm:text-sm font-subheading uppercase tracking-widest inline-block shadow-glow-yellow transform -rotate-1">
                         COMUNIDAD EN REDES
                     </span>
-                    <h2 class="text-brand-blue text-4xl sm:text-5xl lg:text-6xl font-display uppercase tracking-tight leading-[1.1]">
+                    <h2
+                        class="text-brand-blue text-4xl sm:text-5xl lg:text-6xl font-display uppercase tracking-tight leading-[1.1]">
                         CANALES OFICIALES
                     </h2>
                     <p class="text-brand-blue/80 font-sans text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
-                        Conectate al instante con nuestras plataformas oficiales y formá parte de la mayor comunidad logística de Mar del Plata.
+                        Conectate al instante con nuestras plataformas oficiales y formá parte de la mayor comunidad
+                        logística de Mar del Plata.
                     </p>
                     <div class="h-1 w-16 bg-brand-blue mx-auto rounded-full"></div>
                 </div>
@@ -420,24 +490,31 @@
                 <!-- Bento Grid Asimétrico -->
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
                     <!-- WhatsApp: Ancho Completo 12 Columnas -->
-                    <div class="lg:col-span-12 rounded-[28px] p-2 sm:p-2.5 bg-white border border-brand-blue-100 shadow-float">
-                        <div class="rounded-[20px] bg-white p-6 sm:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                    <div
+                        class="lg:col-span-12 rounded-[28px] p-2 sm:p-2.5 bg-white border border-brand-blue-100 shadow-float">
+                        <div
+                            class="rounded-[20px] bg-white p-6 sm:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
                             <div class="space-y-4 max-w-3xl">
                                 <div class="flex items-center gap-3">
-                                    <div class="p-3 bg-brand-blue-50 text-brand-blue border border-brand-blue-100 rounded-2xl w-12 h-12 flex items-center justify-center shrink-0">
+                                    <div
+                                        class="p-3 bg-brand-blue-50 text-brand-blue border border-brand-blue-100 rounded-2xl w-12 h-12 flex items-center justify-center shrink-0">
                                         <span class="material-symbols-outlined text-2xl text-brand-blue">chat</span>
                                     </div>
                                     <div>
-                                        <h3 class="text-2xl sm:text-3xl font-subheading uppercase tracking-wider text-brand-blue leading-none">
+                                        <h3
+                                            class="text-2xl sm:text-3xl font-subheading uppercase tracking-wider text-brand-blue leading-none">
                                             WHATSAPP DIRECTO
                                         </h3>
-                                        <span class="text-xs text-brand-blue font-mono font-bold mt-1 block tabular-nums">
+                                        <span
+                                            class="text-xs text-brand-blue font-mono font-bold mt-1 block tabular-nums">
                                             +54 223 660-2699 | ATENCIÓN INMEDIATA
                                         </span>
                                     </div>
                                 </div>
                                 <p class="text-sm text-brand-blue/85 font-sans leading-relaxed">
-                                    Atención personalizada y sin demoras por WhatsApp. El canal más ágil para coordinar cotizaciones, retiros inmediatos, envíos FLEX y resolver dudas sobre nuestra operativa diaria.
+                                    Atención personalizada y sin demoras por WhatsApp. El canal más ágil para coordinar
+                                    cotizaciones, retiros inmediatos, envíos FLEX y resolver dudas sobre nuestra
+                                    operativa diaria.
                                 </p>
                             </div>
                             <div class="shrink-0 w-full md:w-auto">
@@ -445,26 +522,33 @@
                                     target="_blank" rel="noopener noreferrer"
                                     class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-brand-yellow hover:bg-brand-yellow-hover text-brand-blue font-display text-sm uppercase px-7 py-3.5 rounded-full border-2 border-brand-yellow transition-all shadow-glow-yellow group">
                                     <span>CHATEÁ AHORA</span>
-                                    <span class="material-symbols-outlined text-sm font-bold group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                    <span
+                                        class="material-symbols-outlined text-sm font-bold group-hover:translate-x-1 transition-transform">arrow_forward</span>
                                 </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Instagram: 6 Columnas -->
-                    <div class="lg:col-span-6 rounded-[28px] p-2 sm:p-2.5 bg-white border border-brand-blue-100 shadow-float">
-                        <div class="rounded-[20px] bg-white p-6 sm:p-8 flex flex-col justify-between h-full min-h-[320px]">
+                    <div
+                        class="lg:col-span-6 rounded-[28px] p-2 sm:p-2.5 bg-white border border-brand-blue-100 shadow-float">
+                        <div
+                            class="rounded-[20px] bg-white p-6 sm:p-8 flex flex-col justify-between h-full min-h-[320px]">
                             <div class="space-y-6">
                                 <div class="flex items-center justify-between">
-                                    <div class="p-3 bg-brand-blue-50 border border-brand-blue-100 rounded-2xl w-12 h-12 flex items-center justify-center">
-                                        <span class="material-symbols-outlined text-2xl text-brand-blue">photo_camera</span>
+                                    <div
+                                        class="p-3 bg-brand-blue-50 border border-brand-blue-100 rounded-2xl w-12 h-12 flex items-center justify-center">
+                                        <span
+                                            class="material-symbols-outlined text-2xl text-brand-blue">photo_camera</span>
                                     </div>
-                                    <span class="px-3 py-1 bg-brand-yellow/20 text-brand-blue border border-brand-yellow/40 rounded-full text-xs font-mono font-bold uppercase tracking-wider transform -rotate-1 shadow-sm tabular-nums">
+                                    <span
+                                        class="px-3 py-1 bg-brand-yellow/20 text-brand-blue border border-brand-yellow/40 rounded-full text-xs font-mono font-bold uppercase tracking-wider transform -rotate-1 shadow-sm tabular-nums">
                                         +3.000 SEGUIDORES
                                     </span>
                                 </div>
                                 <div>
-                                    <h3 class="text-2xl sm:text-3xl font-subheading uppercase tracking-wider text-brand-blue leading-none">
+                                    <h3
+                                        class="text-2xl sm:text-3xl font-subheading uppercase tracking-wider text-brand-blue leading-none">
                                         INSTAGRAM
                                     </h3>
                                     <span class="text-xs text-brand-blue/70 font-sans mt-1 block">
@@ -472,11 +556,13 @@
                                     </span>
                                 </div>
                                 <p class="text-sm text-brand-blue/85 font-sans leading-relaxed">
-                                    Mirá nuestro día a día, fotos reales de las entregas diarias de la flota y promociones especiales diseñadas para tu e-commerce.
+                                    Mirá nuestro día a día, fotos reales de las entregas diarias de la flota y
+                                    promociones especiales diseñadas para tu e-commerce.
                                 </p>
                             </div>
                             <div class="pt-6 mt-6 border-t border-brand-blue-100 w-full">
-                                <a href="https://www.instagram.com/enviosdosruedas/" target="_blank" rel="noopener noreferrer"
+                                <a href="https://www.instagram.com/enviosdosruedas/" target="_blank"
+                                    rel="noopener noreferrer"
                                     class="w-full inline-flex items-center justify-center gap-2 bg-transparent hover:bg-brand-blue-50 text-brand-blue font-subheading tracking-wider text-xs sm:text-sm uppercase py-3 px-5 rounded-full border-2 border-brand-blue transition-all">
                                     <span>SEGUINOS EN INSTAGRAM</span>
                                     <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
@@ -486,19 +572,24 @@
                     </div>
 
                     <!-- Facebook: 6 Columnas -->
-                    <div class="lg:col-span-6 rounded-[28px] p-2 sm:p-2.5 bg-white border border-brand-blue-100 shadow-float">
-                        <div class="rounded-[20px] bg-white p-6 sm:p-8 flex flex-col justify-between h-full min-h-[320px]">
+                    <div
+                        class="lg:col-span-6 rounded-[28px] p-2 sm:p-2.5 bg-white border border-brand-blue-100 shadow-float">
+                        <div
+                            class="rounded-[20px] bg-white p-6 sm:p-8 flex flex-col justify-between h-full min-h-[320px]">
                             <div class="space-y-6">
                                 <div class="flex items-center justify-between">
-                                    <div class="p-3 bg-brand-blue-50 border border-brand-blue-100 rounded-2xl w-12 h-12 flex items-center justify-center">
+                                    <div
+                                        class="p-3 bg-brand-blue-50 border border-brand-blue-100 rounded-2xl w-12 h-12 flex items-center justify-center">
                                         <span class="material-symbols-outlined text-2xl text-brand-blue">public</span>
                                     </div>
-                                    <span class="px-3 py-1 bg-brand-blue-50 text-brand-blue border border-brand-blue-100 rounded-full text-xs font-mono font-bold uppercase tracking-wider transform -rotate-1 tabular-nums">
+                                    <span
+                                        class="px-3 py-1 bg-brand-blue-50 text-brand-blue border border-brand-blue-100 rounded-full text-xs font-mono font-bold uppercase tracking-wider transform -rotate-1 tabular-nums">
                                         +2.000 SEGUIDORES
                                     </span>
                                 </div>
                                 <div>
-                                    <h3 class="text-2xl sm:text-3xl font-subheading uppercase tracking-wider text-brand-blue leading-none">
+                                    <h3
+                                        class="text-2xl sm:text-3xl font-subheading uppercase tracking-wider text-brand-blue leading-none">
                                         FACEBOOK
                                     </h3>
                                     <span class="text-xs text-brand-blue/70 font-sans mt-1 block">
@@ -506,11 +597,13 @@
                                     </span>
                                 </div>
                                 <p class="text-sm text-brand-blue/85 font-sans leading-relaxed">
-                                    Seguinos para enterarte de ofertas exclusivas y novedades logísticas sobre el tránsito y cadetería comercial local.
+                                    Seguinos para enterarte de ofertas exclusivas y novedades logísticas sobre el
+                                    tránsito y cadetería comercial local.
                                 </p>
                             </div>
                             <div class="pt-6 mt-6 border-t border-brand-blue-100 w-full">
-                                <a href="https://www.facebook.com/enviosdosruedas/" target="_blank" rel="noopener noreferrer"
+                                <a href="https://www.facebook.com/enviosdosruedas/" target="_blank"
+                                    rel="noopener noreferrer"
                                     class="w-full inline-flex items-center justify-center gap-2 bg-transparent hover:bg-brand-blue-50 text-brand-blue font-subheading tracking-wider text-xs sm:text-sm uppercase py-3 px-5 rounded-full border-2 border-brand-blue transition-all">
                                     <span>SEGUINOS EN FACEBOOK</span>
                                     <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
@@ -525,40 +618,53 @@
         <!-- ========================================================================= -->
         <!-- 4. PUBLICACIONES RECIENTES EN REDES (Bento Layout de 5 Posts)             -->
         <!-- ========================================================================= -->
-        <section id="recent-posts" class="py-20 sm:py-24 bg-brand-blue text-white relative overflow-hidden border-t border-white/10">
+        <section id="recent-posts"
+            class="py-20 sm:py-24 bg-brand-blue text-white relative overflow-hidden border-t border-white/10">
             <!-- Destellos ambientales de fondo -->
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_25%,#0950F6,transparent_50%)] pointer-events-none opacity-30"></div>
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_75%,#FFEC01,transparent_50%)] pointer-events-none opacity-15"></div>
+            <div
+                class="absolute inset-0 bg-[radial-gradient(circle_at_20%_25%,#0950F6,transparent_50%)] pointer-events-none opacity-30">
+            </div>
+            <div
+                class="absolute inset-0 bg-[radial-gradient(circle_at_80%_75%,#FFEC01,transparent_50%)] pointer-events-none opacity-15">
+            </div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <!-- Header Block -->
                 <div class="text-left max-w-2xl mb-16 space-y-4">
-                    <span class="px-4 py-1.5 bg-brand-yellow text-brand-blue font-bold rounded-full text-xs sm:text-sm font-subheading uppercase tracking-widest inline-block shadow-glow-yellow transform -rotate-1">
+                    <span
+                        class="px-4 py-1.5 bg-brand-yellow text-brand-blue font-bold rounded-full text-xs sm:text-sm font-subheading uppercase tracking-widest inline-block shadow-glow-yellow transform -rotate-1">
                         EN VIVO
                     </span>
-                    <h2 class="text-white text-4xl sm:text-5xl lg:text-6xl font-display uppercase tracking-tight leading-[1.05]">
+                    <h2
+                        class="text-white text-4xl sm:text-5xl lg:text-6xl font-display uppercase tracking-tight leading-[1.05]">
                         PUBLICACIONES RECIENTES
                     </h2>
                     <p class="text-white/90 font-sans text-base sm:text-lg max-w-prose leading-relaxed">
-                        Lo que está pasando ahora mismo en nuestras redes sociales oficiales de Mar del Plata. Seguinos para no perderte nada.
+                        Lo que está pasando ahora mismo en nuestras redes sociales oficiales de Mar del Plata. Seguinos
+                        para no perderte nada.
                     </p>
                 </div>
 
                 <!-- Structured Bento Layout de 5 Posts -->
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8">
                     <!-- Post 1: Destacado (12 cols md, 8 cols lg) -->
-                    <div class="md:col-span-12 lg:col-span-8 rounded-[28px] bg-white/10 backdrop-blur-md border border-white/20 p-2 shadow-2xl flex flex-col justify-between">
-                        <div class="rounded-[20px] bg-white text-brand-blue overflow-hidden flex flex-col md:flex-row justify-between h-full border border-brand-blue-50/50 shadow-sm">
+                    <div
+                        class="md:col-span-12 lg:col-span-8 rounded-[28px] bg-white/10 backdrop-blur-md border border-white/20 p-2 shadow-2xl flex flex-col justify-between">
+                        <div
+                            class="rounded-[20px] bg-white text-brand-blue overflow-hidden flex flex-col md:flex-row justify-between h-full border border-brand-blue-50/50 shadow-sm">
                             <!-- Visual del Post -->
-                            <div class="relative w-full md:w-1/2 h-64 md:h-full min-h-[300px] bg-brand-blue-50 flex flex-col justify-between p-6 border-b md:border-b-0 md:border-r border-brand-blue-100">
+                            <div
+                                class="relative w-full md:w-1/2 h-64 md:h-full min-h-[300px] bg-brand-blue-50 flex flex-col justify-between p-6 border-b md:border-b-0 md:border-r border-brand-blue-100">
                                 <div class="flex items-center justify-between">
-                                    <span class="px-3 py-1 bg-brand-yellow text-brand-blue font-subheading font-bold text-xs uppercase tracking-widest rounded-lg shadow-sm transform -rotate-1">
+                                    <span
+                                        class="px-3 py-1 bg-brand-yellow text-brand-blue font-subheading font-bold text-xs uppercase tracking-widest rounded-lg shadow-sm transform -rotate-1">
                                         DESTACADO
                                     </span>
                                     <span class="material-symbols-outlined text-2xl text-brand-blue">public</span>
                                 </div>
                                 <div class="space-y-2">
-                                    <span class="font-mono text-xs font-bold uppercase text-brand-blue bg-white/80 px-2 py-0.5 rounded">Facebook</span>
+                                    <span
+                                        class="font-mono text-xs font-bold uppercase text-brand-blue bg-white/80 px-2 py-0.5 rounded">Facebook</span>
                                     <p class="font-display text-2xl uppercase leading-tight text-brand-blue">
                                         Solución para tus envíos en MDQ
                                     </p>
@@ -568,16 +674,20 @@
                             <!-- Detalles y Copy -->
                             <div class="flex flex-col justify-between w-full md:w-1/2">
                                 <div>
-                                    <div class="p-5 flex items-center justify-between border-b border-brand-blue-100/50">
+                                    <div
+                                        class="p-5 flex items-center justify-between border-b border-brand-blue-100/50">
                                         <div class="flex items-center gap-3">
-                                            <div class="w-9 h-9 rounded-full bg-brand-blue flex items-center justify-center text-white font-display text-xs">
+                                            <div
+                                                class="w-9 h-9 rounded-full bg-brand-blue flex items-center justify-center text-white font-display text-xs">
                                                 DR
                                             </div>
                                             <div>
-                                                <h3 class="text-sm font-sans font-bold uppercase tracking-wider text-brand-blue leading-none">
+                                                <h3
+                                                    class="text-sm font-sans font-bold uppercase tracking-wider text-brand-blue leading-none">
                                                     Envíos DosRuedas
                                                 </h3>
-                                                <span class="text-[10px] font-mono font-bold text-brand-blue/70 mt-1 block tabular-nums">
+                                                <span
+                                                    class="text-[10px] font-mono font-bold text-brand-blue/70 mt-1 block tabular-nums">
                                                     21 Jun
                                                 </span>
                                             </div>
@@ -588,17 +698,23 @@
                                     </div>
 
                                     <div class="p-5 md:p-8">
-                                        <p class="text-sm md:text-base font-sans leading-relaxed text-brand-blue/90 line-clamp-6">
-                                            MENSAJERÍA ENVÍOS DOSRUEDAS ~ ¡Somos la solución para tus envíos en Mar del Plata! ~ Confianza y responsabilidad son nuestros pilares fundamentales para tu negocio.
+                                        <p
+                                            class="text-sm md:text-base font-sans leading-relaxed text-brand-blue/90 line-clamp-6">
+                                            MENSAJERÍA ENVÍOS DOSRUEDAS ~ ¡Somos la solución para tus envíos en Mar del
+                                            Plata! ~ Confianza y responsabilidad son nuestros pilares fundamentales para
+                                            tu negocio.
                                         </p>
                                     </div>
                                 </div>
 
                                 <div class="p-5 pt-0 md:px-8 pb-6">
-                                    <div class="pt-4 border-t border-brand-blue-100/50 flex items-center justify-between">
-                                        <div class="flex items-center gap-4 text-xs font-mono font-bold text-brand-blue tabular-nums">
+                                    <div
+                                        class="pt-4 border-t border-brand-blue-100/50 flex items-center justify-between">
+                                        <div
+                                            class="flex items-center gap-4 text-xs font-mono font-bold text-brand-blue tabular-nums">
                                             <span class="flex items-center gap-1">
-                                                <span class="material-symbols-outlined text-sm text-red-500">favorite</span>
+                                                <span
+                                                    class="material-symbols-outlined text-sm text-red-500">favorite</span>
                                                 <span>12</span>
                                             </span>
                                             <span class="flex items-center gap-1">
@@ -607,7 +723,8 @@
                                             </span>
                                         </div>
 
-                                        <a href="https://www.facebook.com/enviosdosruedas/" target="_blank" rel="noopener noreferrer"
+                                        <a href="https://www.facebook.com/enviosdosruedas/" target="_blank"
+                                            rel="noopener noreferrer"
                                             class="bg-brand-yellow hover:bg-brand-yellow-hover text-brand-blue font-subheading tracking-wider text-xs uppercase py-2 px-4 rounded-full flex items-center gap-1.5 shadow-sm transition-all">
                                             <span>Ver original</span>
                                             <span class="material-symbols-outlined text-xs">open_in_new</span>
@@ -619,18 +736,23 @@
                     </div>
 
                     <!-- Post 2: Instagram (6 cols md, 4 cols lg) -->
-                    <div class="md:col-span-6 lg:col-span-4 rounded-[28px] bg-white/10 backdrop-blur-md border border-white/20 p-2 shadow-2xl flex flex-col justify-between">
-                        <div class="rounded-[20px] bg-white text-brand-blue overflow-hidden flex flex-col justify-between h-full border border-brand-blue-50/50 shadow-sm">
+                    <div
+                        class="md:col-span-6 lg:col-span-4 rounded-[28px] bg-white/10 backdrop-blur-md border border-white/20 p-2 shadow-2xl flex flex-col justify-between">
+                        <div
+                            class="rounded-[20px] bg-white text-brand-blue overflow-hidden flex flex-col justify-between h-full border border-brand-blue-50/50 shadow-sm">
                             <div class="p-5 flex items-center justify-between border-b border-brand-blue-100/50">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-9 h-9 rounded-full bg-brand-blue flex items-center justify-center text-white font-display text-xs">
+                                    <div
+                                        class="w-9 h-9 rounded-full bg-brand-blue flex items-center justify-center text-white font-display text-xs">
                                         DR
                                     </div>
                                     <div>
-                                        <h3 class="text-sm font-sans font-bold uppercase tracking-wider text-brand-blue leading-none">
+                                        <h3
+                                            class="text-sm font-sans font-bold uppercase tracking-wider text-brand-blue leading-none">
                                             Envíos DosRuedas
                                         </h3>
-                                        <span class="text-[10px] font-mono font-bold text-brand-blue/70 mt-1 block tabular-nums">
+                                        <span
+                                            class="text-[10px] font-mono font-bold text-brand-blue/70 mt-1 block tabular-nums">
                                             21 Jun
                                         </span>
                                     </div>
@@ -642,13 +764,15 @@
 
                             <div class="p-5 space-y-4">
                                 <p class="text-sm font-sans leading-relaxed text-brand-blue/90 line-clamp-4">
-                                    MENSAJERÍA ENVÍOS DOSRUEDAS ~ ¡Somos la solución para tus envíos en Mar del Plata! ~ Te ofrecemos un servicio confiable y personalizado para tu tienda.
+                                    MENSAJERÍA ENVÍOS DOSRUEDAS ~ ¡Somos la solución para tus envíos en Mar del Plata! ~
+                                    Te ofrecemos un servicio confiable y personalizado para tu tienda.
                                 </p>
                             </div>
 
                             <div class="p-5 pt-0 pb-6">
                                 <div class="pt-4 border-t border-brand-blue-100/50 flex items-center justify-between">
-                                    <div class="flex items-center gap-4 text-xs font-mono font-bold text-brand-blue tabular-nums">
+                                    <div
+                                        class="flex items-center gap-4 text-xs font-mono font-bold text-brand-blue tabular-nums">
                                         <span class="flex items-center gap-1">
                                             <span class="material-symbols-outlined text-sm text-red-500">favorite</span>
                                             <span>14</span>
@@ -658,7 +782,8 @@
                                             <span>2</span>
                                         </span>
                                     </div>
-                                    <a href="https://www.instagram.com/enviosdosruedas/" target="_blank" rel="noopener noreferrer"
+                                    <a href="https://www.instagram.com/enviosdosruedas/" target="_blank"
+                                        rel="noopener noreferrer"
                                         class="bg-brand-yellow hover:bg-brand-yellow-hover text-brand-blue font-subheading tracking-wider text-xs uppercase py-2 px-4 rounded-full flex items-center gap-1.5 shadow-sm transition-all">
                                         <span>Ver original</span>
                                         <span class="material-symbols-outlined text-xs">open_in_new</span>
@@ -669,18 +794,23 @@
                     </div>
 
                     <!-- Post 3: Facebook (6 cols md, 4 cols lg) -->
-                    <div class="md:col-span-6 lg:col-span-4 rounded-[28px] bg-white/10 backdrop-blur-md border border-white/20 p-2 shadow-2xl flex flex-col justify-between">
-                        <div class="rounded-[20px] bg-white text-brand-blue overflow-hidden flex flex-col justify-between h-full border border-brand-blue-50/50 shadow-sm">
+                    <div
+                        class="md:col-span-6 lg:col-span-4 rounded-[28px] bg-white/10 backdrop-blur-md border border-white/20 p-2 shadow-2xl flex flex-col justify-between">
+                        <div
+                            class="rounded-[20px] bg-white text-brand-blue overflow-hidden flex flex-col justify-between h-full border border-brand-blue-50/50 shadow-sm">
                             <div class="p-5 flex items-center justify-between border-b border-brand-blue-100/50">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-9 h-9 rounded-full bg-brand-blue flex items-center justify-center text-white font-display text-xs">
+                                    <div
+                                        class="w-9 h-9 rounded-full bg-brand-blue flex items-center justify-center text-white font-display text-xs">
                                         DR
                                     </div>
                                     <div>
-                                        <h3 class="text-sm font-sans font-bold uppercase tracking-wider text-brand-blue leading-none">
+                                        <h3
+                                            class="text-sm font-sans font-bold uppercase tracking-wider text-brand-blue leading-none">
                                             Envíos DosRuedas
                                         </h3>
-                                        <span class="text-[10px] font-mono font-bold text-brand-blue/70 mt-1 block tabular-nums">
+                                        <span
+                                            class="text-[10px] font-mono font-bold text-brand-blue/70 mt-1 block tabular-nums">
                                             21 Jun
                                         </span>
                                     </div>
@@ -692,13 +822,16 @@
 
                             <div class="p-5 space-y-4">
                                 <p class="text-sm font-sans leading-relaxed text-brand-blue/90 line-clamp-4">
-                                    Para vos, que vendés en Mar del Plata y hacés envíos... ¿Solés usar apps genéricas pero no te dan tranquilidad ni cara visible? Descubrí nuestro servicio con flota propia.
+                                    Para vos, que vendés en Mar del Plata y hacés envíos... ¿Solés usar apps genéricas
+                                    pero no te dan tranquilidad ni cara visible? Descubrí nuestro servicio con flota
+                                    propia.
                                 </p>
                             </div>
 
                             <div class="p-5 pt-0 pb-6">
                                 <div class="pt-4 border-t border-brand-blue-100/50 flex items-center justify-between">
-                                    <div class="flex items-center gap-4 text-xs font-mono font-bold text-brand-blue tabular-nums">
+                                    <div
+                                        class="flex items-center gap-4 text-xs font-mono font-bold text-brand-blue tabular-nums">
                                         <span class="flex items-center gap-1">
                                             <span class="material-symbols-outlined text-sm text-red-500">favorite</span>
                                             <span>19</span>
@@ -708,7 +841,8 @@
                                             <span>7</span>
                                         </span>
                                     </div>
-                                    <a href="https://www.facebook.com/enviosdosruedas/" target="_blank" rel="noopener noreferrer"
+                                    <a href="https://www.facebook.com/enviosdosruedas/" target="_blank"
+                                        rel="noopener noreferrer"
                                         class="bg-brand-yellow hover:bg-brand-yellow-hover text-brand-blue font-subheading tracking-wider text-xs uppercase py-2 px-4 rounded-full flex items-center gap-1.5 shadow-sm transition-all">
                                         <span>Ver original</span>
                                         <span class="material-symbols-outlined text-xs">open_in_new</span>
@@ -719,18 +853,23 @@
                     </div>
 
                     <!-- Post 4: Instagram (6 cols md, 4 cols lg) -->
-                    <div class="md:col-span-6 lg:col-span-4 rounded-[28px] bg-white/10 backdrop-blur-md border border-white/20 p-2 shadow-2xl flex flex-col justify-between">
-                        <div class="rounded-[20px] bg-white text-brand-blue overflow-hidden flex flex-col justify-between h-full border border-brand-blue-50/50 shadow-sm">
+                    <div
+                        class="md:col-span-6 lg:col-span-4 rounded-[28px] bg-white/10 backdrop-blur-md border border-white/20 p-2 shadow-2xl flex flex-col justify-between">
+                        <div
+                            class="rounded-[20px] bg-white text-brand-blue overflow-hidden flex flex-col justify-between h-full border border-brand-blue-50/50 shadow-sm">
                             <div class="p-5 flex items-center justify-between border-b border-brand-blue-100/50">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-9 h-9 rounded-full bg-brand-blue flex items-center justify-center text-white font-display text-xs">
+                                    <div
+                                        class="w-9 h-9 rounded-full bg-brand-blue flex items-center justify-center text-white font-display text-xs">
                                         DR
                                     </div>
                                     <div>
-                                        <h3 class="text-sm font-sans font-bold uppercase tracking-wider text-brand-blue leading-none">
+                                        <h3
+                                            class="text-sm font-sans font-bold uppercase tracking-wider text-brand-blue leading-none">
                                             Envíos DosRuedas
                                         </h3>
-                                        <span class="text-[10px] font-mono font-bold text-brand-blue/70 mt-1 block tabular-nums">
+                                        <span
+                                            class="text-[10px] font-mono font-bold text-brand-blue/70 mt-1 block tabular-nums">
                                             21 Jun
                                         </span>
                                     </div>
@@ -742,13 +881,15 @@
 
                             <div class="p-5 space-y-4">
                                 <p class="text-sm font-sans leading-relaxed text-brand-blue/90 line-clamp-4">
-                                    En Envíos DosRuedas, nuestro servicio se construye sobre tres pilares fundamentales: Responsabilidad, Eficiencia y Confianza en cada cuadra de la ciudad.
+                                    En Envíos DosRuedas, nuestro servicio se construye sobre tres pilares fundamentales:
+                                    Responsabilidad, Eficiencia y Confianza en cada cuadra de la ciudad.
                                 </p>
                             </div>
 
                             <div class="p-5 pt-0 pb-6">
                                 <div class="pt-4 border-t border-brand-blue-100/50 flex items-center justify-between">
-                                    <div class="flex items-center gap-4 text-xs font-mono font-bold text-brand-blue tabular-nums">
+                                    <div
+                                        class="flex items-center gap-4 text-xs font-mono font-bold text-brand-blue tabular-nums">
                                         <span class="flex items-center gap-1">
                                             <span class="material-symbols-outlined text-sm text-red-500">favorite</span>
                                             <span>24</span>
@@ -758,7 +899,8 @@
                                             <span>4</span>
                                         </span>
                                     </div>
-                                    <a href="https://www.instagram.com/enviosdosruedas/" target="_blank" rel="noopener noreferrer"
+                                    <a href="https://www.instagram.com/enviosdosruedas/" target="_blank"
+                                        rel="noopener noreferrer"
                                         class="bg-brand-yellow hover:bg-brand-yellow-hover text-brand-blue font-subheading tracking-wider text-xs uppercase py-2 px-4 rounded-full flex items-center gap-1.5 shadow-sm transition-all">
                                         <span>Ver original</span>
                                         <span class="material-symbols-outlined text-xs">open_in_new</span>
@@ -769,18 +911,23 @@
                     </div>
 
                     <!-- Post 5: Instagram (6 cols md, 4 cols lg) -->
-                    <div class="md:col-span-6 lg:col-span-4 rounded-[28px] bg-white/10 backdrop-blur-md border border-white/20 p-2 shadow-2xl flex flex-col justify-between">
-                        <div class="rounded-[20px] bg-white text-brand-blue overflow-hidden flex flex-col justify-between h-full border border-brand-blue-50/50 shadow-sm">
+                    <div
+                        class="md:col-span-6 lg:col-span-4 rounded-[28px] bg-white/10 backdrop-blur-md border border-white/20 p-2 shadow-2xl flex flex-col justify-between">
+                        <div
+                            class="rounded-[20px] bg-white text-brand-blue overflow-hidden flex flex-col justify-between h-full border border-brand-blue-50/50 shadow-sm">
                             <div class="p-5 flex items-center justify-between border-b border-brand-blue-100/50">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-9 h-9 rounded-full bg-brand-blue flex items-center justify-center text-white font-display text-xs">
+                                    <div
+                                        class="w-9 h-9 rounded-full bg-brand-blue flex items-center justify-center text-white font-display text-xs">
                                         DR
                                     </div>
                                     <div>
-                                        <h3 class="text-sm font-sans font-bold uppercase tracking-wider text-brand-blue leading-none">
+                                        <h3
+                                            class="text-sm font-sans font-bold uppercase tracking-wider text-brand-blue leading-none">
                                             Envíos DosRuedas
                                         </h3>
-                                        <span class="text-[10px] font-mono font-bold text-brand-blue/70 mt-1 block tabular-nums">
+                                        <span
+                                            class="text-[10px] font-mono font-bold text-brand-blue/70 mt-1 block tabular-nums">
                                             21 Jun
                                         </span>
                                     </div>
@@ -792,13 +939,15 @@
 
                             <div class="p-5 space-y-4">
                                 <p class="text-sm font-sans leading-relaxed text-brand-blue/90 line-clamp-4">
-                                    En cada envío, nos das tu confianza. Con cada entrega, te demostramos por qué vale la pena. En Envíos DosRuedas, la responsabilidad es nuestro motor.
+                                    En cada envío, nos das tu confianza. Con cada entrega, te demostramos por qué vale
+                                    la pena. En Envíos DosRuedas, la responsabilidad es nuestro motor.
                                 </p>
                             </div>
 
                             <div class="p-5 pt-0 pb-6">
                                 <div class="pt-4 border-t border-brand-blue-100/50 flex items-center justify-between">
-                                    <div class="flex items-center gap-4 text-xs font-mono font-bold text-brand-blue tabular-nums">
+                                    <div
+                                        class="flex items-center gap-4 text-xs font-mono font-bold text-brand-blue tabular-nums">
                                         <span class="flex items-center gap-1">
                                             <span class="material-symbols-outlined text-sm text-red-500">favorite</span>
                                             <span>31</span>
@@ -808,7 +957,8 @@
                                             <span>6</span>
                                         </span>
                                     </div>
-                                    <a href="https://www.instagram.com/enviosdosruedas/" target="_blank" rel="noopener noreferrer"
+                                    <a href="https://www.instagram.com/enviosdosruedas/" target="_blank"
+                                        rel="noopener noreferrer"
                                         class="bg-brand-yellow hover:bg-brand-yellow-hover text-brand-blue font-subheading tracking-wider text-xs uppercase py-2 px-4 rounded-full flex items-center gap-1.5 shadow-sm transition-all">
                                         <span>Ver original</span>
                                         <span class="material-symbols-outlined text-xs">open_in_new</span>
@@ -826,12 +976,13 @@
     <!-- 5. PIE DE PÁGINA GLOBAL (OptimizedFooter Oficial de 3 Columnas)           -->
     <!-- ========================================================================= -->
     <footer class="bg-brand-blue text-white border-t border-white/20 relative select-none" id="contacto">
-        
+
         <!-- Banner Superior de Operaciones Activas -->
-        <div class="border-b border-white/15 bg-brand-blue-900/60 py-8">
+        <div class="border-b border-white/15 bg-brand-blue-500/60 py-8">
             <div class="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="space-y-1 text-center md:text-left">
-                    <span class="font-mono text-[11px] font-bold uppercase tracking-wider text-brand-yellow flex items-center gap-1.5 justify-center md:justify-start">
+                    <span
+                        class="font-mono text-[11px] font-bold uppercase tracking-wider text-brand-yellow flex items-center gap-1.5 justify-center md:justify-start">
                         <span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse"></span>
                         OPERACIONES ACTIVAS MAR DEL PLATA 2026
                     </span>
@@ -859,10 +1010,11 @@
         <!-- Contenido Principal Footer (3 Columnas) -->
         <div class="max-w-7xl mx-auto px-4 lg:px-8 py-16">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
-                
+
                 <!-- Columna 1: Identidad, Misión y Canales Oficiales -->
                 <div class="lg:col-span-5 space-y-5 text-left">
-                    <a class="flex items-center gap-2.5 group" href="home_clean.html" aria-label="Inicio Envíos DosRuedas">
+                    <a class="flex items-center gap-2.5 group" href="home_clean.html"
+                        aria-label="Inicio Envíos DosRuedas">
                         <img src="logo_.png" alt="Logo Envíos DosRuedas"
                             class="w-10 h-10 rounded-full object-contain shadow-sm group-hover:scale-105 transition-transform">
                         <span class="text-2xl font-display uppercase tracking-normal">
@@ -873,21 +1025,26 @@
                         TU SOLUCIÓN CONFIABLE · MAR DEL PLATA
                     </p>
                     <p class="text-xs text-white/80 leading-relaxed font-normal max-w-sm">
-                        Con más de 7 años de trayectoria en Mar del Plata, transformamos el despacho de tus productos en un motor de crecimiento para emprendedores, PyMEs y comercios locales con flota propia y compromiso humano.
+                        Con más de 7 años de trayectoria en Mar del Plata, transformamos el despacho de tus productos en
+                        un motor de crecimiento para emprendedores, PyMEs y comercios locales con flota propia y
+                        compromiso humano.
                     </p>
                     <div class="space-y-2">
                         <p class="font-mono text-[10px] uppercase font-bold text-white/60">CANALES OFICIALES</p>
                         <div class="flex items-center gap-2">
                             <a class="w-8 h-8 rounded-full bg-white/10 hover:bg-brand-yellow hover:text-brand-blue flex items-center justify-center transition-colors"
-                                href="https://instagram.com/enviosdosruedas" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                href="https://instagram.com/enviosdosruedas" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram">
                                 <span class="material-symbols-outlined text-base">photo_camera</span>
                             </a>
                             <a class="w-8 h-8 rounded-full bg-white/10 hover:bg-brand-yellow hover:text-brand-blue flex items-center justify-center transition-colors"
-                                href="https://facebook.com/enviosdosruedas" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                href="https://facebook.com/enviosdosruedas" target="_blank" rel="noopener noreferrer"
+                                aria-label="Facebook">
                                 <span class="material-symbols-outlined text-base">thumb_up</span>
                             </a>
                             <a class="w-8 h-8 rounded-full bg-brand-yellow text-brand-blue flex items-center justify-center transition-colors shadow-sm"
-                                href="https://wa.me/542236602699" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                href="https://wa.me/542236602699" target="_blank" rel="noopener noreferrer"
+                                aria-label="WhatsApp">
                                 <span class="material-symbols-outlined text-base">chat</span>
                             </a>
                         </div>
@@ -959,7 +1116,8 @@
                     </p>
                     <div class="space-y-3 font-mono text-xs">
                         <div class="flex items-start gap-2.5">
-                            <span class="material-symbols-outlined text-brand-yellow text-base mt-0.5">location_on</span>
+                            <span
+                                class="material-symbols-outlined text-brand-yellow text-base mt-0.5">location_on</span>
                             <div>
                                 <p class="text-white font-bold">CENTRO DE DISTRIBUCIÓN</p>
                                 <p class="text-white/70">Friuli 1972, Mar del Plata</p>
@@ -969,22 +1127,26 @@
                             <span class="material-symbols-outlined text-brand-yellow text-base mt-0.5">call</span>
                             <div>
                                 <p class="text-white font-bold">LÍNEA DIRECTA Y WHATSAPP</p>
-                                <a class="text-brand-yellow font-bold underline" href="tel:+542236602699">+54 223 660-2699</a>
+                                <a class="text-brand-yellow font-bold underline" href="tel:+542236602699">+54 223
+                                    660-2699</a>
                             </div>
                         </div>
                         <div class="flex items-start gap-2.5">
                             <span class="material-symbols-outlined text-brand-yellow text-base mt-0.5">mail</span>
                             <div>
                                 <p class="text-white font-bold">ATENCIÓN COMERCIAL</p>
-                                <a class="text-white/70 hover:text-brand-yellow underline transition-colors" href="mailto:matiascejas@enviosdosruedas.com">matiascejas@enviosdosruedas.com</a>
+                                <a class="text-white/70 hover:text-brand-yellow underline transition-colors"
+                                    href="mailto:matiascejas@enviosdosruedas.com">matiascejas@enviosdosruedas.com</a>
                             </div>
                         </div>
                         <div class="flex items-start gap-2.5 pt-2 border-t border-white/10">
                             <span class="material-symbols-outlined text-brand-yellow text-base mt-0.5">schedule</span>
                             <div>
                                 <p class="text-white font-bold">HORARIOS DE DESPACHO EN BASE CENTRAL</p>
-                                <p class="text-white/80">Lunes a Viernes: <span class="text-brand-yellow font-bold">08:00 a 19:00 hs</span></p>
-                                <p class="text-white/80">Sábados: <span class="text-brand-yellow font-bold">10:00 a 15:00 hs</span></p>
+                                <p class="text-white/80">Lunes a Viernes: <span
+                                        class="text-brand-yellow font-bold">08:00 a 19:00 hs</span></p>
+                                <p class="text-white/80">Sábados: <span class="text-brand-yellow font-bold">10:00 a
+                                        15:00 hs</span></p>
                             </div>
                         </div>
                     </div>
@@ -993,7 +1155,8 @@
             </div>
 
             <!-- Barra de Copyright Inferior y Marco Legal -->
-            <div class="border-t border-white/15 pt-8 mt-12 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-[11px] text-white/60">
+            <div
+                class="border-t border-white/15 pt-8 mt-12 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-[11px] text-white/60">
                 <div>
                     © 2026 Envíos DosRuedas · Mar del Plata, Argentina.
                 </div>
@@ -1002,13 +1165,15 @@
                     <span>·</span>
                     <a class="hover:text-white transition-colors" href="servicios_clean.html">Cobertura</a>
                     <span>·</span>
-                    <a class="hover:text-white transition-colors" href="enviosflex_clean.html">Guía MercadoLibre Flex</a>
+                    <a class="hover:text-white transition-colors" href="enviosflex_clean.html">Guía MercadoLibre
+                        Flex</a>
                     <span>·</span>
                     <a class="hover:text-white transition-colors" href="sobre_nosotros_clean.html">Nosotros</a>
                     <span>·</span>
                     <a class="hover:text-white transition-colors" href="sobre_nosotros_clean.html">Sobre Nosotros</a>
                     <span>·</span>
-                    <a class="hover:text-white transition-colors" href="preguntas_frecuentes_clean.html">Preguntas Frecuentes</a>
+                    <a class="hover:text-white transition-colors" href="preguntas_frecuentes_clean.html">Preguntas
+                        Frecuentes</a>
                     <span>·</span>
                     <a class="hover:text-white transition-colors" href="nuestras_redes_clean.html">Nuestras Redes</a>
                     <span>·</span>
