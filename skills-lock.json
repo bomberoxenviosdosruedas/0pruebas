@@ -13,6 +13,12 @@
       "skillPath": "plugins/stitch-utilities/skills/enhance-prompt/SKILL.md",
       "computedHash": "28c47bcbc0e8d81f48fbbbe41d227efe4018a32c5d4674b0d052a70d215072d3"
     },
+    "full-page-screenshot": {
+      "source": "LewisLiu007/full-page-screenshot",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "726b547d5cb3283538bec554a72db179b18ca6bb168e228ff42a84c7302e2da3"
+    },
     "react-vite-dashboard": {
       "source": "google-labs-code/stitch-skills",
       "sourceType": "github",
