@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envíos DosRuedas - Infraestructura Logística de Última Milla | Mar del Plata</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ramp: {
+              canvas: '#F7F8FA',
+              paper: '#FFFFFF',
+              bone: '#F1F3F5',
+              ink: '#0A1124',
+              inkSecondary: '#4A5568',
+              ash: '#718096',
+              hairline: '#E2E8F0',
+              hairlineDark: '#CBD5E1',
+            },
+            brand: {
+              yellow: '#FFEC01',
+              yellowHover: '#F5E100',
+              blue: '#0950F6',
+              blueHover: '#073ECC',
+              blueSubtle: '#EFF4FF',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            mono: ['"IBM Plex Mono"', 'monospace'],
+          },
+          borderRadius: {
+            'btn': '6px',
+            'card': '16px',
+            'tag': '6px',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F7F8FA;
+      color: #0A1124;
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .hairline-border {
+      border: 1px solid #E2E8F0;
+    }
+
+    .highlighter-mark {
+      background: linear-gradient(120deg, rgba(255, 236, 1, 0.45) 0%, rgba(255, 236, 1, 0.9) 100%);
+      padding: 0 4px;
+      border-radius: 3px;
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 40s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+
+<body class="bg-ramp-canvas text-ramp-ink selection:bg-brand-yellow selection:text-ramp-ink">
+
+  <!-- ========================================== -->
+  <!-- HEADER - Ramp Editorial Style (Hairline flat bar) -->
+  <!-- ========================================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-ramp-paper/95 backdrop-blur border-b border-ramp-hairline">
+    <div class="max-w-[1240px] mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-[64px]">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3">
+          <div class="w-7 h-7 bg-ramp-ink text-brand-yellow rounded-[4px] flex items-center justify-center font-mono font-bold text-[12px] leading-none">
+            2R
+          </div>
+          <div class="flex items-baseline gap-2">
+            <span class="text-[17px] font-semibold tracking-tight text-ramp-ink">
+              ENVÍOS DOSRUEDAS
+            </span>
+            <span class="text-[10px] font-mono tracking-widest uppercase text-ramp-ash hidden sm:inline">
+              / MAR DEL PLATA
+            </span>
+          </div>
+        </a>
+
+        <!-- Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-6 text-[13px] font-medium text-ramp-inkSecondary">
+          <a href="#" class="text-ramp-ink hover:text-brand-blue transition-colors">Inicio</a>
+          <a href="#servicios" class="hover:text-ramp-ink transition-colors">Servicios</a>
+          <a href="#modelos" class="hover:text-ramp-ink transition-colors">Modelos Logísticos</a>
+          <a href="#testimonios" class="hover:text-ramp-ink transition-colors">Métricas & Reseñas</a>
+          <a href="#contacto" class="hover:text-ramp-ink transition-colors">Contacto</a>
+        </nav>
+
+        <!-- Right Action Button -->
+        <div class="flex items-center gap-4">
+          <a href="tel:+542236602699" class="hidden md:block font-mono text-[12px] text-ramp-inkSecondary hover:text-ramp-ink">
+            223 660-2699
+          </a>
+          <a href="/cotizar" class="inline-flex items-center justify-center bg-brand-yellow hover:bg-brand-yellowHover text-ramp-ink text-[13px] font-semibold px-4 py-2.5 rounded-btn transition-colors border border-black/10">
+            Cotizar envío
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-[64px]">
+
+    <!-- ========================================== -->
+    <!-- HERO SECTION - Ramp Financial / Editorial Desk -->
+    <!-- ========================================== -->
+    <section class="border-b border-ramp-hairline bg-ramp-paper py-20 lg:py-28">
+      <div class="max-w-[1240px] mx-auto px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          
+          <div class="inline-flex items-center gap-2 border border-ramp-hairline bg-ramp-bone px-3 py-1 rounded-tag font-mono text-[11px] tracking-wider uppercase text-ramp-inkSecondary">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>
+            <span>Operaciones Activas 2026</span>
+            <span class="text-ramp-ash">·</span>
+            <span class="font-semibold text-ramp-ink">Flota Propia en Motos</span>
+          </div>
+
+          <h1 class="text-[44px] sm:text-[56px] lg:text-[62px] font-semibold text-ramp-ink leading-[1.05] tracking-tight">
+            Logística urbana de <span class="highlighter-mark">última milla</span> para el comercio que no frena.
+          </h1>
+
+          <p class="text-[17px] sm:text-[18px] text-ramp-inkSecondary leading-relaxed max-w-[56ch]">
+            Conectamos tiendas online, depósitos y clientes en Mar del Plata. Envíos programados y en el día con mensajería directa, trazabilidad y cero intermediarios.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-3 pt-3">
+            <a href="/cotizar" class="inline-flex items-center justify-center bg-brand-yellow hover:bg-brand-yellowHover text-ramp-ink text-[14px] font-semibold px-6 py-3 rounded-btn border border-black/10 transition-colors">
+              Cotizá tu servicio
+            </a>
+            <a href="#servicios" class="inline-flex items-center justify-center bg-ramp-paper hover:bg-ramp-bone text-ramp-ink text-[14px] font-medium px-5 py-3 rounded-btn border border-ramp-hairline transition-colors">
+              Ver cuadro de tarifas
+            </a>
+          </div>
+
+          <!-- Proof points -->
+          <div class="grid grid-cols-3 gap-6 pt-8 border-t border-ramp-hairline">
+            <div>
+              <p class="font-mono text-[11px] uppercase tracking-wider text-ramp-ash">Flota</p>
+              <p class="text-[22px] font-semibold text-ramp-ink mt-0.5">100% Propia</p>
+            </div>
+            <div>
+              <p class="font-mono text-[11px] uppercase tracking-wider text-ramp-ash">Corte Same-Day</p>
+              <p class="text-[22px] font-semibold text-ramp-ink mt-0.5">15:00 hs</p>
+            </div>
+            <div>
+              <p class="font-mono text-[11px] uppercase tracking-wider text-ramp-ash">Google Reviews</p>
+              <p class="text-[22px] font-semibold text-brand-blue mt-0.5">5.0 / 5.0</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Ramp Side Desk Component -->
+        <div class="lg:col-span-5">
+          <div class="bg-ramp-canvas rounded-card p-6 border border-ramp-hairline space-y-4">
+            
+            <div class="flex justify-between items-center border-b border-ramp-hairline pb-3">
+              <span class="font-mono text-[11px] uppercase tracking-wider text-ramp-ash">DESPACHO MDQ / STATUS</span>
+              <span class="inline-flex items-center gap-1.5 font-mono text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-[4px] border border-emerald-200">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                ONLINE
+              </span>
+            </div>
+
+            <!-- Terminal Row 1 -->
+            <div class="bg-ramp-paper p-4 rounded-[10px] border border-ramp-hairline space-y-2">
+              <div class="flex justify-between text-[12px] text-ramp-ash font-mono">
+                <span>PUNTO DE CONSOLIDACIÓN</span>
+                <span class="text-ramp-ink font-semibold">Friuli 1972</span>
+              </div>
+              <div class="text-[14px] font-medium text-ramp-ink">
+                Fulfillment & Almacenamiento Mar del Plata
+              </div>
+              <div class="text-[12px] text-ramp-inkSecondary">
+                Picking asistido con código QR y despacho diario para e-commerce.
+              </div>
+            </div>
+
+            <!-- Terminal Row 2 -->
+            <div class="bg-ramp-paper p-4 rounded-[10px] border border-ramp-hairline space-y-2">
+              <div class="flex justify-between text-[12px] text-ramp-ash font-mono">
+                <span>RANGO OPERATIVO</span>
+                <span class="text-brand-blue font-semibold">Toda la Ciudad</span>
+              </div>
+              <div class="text-[14px] font-medium text-ramp-ink">
+                Centro, Güemes, Puerto, Constitución y Batán
+              </div>
+              <div class="text-[12px] text-ramp-inkSecondary">
+                Tarifas lineales fijas por radio de distancia sin recargos sorpresa.
+              </div>
+            </div>
+
+            <!-- Mini highlights -->
+            <div class="flex items-center justify-between pt-2 px-1 text-[12px] font-mono text-ramp-ash">
+              <span>REMITO DIGITAL: SÍ</span>
+              <span>COBRANZA DESTINO: SÍ</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Ticker -->
+      <div class="border-t border-ramp-hairline bg-ramp-bone py-3 overflow-hidden mt-16">
+        <div class="marquee-track font-mono text-[11px] uppercase tracking-wider text-ramp-inkSecondary">
+          <span class="mx-8 font-medium">· Mercado Envíos Flex</span>
+          <span class="mx-8 font-medium">· E-Commerce 24hs & Same-Day</span>
+          <span class="mx-8 font-medium">· Paquetería LowCost</span>
+          <span class="mx-8 font-medium">· Mensajería Express en 3 Horas</span>
+          <span class="mx-8 font-medium">· Cobro Contrareembolso</span>
+          <span class="mx-8 font-medium">· Almacenamiento Central Friuli 1972</span>
+          <span class="mx-8 font-medium">· Mercado Envíos Flex</span>
+          <span class="mx-8 font-medium">· E-Commerce 24hs & Same-Day</span>
+          <span class="mx-8 font-medium">· Paquetería LowCost</span>
+          <span class="mx-8 font-medium">· Mensajería Express en 3 Horas</span>
+          <span class="mx-8 font-medium">· Cobro Contrareembolso</span>
+          <span class="mx-8 font-medium">· Almacenamiento Central Friuli 1972</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SEGMENTOS - Editorial High-Density Grid -->
+    <!-- ========================================== -->
+    <section id="modelos" class="py-24 max-w-[1240px] mx-auto px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+        <div>
+          <span class="font-mono text-[11px] uppercase tracking-wider text-brand-blue font-semibold">Segmentos Operativos</span>
+          <h2 class="text-[34px] sm:text-[42px] font-semibold text-ramp-ink tracking-tight mt-1">
+            Planes diseñados según el volumen de tu negocio
+          </h2>
+        </div>
+        <p class="text-[14px] text-ramp-inkSecondary max-w-sm">
+          Soluciones modulares con trazabilidad directa sin necesidad de contratos rígidos ni mínimos forzados.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <!-- Segment 1: Flex -->
+        <div class="bg-ramp-paper rounded-card p-6 border-2 border-brand-yellow flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="font-mono text-[10px] font-semibold uppercase tracking-wider bg-brand-yellow px-2 py-0.5 rounded-[4px] text-ramp-ink">
+                FLEX MERCADOLIBRE
+              </span>
+              <span class="font-mono text-[11px] text-ramp-ash">01</span>
+            </div>
+            <h3 class="text-[20px] font-semibold text-ramp-ink leading-snug">Vendedores Mercado Libre</h3>
+            <p class="text-[13.5px] text-ramp-inkSecondary leading-relaxed">
+              Cumplí con la promesa de entrega en el día con repartidores que conocen los puntos de entrega en Mar del Plata. Corte 15:00 hs.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-ramp-hairline mt-6">
+            <a href="/servicios" class="inline-flex items-center justify-between w-full text-[13px] font-semibold text-ramp-ink hover:text-brand-blue transition-colors">
+              <span>Configurar Flex</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Segment 2: E-Commerce Stock -->
+        <div class="bg-ramp-paper rounded-card p-6 border border-ramp-hairline flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="font-mono text-[10px] font-medium uppercase tracking-wider bg-ramp-bone px-2 py-0.5 rounded-[4px] text-ramp-inkSecondary">
+                STOCK PROPIO
+              </span>
+              <span class="font-mono text-[11px] text-ramp-ash">02</span>
+            </div>
+            <h3 class="text-[20px] font-semibold text-ramp-ink leading-snug">Tiendas Online con Stock</h3>
+            <p class="text-[13.5px] text-ramp-inkSecondary leading-relaxed">
+              E-Commerce 24hs o Same-Day: guardá tu mercadería en nuestra base Friuli 1972 y despachamos de inmediato con empaque y picking.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-ramp-hairline mt-6">
+            <a href="/servicios" class="inline-flex items-center justify-between w-full text-[13px] font-semibold text-ramp-ink hover:text-brand-blue transition-colors">
+              <span>Ver depósito</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Segment 3: Comercios Diarios -->
+        <div class="bg-ramp-paper rounded-card p-6 border border-ramp-hairline flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="font-mono text-[10px] font-medium uppercase tracking-wider bg-ramp-bone px-2 py-0.5 rounded-[4px] text-ramp-inkSecondary">
+                COMERCIAL
+              </span>
+              <span class="font-mono text-[11px] text-ramp-ash">03</span>
+            </div>
+            <h3 class="text-[20px] font-semibold text-ramp-ink leading-snug">Comercios y Empresas</h3>
+            <p class="text-[13.5px] text-ramp-inkSecondary leading-relaxed">
+              Reparto económico LowCost: solicitá antes de las 13:00 hs y se entrega antes de las 19:00 hs con remito digital y tarifa plana.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-ramp-hairline mt-6">
+            <a href="/servicios" class="inline-flex items-center justify-between w-full text-[13px] font-semibold text-ramp-ink hover:text-brand-blue transition-colors">
+              <span>Planes comerciales</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Segment 4: Express -->
+        <div class="bg-ramp-paper rounded-card p-6 border border-ramp-hairline flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="font-mono text-[10px] font-medium uppercase tracking-wider bg-brand-blueSubtle text-brand-blue px-2 py-0.5 rounded-[4px]">
+                PRIORITARIO
+              </span>
+              <span class="font-mono text-[11px] text-ramp-ash">04</span>
+            </div>
+            <h3 class="text-[20px] font-semibold text-ramp-ink leading-snug">Particulares y Urgencias</h3>
+            <p class="text-[13.5px] text-ramp-inkSecondary leading-relaxed">
+              Mensajería express punto a punto en moto. Franja horaria reducida de 3 horas reservando con 2 hs de anticipación.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-ramp-hairline mt-6">
+            <a href="/cotizar" class="inline-flex items-center justify-between w-full text-[13px] font-semibold text-ramp-ink hover:text-brand-blue transition-colors">
+              <span>Cotizar Express</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SERVICES OVERVIEW - Ramp Clean Table View -->
+    <!-- ========================================== -->
+    <section id="servicios" class="py-24 bg-ramp-paper border-y border-ramp-hairline">
+      <div class="max-w-[1240px] mx-auto px-6 lg:px-8 space-y-12">
+        
+        <div class="max-w-xl">
+          <span class="font-mono text-[11px] uppercase tracking-wider text-brand-blue font-semibold">Especificaciones de Servicio</span>
+          <h2 class="text-[34px] sm:text-[42px] font-semibold text-ramp-ink tracking-tight mt-1">
+            Matriz de servicios y plazos de entrega
+          </h2>
+        </div>
+
+        <div class="border border-ramp-hairline rounded-card overflow-hidden bg-ramp-paper">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-[14px] border-collapse">
+              <thead>
+                <tr class="bg-ramp-bone border-b border-ramp-hairline font-mono text-[11px] uppercase text-ramp-inkSecondary tracking-wider">
+                  <th class="py-3.5 px-6">Servicio</th>
+                  <th class="py-3.5 px-6">Plazo de entrega</th>
+                  <th class="py-3.5 px-6">Horario de corte</th>
+                  <th class="py-3.5 px-6">Modalidad</th>
+                  <th class="py-3.5 px-6 text-right">Acción</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-ramp-hairline font-medium text-ramp-ink">
+                
+                <tr class="hover:bg-ramp-canvas transition-colors">
+                  <td class="py-4 px-6 font-semibold">
+                    Mercado Envíos Flex
+                    <span class="block text-[12px] font-normal text-ramp-ash">Integrado con marketplace</span>
+                  </td>
+                  <td class="py-4 px-6 text-emerald-700 font-mono text-[13px]">Mismo día</td>
+                  <td class="py-4 px-6 font-mono text-[13px]">15:00 hs</td>
+                  <td class="py-4 px-6 text-[13px] text-ramp-inkSecondary">Retiro en local + reparto moto</td>
+                  <td class="py-4 px-6 text-right">
+                    <a href="/cotizar" class="inline-block bg-brand-yellow hover:bg-brand-yellowHover text-ramp-ink font-semibold text-[12px] px-3 py-1.5 rounded-btn border border-black/10">Contratar</a>
+                  </td>
+                </tr>
+
+                <tr class="hover:bg-ramp-canvas transition-colors">
+                  <td class="py-4 px-6 font-semibold">
+                    E-Commerce Same Day
+                    <span class="block text-[12px] font-normal text-ramp-ash">Stock en Friuli 1972</span>
+                  </td>
+                  <td class="py-4 px-6 text-emerald-700 font-mono text-[13px]">Antes de 19:00 hs</td>
+                  <td class="py-4 px-6 font-mono text-[13px]">13:00 hs</td>
+                  <td class="py-4 px-6 text-[13px] text-ramp-inkSecondary">Picking + empaque incluido</td>
+                  <td class="py-4 px-6 text-right">
+                    <a href="/cotizar" class="inline-block bg-ramp-bone hover:bg-ramp-hairline text-ramp-ink font-semibold text-[12px] px-3 py-1.5 rounded-btn border border-ramp-hairline">Ver depósito</a>
+                  </td>
+                </tr>
+
+                <tr class="hover:bg-ramp-canvas transition-colors">
+                  <td class="py-4 px-6 font-semibold">
+                    Paquetería LowCost
+                    <span class="block text-[12px] font-normal text-ramp-ash">Reparto diario económico</span>
+                  </td>
+                  <td class="py-4 px-6 font-mono text-[13px]">Mismo día</td>
+                  <td class="py-4 px-6 font-mono text-[13px]">13:00 hs</td>
+                  <td class="py-4 px-6 text-[13px] text-ramp-inkSecondary">Sin franja fija, tarifa plana</td>
+                  <td class="py-4 px-6 text-right">
+                    <a href="/cotizar" class="inline-block bg-ramp-bone hover:bg-ramp-hairline text-ramp-ink font-semibold text-[12px] px-3 py-1.5 rounded-btn border border-ramp-hairline">Consultar</a>
+                  </td>
+                </tr>
+
+                <tr class="hover:bg-ramp-canvas transition-colors">
+                  <td class="py-4 px-6 font-semibold">
+                    Envíos Express Prioritarios
+                    <span class="block text-[12px] font-normal text-ramp-ash">Punto a punto urgente</span>
+                  </td>
+                  <td class="py-4 px-6 text-brand-blue font-mono text-[13px]">Franja de 3 hs</td>
+                  <td class="py-4 px-6 font-mono text-[13px]">Con 2 hs previas</td>
+                  <td class="py-4 px-6 text-[13px] text-ramp-inkSecondary">Cadete asignado exclusivo</td>
+                  <td class="py-4 px-6 text-right">
+                    <a href="/cotizar" class="inline-block bg-ramp-bone hover:bg-ramp-hairline text-ramp-ink font-semibold text-[12px] px-3 py-1.5 rounded-btn border border-ramp-hairline">Pedir moto</a>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- EMPRENDEDORES & CUENTA CORRIENTE -->
+    <!-- ========================================== -->
+    <section class="py-24 max-w-[1240px] mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <span class="font-mono text-[11px] uppercase tracking-wider text-brand-blue font-semibold">Modalidad para Empresas & Tiendas</span>
+          <h2 class="text-[34px] sm:text-[44px] font-semibold text-ramp-ink tracking-tight leading-tight">
+            Cuenta Corriente Comercial: Agilidad financiera para tus ventas locales.
+          </h2>
+          <p class="text-[16px] text-ramp-inkSecondary leading-relaxed">
+            Eliminá el pago por cada viaje individual. Agrupá tus envíos en liquidaciones semanales o mensuales con soporte directo y remito firmado.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="flex items-start gap-3 p-3 bg-ramp-paper rounded-[8px] border border-ramp-hairline">
+              <span class="text-brand-blue font-bold font-mono">01.</span>
+              <p class="text-[14px] text-ramp-ink"><strong>Sin exigencia de mínimos:</strong> Empezá con la cantidad de paquetes que despaches habitualmente.</p>
+            </div>
+            <div class="flex items-start gap-3 p-3 bg-ramp-paper rounded-[8px] border border-ramp-hairline">
+              <span class="text-brand-blue font-bold font-mono">02.</span>
+              <p class="text-[14px] text-ramp-ink"><strong>Cobranza contrareembolso:</strong> Recaudamos el dinero en efectivo o transferencia y te lo rendimos.</p>
+            </div>
+            <div class="flex items-start gap-3 p-3 bg-ramp-paper rounded-[8px] border border-ramp-hairline">
+              <span class="text-brand-blue font-bold font-mono">03.</span>
+              <p class="text-[14px] text-ramp-ink"><strong>Facturación formal:</strong> Emisión de comprobantes fiscales para deducir gastos comerciales.</p>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <a href="https://wa.me/542236602699" target="_blank" class="inline-flex items-center gap-2 bg-ramp-ink hover:bg-black text-white text-[13px] font-semibold px-6 py-3 rounded-btn transition-colors">
+              <span>Habilitar cuenta corriente</span>
+              <span class="text-brand-yellow font-mono">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 bg-ramp-bone rounded-card p-8 border border-ramp-hairline space-y-6">
+          <span class="font-mono text-[11px] uppercase tracking-wider text-ramp-ash">COMPROBANTES & REPUTACIÓN</span>
+          <div class="space-y-4">
+            <div class="border-b border-ramp-hairline pb-4">
+              <p class="text-[15px] font-semibold text-ramp-ink">Trazabilidad en WhatsApp</p>
+              <p class="text-[13px] text-ramp-inkSecondary mt-1">Notificación inmediata de entrega y firma del destinatario en Mar del Plata.</p>
+            </div>
+            <div class="border-b border-ramp-hairline pb-4">
+              <p class="text-[15px] font-semibold text-ramp-ink">Almacén Friuli 1972</p>
+              <p class="text-[13px] text-ramp-inkSecondary mt-1">Capacidad de custodia de mercadería y empaque con insumos propios.</p>
+            </div>
+            <div>
+              <p class="text-[15px] font-semibold text-ramp-ink">Flota Homologada</p>
+              <p class="text-[13px] text-ramp-inkSecondary mt-1">Riders propios capacitados para el trato con el cliente final de tu marca.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Bar -->
+      <div class="mt-20 pt-8 border-t border-ramp-hairline flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <span class="font-mono text-[11px] uppercase tracking-wider text-ramp-ash">Confían en nuestra operativa:</span>
+        <div class="flex flex-wrap gap-8 text-[13.5px] font-medium text-ramp-inkSecondary">
+          <span>Toy Piola Juguetería</span>
+          <span>Ama & Pola</span>
+          <span>Dropix 3D</span>
+          <span>El Cóndor</span>
+          <span>Starcel</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SOCIAL PROOF - Google Reviews Editorial -->
+    <!-- ========================================== -->
+    <section id="testimonios" class="py-24 bg-ramp-paper border-t border-ramp-hairline">
+      <div class="max-w-[1240px] mx-auto px-6 lg:px-8 space-y-12">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider bg-brand-yellow px-2.5 py-0.5 rounded-[4px] text-ramp-ink font-semibold mb-2">
+              AUDITORÍA GOOGLE 5.0 ESTRELLAS
+            </div>
+            <h2 class="text-[34px] sm:text-[42px] font-semibold text-ramp-ink tracking-tight">
+              Opiniones verificadas de clientes comerciales
+            </h2>
+          </div>
+          <a href="https://maps.google.com" target="_blank" class="font-mono text-[12px] text-brand-blue hover:underline">
+            Ver todas las reseñas en Google Maps ↗
+          </a>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          
+          <div class="bg-ramp-canvas p-6 rounded-card border border-ramp-hairline flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="flex justify-between items-center text-[12px]">
+                <span class="text-brand-blue font-bold">★★★★★</span>
+                <span class="font-mono text-ramp-ash text-[10px]">Hace 13 semanas</span>
+              </div>
+              <h4 class="text-[15px] font-semibold text-ramp-ink">"Resolvieron mi problema con la mejor predisposición"</h4>
+              <p class="text-[13px] text-ramp-inkSecondary leading-relaxed">
+                Excelente el servicio, rápidos, muy atentos, resolvieron mi problema con la mejor predisposición, los recomiendo ampliamente.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-ramp-hairline font-mono text-[12px] text-ramp-ink">
+              Karen Herrera
+            </div>
+          </div>
+
+          <div class="bg-ramp-canvas p-6 rounded-card border-2 border-brand-yellow flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="flex justify-between items-center text-[12px]">
+                <span class="text-brand-blue font-bold">★★★★★</span>
+                <span class="font-mono text-ramp-ash text-[10px]">Hace 48 semanas</span>
+              </div>
+              <h4 class="text-[15px] font-semibold text-ramp-ink">"Impecable para llevar pedidos a nuestros clientes"</h4>
+              <p class="text-[13px] text-ramp-inkSecondary leading-relaxed">
+                Lo usé varias veces para llevar pedidos a nuestros clientes. Impecable el servicio. Además hacen depósitos en cajeros sin problemas.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-ramp-hairline font-mono text-[12px] text-ramp-ink">
+              Agustin Torres
+            </div>
+          </div>
+
+          <div class="bg-ramp-canvas p-6 rounded-card border border-ramp-hairline flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="flex justify-between items-center text-[12px]">
+                <span class="text-brand-blue font-bold">★★★★★</span>
+                <span class="font-mono text-ramp-ash text-[10px]">Hace 37 semanas</span>
+              </div>
+              <h4 class="text-[15px] font-semibold text-ramp-ink">"El mejor servicio premium de la zona"</h4>
+              <p class="text-[13px] text-ramp-inkSecondary leading-relaxed">
+                El mejor servicio premium de la zona en Mar del Plata. 100% recomendable por puntualidad y trato formal.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-ramp-hairline font-mono text-[12px] text-ramp-ink">
+              Alexis Bogarin
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- CTA / CONTACTO -->
+    <!-- ========================================== -->
+    <section id="contacto" class="py-24 max-w-[1240px] mx-auto px-6 lg:px-8">
+      <div class="bg-ramp-paper border border-ramp-hairline rounded-card p-10 lg:p-14 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+        <div class="max-w-xl space-y-3">
+          <span class="font-mono text-[11px] uppercase tracking-wider text-brand-blue font-semibold">Atención Inmediata</span>
+          <h2 class="text-[32px] sm:text-[40px] font-semibold text-ramp-ink tracking-tight">
+            ¿Listo para coordinar tus envíos hoy?
+          </h2>
+          <p class="text-[15px] text-ramp-inkSecondary leading-relaxed">
+            Escribinos directamente con el origen y destino para enviarte la cotización exacta en Mar del Plata.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="https://wa.me/542236602699" target="_blank" class="bg-brand-yellow hover:bg-brand-yellowHover text-ramp-ink text-[13.5px] font-semibold px-6 py-3 rounded-btn border border-black/10 transition-colors">
+            Cotizar por WhatsApp
+          </a>
+          <a href="tel:+542236602699" class="bg-ramp-canvas hover:bg-ramp-bone text-ramp-ink text-[13.5px] font-medium px-5 py-3 rounded-btn border border-ramp-hairline transition-colors">
+            Llamar al 223 660-2699
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- FOOTER - Ramp Minimal Editorial -->
+  <!-- ========================================== -->
+  <footer class="bg-ramp-paper border-t border-ramp-hairline py-12">
+    <div class="max-w-[1240px] mx-auto px-6 lg:px-8 space-y-8">
+      
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-brand-blue"></span>
+          <span class="font-semibold text-[15px] tracking-tight text-ramp-ink">ENVÍOS DOSRUEDAS</span>
+          <span class="font-mono text-[11px] text-ramp-ash">· MDQ LOGÍSTICA</span>
+        </div>
+        <p class="font-mono text-[12px] text-ramp-inkSecondary">
+          Base: Friuli 1972, Mar del Plata, Buenos Aires
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-6 border-t border-ramp-hairline font-mono text-[11px] text-ramp-ash">
+        <p>© 2026 Envíos DosRuedas. Todos los derechos reservados.</p>
+        <div class="flex items-center gap-6">
+          <a href="/servicios" class="hover:text-ramp-ink transition-colors">Servicios</a>
+          <a href="/cotizar" class="hover:text-ramp-ink transition-colors">Cotizador</a>
+          <a href="https://wa.me/542236602699" class="hover:text-ramp-ink transition-colors">Soporte WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envíos DosRuedas | Mensajería y Logística Urbana en Mar del Plata</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tipografías: Inter para lectura/UI y Oswald para display/titulares -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Oswald', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              yellow: '#FFDD00',
+              'yellow-hover': '#F5D000',
+              blue: '#0047FF',
+              dark: '#060B18',
+              surface: '#0B1528',
+            }
+          },
+          animation: {
+            'float-slow': 'float 5s ease-in-out infinite',
+            'pulse-subtle': 'pulseSubtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' },
+            },
+            pulseSubtle: {
+              '0%, 100%': { opacity: '1' },
+              '50%': { opacity: '0.4' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .bg-grid-pattern {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    }
+    .bg-grid-light {
+      background-size: 28px 28px;
+      background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+  </style>
+</head>
+
+<body class="bg-[#060B18] text-slate-100 font-sans antialiased selection:bg-brand-yellow selection:text-black min-h-screen">
+
+  <!-- ========================================================================= -->
+  <!-- 1. OPTIMIZED-HEADER                                                       -->
+  <!-- ========================================================================= -->
+  <header class="sticky top-0 z-50 w-full border-b border-white/10 bg-[#060B18]/90 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo Oficial -->
+      <a href="#" class="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow rounded-lg p-1">
+        <div class="w-11 h-11 rounded-full bg-slate-900 border border-white/20 p-0.5 overflow-hidden flex items-center justify-center shadow-inner group-hover:border-white/40 transition-colors">
+          <svg class="w-6 h-6 text-brand-yellow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="5.5" cy="17.5" r="3.5"/>
+            <circle cx="18.5" cy="17.5" r="3.5"/>
+            <path d="M15 6h-5l-4 8h12l-3-8z"/>
+            <circle cx="12" cy="6" r="1.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display text-2xl tracking-tight leading-none text-white uppercase group-hover:text-slate-200 transition-colors">
+            ENVÍOS <span class="text-brand-yellow">DOSRUEDAS</span>[cite: 1]
+          </span>
+          <span class="text-[10px] tracking-widest text-slate-400 uppercase font-semibold mt-0.5">Mar del Plata</span>
+        </div>
+      </a>
+
+      <!-- Navegación -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#inicio" class="text-white hover:text-brand-yellow transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow rounded px-1">INICIO[cite: 1]</a>
+        <a href="#servicios" class="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow rounded px-1">SERVICIOS[cite: 1]</a>
+        <a href="#segmentos" class="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow rounded px-1">PLANES[cite: 2]</a>
+        <a href="#testimonios" class="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow rounded px-1">OPINIONES</a>
+        <a href="#contacto" class="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow rounded px-1">CONTACTO[cite: 1]</a>
+      </nav>
+
+      <!-- Acción Rápida: Teléfono Sobrio + Botón de Conversión -->
+      <div class="flex items-center gap-5">
+        <a href="tel:+542236602699" class="hidden lg:flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors font-medium tabular-nums">
+          <svg class="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <span>223 660-2699[cite: 1]</span>
+        </a>
+
+        <a href="#cotizador" class="inline-flex items-center justify-center gap-2 bg-brand-yellow text-slate-950 font-semibold px-5 py-2.5 rounded-full text-sm shadow-md shadow-brand-yellow/10 hover:bg-brand-yellow-hover hover:scale-[1.02] active:scale-[0.98] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow">
+          <span>COTIZÁ TU ENVÍO[cite: 1]</span>
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- 2. HERO-ANIMADO                                                           -->
+  <!-- ========================================================================= -->
+  <section id="inicio" class="relative overflow-hidden bg-grid-pattern pt-12 pb-20 lg:pt-20 lg:pb-28">
+    <div class="pointer-events-none absolute -top-40 right-1/4 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl"></div>
+    <div class="pointer-events-none absolute bottom-0 left-10 w-72 h-72 bg-brand-yellow/5 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <div class="lg:col-span-7 space-y-7 text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-xs font-medium text-slate-300">
+            <span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse-subtle"></span>
+            <span class="tracking-wide">FLOTA PROPIA · TODO MAR DEL PLATA[cite: 9]</span>
+          </div>
+
+          <h1 class="font-display uppercase text-4xl sm:text-6xl lg:text-[4rem] font-bold tracking-tight text-white leading-[1.05] text-balance">
+            EL MOTOR DE TU <span class="text-brand-yellow">ÚLTIMA MILLA.</span>[cite: 9]<br>
+            SOMOS LA SOLUCIÓN A TUS ENVÍOS[cite: 9]
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg max-w-xl leading-relaxed text-balance">
+            Mensajería y logística e-commerce en Mar del Plata: envíos en el día con motos propias. Llegamos a toda la ciudad y los repartidores son nuestros, sin tercerizar.[cite: 9]
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#cotizador" class="inline-flex items-center justify-center gap-2 bg-brand-yellow text-slate-950 font-semibold text-base px-7 py-3.5 rounded-full shadow-lg shadow-brand-yellow/15 hover:bg-brand-yellow-hover hover:scale-[1.02] active:scale-[0.98] transition-all">
+              <span>COTIZÁ TU ENVÍO[cite: 9]</span>
+              <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
+              </svg>
+            </a>
+
+            <a href="#servicios" class="inline-flex items-center justify-center gap-2 border border-white/20 bg-white/5 hover:bg-white/10 text-white font-medium text-base px-6 py-3.5 rounded-full transition-all">
+              <span>VER SERVICIOS[cite: 9]</span>
+              <svg class="w-4 h-4 text-slate-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="pt-4 flex flex-wrap items-center gap-6 text-xs text-slate-400 border-t border-white/10">
+            <div class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              <span>Retiro en tu local[cite: 9]</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              <span>Mercado Envíos Flex[cite: 2, 5, 6]</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              <span>Base Friuli 1972[cite: 9]</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="lg:col-span-5 relative flex justify-center items-center">
+          <div class="relative w-full max-w-md animate-float-slow">
+            <div class="relative rounded-3xl border border-white/15 bg-gradient-to-b from-white/10 to-white/[0.02] p-6 backdrop-blur-xl shadow-2xl">
+              
+              <div class="relative w-full aspect-[4/3] rounded-2xl bg-[#0B1528] border border-white/10 overflow-hidden flex items-center justify-center">
+                <svg class="absolute inset-0 w-full h-full opacity-20" viewBox="0 0 100 100">
+                  <path d="M0,20 L100,20 M0,50 L100,50 M0,80 L100,80" stroke="white" stroke-width="0.5"/>
+                  <path d="M25,0 L25,100 M60,0 L60,100 M85,0 L85,100" stroke="white" stroke-width="0.5"/>
+                  <path d="M10,90 Q50,40 90,20" fill="none" stroke="#FFDD00" stroke-width="1.5" stroke-dasharray="3,3"/>
+                </svg>
+
+                <div class="relative z-10 flex flex-col items-center justify-center p-6 rounded-2xl bg-[#0E1A33]/90 border border-white/20 shadow-xl">
+                  <div class="w-14 h-14 rounded-full bg-brand-yellow/10 border border-brand-yellow/30 flex items-center justify-center text-brand-yellow mb-2">
+                    <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                      <polyline points="2 17 12 22 22 17"/>
+                      <polyline points="2 12 12 17 22 12"/>
+                    </svg>
+                  </div>
+                  <span class="font-display text-xl uppercase tracking-tight text-white">ENVÍOS DOSRUEDAS[cite: 9]</span>
+                  <span class="text-[11px] font-mono text-slate-400 mt-1">MDQ LOGISTICS HUB[cite: 9]</span>
+                </div>
+              </div>
+
+              <div class="absolute -top-4 -right-4 bg-slate-900/90 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-md shadow-xl flex items-center gap-2.5">
+                <div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+                <div class="text-left">
+                  <div class="text-[10px] text-slate-400 font-semibold uppercase leading-none">Entrega en el día[cite: 9]</div>
+                  <div class="text-xs font-bold text-white mt-0.5">En todo MDQ[cite: 9]</div>
+                </div>
+              </div>
+
+              <div class="absolute -bottom-4 -left-4 bg-slate-900/90 border border-white/20 px-4 py-2.5 rounded-xl backdrop-blur-md shadow-xl flex items-center gap-3">
+                <div class="p-1.5 rounded-lg bg-white/5 text-slate-300">
+                  <svg class="w-4 h-4 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  </svg>
+                </div>
+                <div class="text-left">
+                  <div class="text-[10px] text-slate-400 font-semibold uppercase leading-none">Base Operativa[cite: 2]</div>
+                  <div class="text-xs font-semibold text-white mt-0.5">Friuli 1972 · Mar del Plata[cite: 2, 9]</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Barra de Beneficios Operativos -->
+  <aside class="border-y border-white/10 bg-[#050914] py-3.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center justify-between gap-4 text-xs tracking-wider uppercase font-semibold text-slate-400">
+        <span class="flex items-center gap-2"><span class="text-brand-yellow">◆</span> ENVÍOS EN EL DÍA[cite: 9]</span>
+        <span class="flex items-center gap-2"><span class="text-brand-yellow">◆</span> FLOTA PROPIA[cite: 9]</span>
+        <span class="flex items-center gap-2"><span class="text-brand-yellow">◆</span> CERO TERCERIZACIÓN[cite: 9]</span>
+        <span class="flex items-center gap-2"><span class="text-brand-yellow">◆</span> TODO MAR DEL PLATA[cite: 9]</span>
+        <span class="flex items-center gap-2"><span class="text-brand-yellow">◆</span> RETIRO EN TU LOCAL[cite: 9]</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- 3. SERVICES-OVERVIEW (TARJETAS DE SERVICIO EN FONDO OSCURO)              -->
+  <!-- ========================================================================= -->
+  <section id="servicios" class="py-20 bg-[#080E1E] border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium text-slate-300 uppercase tracking-widest">
+          Nuestros Servicios[cite: 7]
+        </div>
+        <h2 class="font-display uppercase text-3xl sm:text-5xl font-bold tracking-tight text-white">
+          SOLUCIONES LOGÍSTICAS <span class="text-brand-yellow">A TU MEDIDA</span>[cite: 7]
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Tarifas claras, franjas horarias estrictas y cobertura completa en Mar del Plata.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Servicio 1: Envíos Flex -->
+        <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-7 backdrop-blur-sm flex flex-col justify-between hover:border-white/20 transition-all group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 uppercase tracking-wider">
+                Mercado Libre[cite: 7]
+              </span>
+              <span class="text-xs text-slate-400">Mar del Plata Urbana[cite: 7]</span>
+            </div>
+            <h3 class="font-display text-2xl uppercase tracking-tight text-white group-hover:text-brand-yellow transition-colors">
+              ENVÍOS FLEX[cite: 7]
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Entregas en el día integradas para tus ventas de MercadoLibre. Cuidamos tu reputación en verde.[cite: 7, 8]
+            </p>
+            <div class="grid grid-cols-3 gap-2 pt-3 text-center border-t border-white/5">
+              <div class="p-2 rounded-xl bg-white/5">
+                <span class="block text-[10px] text-slate-400 uppercase">Entrega[cite: 7]</span>
+                <span class="text-xs font-bold text-white">En el día[cite: 7]</span>
+              </div>
+              <div class="p-2 rounded-xl bg-white/5">
+                <span class="block text-[10px] text-slate-400 uppercase">Tarifa[cite: 7]</span>
+                <span class="text-xs font-bold text-white">Zonificada[cite: 7]</span>
+              </div>
+              <div class="p-2 rounded-xl bg-white/5">
+                <span class="block text-[10px] text-slate-400 uppercase">Peso[cite: 7]</span>
+                <span class="text-xs font-bold text-white">Apto Moto[cite: 7]</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6">
+            <a href="#contacto" class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white text-sm font-semibold transition-all">
+              <span>Configurar Flex[cite: 6]</span>
+              <svg class="w-4 h-4 text-slate-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicio 2: E-Commerce Same Day (Destacado) -->
+        <div class="relative rounded-3xl border-2 border-brand-yellow/60 bg-[#0B1528] p-7 shadow-xl shadow-brand-yellow/5 flex flex-col justify-between">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-brand-yellow text-slate-950 font-bold text-[10px] uppercase tracking-wider shadow">
+            Depósito Friuli 1972[cite: 7]
+          </div>
+          <div class="space-y-4 pt-1">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 uppercase tracking-wider">
+                E-Commerce[cite: 7]
+              </span>
+              <span class="text-xs text-brand-yellow font-medium">Mayor Conversión</span>
+            </div>
+            <h3 class="font-display text-2xl uppercase tracking-tight text-white">
+              E-COMMERCE SAME DAY[cite: 7]
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Guardamos tu stock y lo despachamos el mismo día, o E-Commerce 24HS si lo necesitás al día siguiente.[cite: 7]
+            </p>
+            <div class="grid grid-cols-3 gap-2 pt-3 text-center border-t border-white/10">
+              <div class="p-2 rounded-xl bg-white/5">
+                <span class="block text-[10px] text-slate-400 uppercase">Entrega[cite: 7]</span>
+                <span class="text-xs font-bold text-white">Same Day[cite: 7]</span>
+              </div>
+              <div class="p-2 rounded-xl bg-white/5">
+                <span class="block text-[10px] text-slate-400 uppercase">Tarifa[cite: 7]</span>
+                <span class="text-xs font-bold text-brand-yellow">$8.000 Fijo[cite: 7]</span>
+              </div>
+              <div class="p-2 rounded-xl bg-white/5">
+                <span class="block text-[10px] text-slate-400 uppercase">Peso[cite: 7]</span>
+                <span class="text-xs font-bold text-white">Sin Límite[cite: 7]</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6">
+            <a href="#cotizador" class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-brand-yellow text-slate-950 text-sm font-semibold hover:bg-brand-yellow-hover shadow-md transition-all">
+              <span>Mirá la Ficha Técnica[cite: 7]</span>
+              <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicio 3: Envíos Express -->
+        <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-7 backdrop-blur-sm flex flex-col justify-between hover:border-white/20 transition-all group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20 uppercase tracking-wider">
+                Urgente[cite: 7]
+              </span>
+              <span class="text-xs text-slate-400">Mar del Plata[cite: 7]</span>
+            </div>
+            <h3 class="font-display text-2xl uppercase tracking-tight text-white group-hover:text-brand-yellow transition-colors">
+              ENVÍOS EXPRESS[cite: 2, 7]
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Cadetería punto a punto en moto con franja horaria de 3 hs o entrega inmediata garantizada.[cite: 7, 8]
+            </p>
+            <div class="grid grid-cols-3 gap-2 pt-3 text-center border-t border-white/5">
+              <div class="p-2 rounded-xl bg-white/5">
+                <span class="block text-[10px] text-slate-400 uppercase">Franja</span>
+                <span class="text-xs font-bold text-white">De 3 HS[cite: 7]</span>
+              </div>
+              <div class="p-2 rounded-xl bg-white/5">
+                <span class="block text-[10px] text-slate-400 uppercase">Tarifa[cite: 7]</span>
+                <span class="text-xs font-bold text-white">$3.700 Base[cite: 7]</span>
+              </div>
+              <div class="p-2 rounded-xl bg-white/5">
+                <span class="block text-[10px] text-slate-400 uppercase">Recargo</span>
+                <span class="text-xs font-bold text-white">Sin Recargo</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6">
+            <a href="#cotizador" class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white text-sm font-semibold transition-all">
+              <span>Cotizá tu Envío Express[cite: 8]</span>
+              <svg class="w-4 h-4 text-slate-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. SEGMENTOS-HOME (CANVAS CLARO: DESCANSO VISUAL)                         -->
+  <!-- ========================================================================= -->
+  <section id="segmentos" class="py-24 bg-slate-50 text-slate-900 bg-grid-light border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-200 bg-blue-50 text-xs font-semibold text-blue-700 uppercase tracking-widest">
+          Elegí tu solución a medida[cite: 8]
+        </div>
+        <h2 class="font-display uppercase text-3xl sm:text-5xl font-bold tracking-tight text-blue-700">
+          ¿CÓMO PODEMOS IMPULSAR TU LOGÍSTICA HOY?[cite: 8]
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Seleccioná tu tipo de negocio o necesidad y descubrí el servicio ideal diseñado para las calles de Mar del Plata.[cite: 8]
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Tarjeta 1: Mercado Libre -->
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="w-10 h-10 rounded-2xl bg-brand-yellow/20 flex items-center justify-center text-slate-900">
+                <svg class="w-5 h-5 text-amber-600" fill="currentColor" viewBox="0 0 20 20"><path d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"/></svg>
+              </div>
+              <span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded-md uppercase">MERCADO LIBRE[cite: 8]</span>
+            </div>
+            <h3 class="font-display text-xl uppercase tracking-tight text-slate-900 leading-snug">
+              ¿Vendés en Mercado Libre?[cite: 8]
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Entregá en el mismo día con Mercado Envíos Flex en Mar del Plata urbana. Horario de corte 15:00 hs y múltiples retiros para cuidar tu reputación.[cite: 8]
+            </p>
+          </div>
+          <div class="pt-6 border-t border-slate-100">
+            <a href="#cotizador" class="w-full inline-flex items-center justify-between text-xs font-bold text-slate-900 hover:text-blue-600 py-2">
+              <span>VER SOLUCIÓN FLEX[cite: 8]</span>
+              <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Tienda Online -->
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="w-10 h-10 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+              </div>
+              <span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded-md uppercase">E-COMMERCE 24HS[cite: 8]</span>
+            </div>
+            <h3 class="font-display text-xl uppercase tracking-tight text-slate-900 leading-snug">
+              ¿Tenés tienda online con stock?[cite: 8]
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              E-Commerce 24hs / Same-Day: despacho garantizado. Stock en Friuli 1972, picking QR y empaque incluido para escalar tu negocio.[cite: 8]
+            </p>
+          </div>
+          <div class="pt-6 border-t border-slate-100">
+            <a href="#cotizador" class="w-full inline-flex items-center justify-between text-xs font-bold text-slate-900 hover:text-blue-600 py-2">
+              <span>VER PLANES E-COMMERCE[cite: 8]</span>
+              <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Envíos Diarios -->
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="w-10 h-10 rounded-2xl bg-indigo-50 flex items-center justify-center text-indigo-600">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+              </div>
+              <span class="text-[10px] font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded-md uppercase">COMERCIOS & PYMES[cite: 8]</span>
+            </div>
+            <h3 class="font-display text-xl uppercase tracking-tight text-slate-900 leading-snug">
+              ¿Tenés envíos diarios?[cite: 8]
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Reparto económico programado: pedís antes de las 13:00 hs y se entrega antes de las 19:00 hs. Tarifa fija por distancia y remito digital.[cite: 8]
+            </p>
+          </div>
+          <div class="pt-6 border-t border-slate-100">
+            <a href="#cotizador" class="w-full inline-flex items-center justify-between text-xs font-bold text-slate-900 hover:text-blue-600 py-2">
+              <span>VER PAQUETERÍA LOWCOST[cite: 8]</span>
+              <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4: Envíos Ya -->
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="w-10 h-10 rounded-2xl bg-amber-50 flex items-center justify-center text-amber-600">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <span class="text-[10px] font-bold text-amber-600 bg-amber-50 px-2 py-1 rounded-md uppercase">PARTICULARES[cite: 8]</span>
+            </div>
+            <h3 class="font-display text-xl uppercase tracking-tight text-slate-900 leading-snug">
+              ¿Necesitás un envío ya?[cite: 8]
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Cadetería prioritaria punto a punto en moto. Entregas en el día con elección de franja horaria de 3 horas, pedido con 2 hs de anticipación.[cite: 8]
+            </p>
+          </div>
+          <div class="pt-6 border-t border-slate-100">
+            <a href="#cotizador" class="w-full inline-flex items-center justify-between text-xs font-bold text-slate-900 hover:text-blue-600 py-2">
+              <span>COTIZÁ TU ENVÍO EXPRESS[cite: 8]</span>
+              <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. EMPRENDEDORES-HOME (CUENTA CORRIENTE Y ESCALA)                         -->
+  <!-- ========================================================================= -->
+  <section class="py-20 bg-[#060B18] border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/10 bg-white/5 text-xs font-semibold text-slate-300 uppercase tracking-widest">
+          Socio Estratégico Local[cite: 6]
+        </div>
+        <h2 class="font-display uppercase text-3xl sm:text-5xl font-bold tracking-tight text-white">
+          POTENCIAMOS TU <span class="text-brand-yellow">MARCA EN MAR DEL PLATA</span>[cite: 6]
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base">
+          Si vendés online, necesitás un socio logístico que responda al toque. Creamos planes a tu medida con tarifas dinámicas transparentes y recolección programada a domicilio.[cite: 6]
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+        
+        <!-- Tarjeta Cuenta Corriente -->
+        <div class="rounded-3xl border border-white/15 bg-white/[0.03] p-8 flex flex-col justify-between backdrop-blur-sm">
+          <div class="space-y-6">
+            <div class="flex items-center justify-between">
+              <span class="px-3.5 py-1 rounded-full bg-white/10 text-white text-xs font-bold uppercase tracking-wider">
+                Emprendedores[cite: 6]
+              </span>
+              <span class="text-xs text-slate-400 font-mono">PLAN FLEXIBLE[cite: 2]</span>
+            </div>
+
+            <div>
+              <h3 class="font-display text-3xl uppercase tracking-tight text-white mb-2">
+                CUENTA CORRIENTE FLEXIBLE[cite: 2, 6]
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Tu equipo de entregas de confianza, aunque la cantidad de pedidos cambie cada día. Pagás los envíos juntos por semana, quincena o mes.[cite: 6]
+              </p>
+            </div>
+
+            <ul class="space-y-3 text-sm text-slate-300">
+              <li class="flex items-center gap-2.5">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>Sin volumen mínimo de envíos: entrás con la cantidad que tengas[cite: 6]</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>Accedés a tarifas LowCost con franjas de 3 hs, como Express[cite: 6]</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>Trabajás de forma exclusiva con nosotros para tus envíos[cite: 6]</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>Entregas contrarreembolso integradas sin cargo extra[cite: 6]</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-8">
+            <a href="#cotizador" class="inline-flex items-center justify-center gap-2 bg-brand-yellow text-slate-950 font-semibold px-6 py-3 rounded-full text-sm hover:bg-brand-yellow-hover transition-all">
+              <span>CONOCÉ MÁS[cite: 6]</span>
+              <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjetas Corporativas y Marcas -->
+        <div class="space-y-6 flex flex-col justify-between">
+          <div class="rounded-3xl border border-white/10 bg-white/[0.02] p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-3.5 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-wider">
+                  Corporativo[cite: 6]
+                </span>
+                <span class="text-xs text-slate-400 font-mono">ALTO VOLUMEN</span>
+              </div>
+              <h3 class="font-display text-2xl uppercase tracking-tight text-white mb-2">
+                SOLUCIONES CORPORATIVAS[cite: 6]
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Soporte a gran escala con pagos agrupados semanales o mensuales, ruteos especiales para grandes volúmenes y entregas express coordinadas en Mar del Plata.[cite: 6]
+              </p>
+            </div>
+            <div class="pt-6">
+              <a href="#contacto" class="inline-flex items-center justify-center gap-2 border border-white/20 bg-white/5 hover:bg-white/10 text-white font-medium px-5 py-2.5 rounded-full text-xs transition-all">
+                <span>ABRIR CUENTA CORRIENTE[cite: 6]</span>
+                <svg class="w-4 h-4 text-slate-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Marcas que Confían -->
+          <div class="p-6 rounded-3xl border border-white/10 bg-white/[0.01]">
+            <span class="block text-center text-xs font-semibold uppercase tracking-widest text-slate-400 mb-4">
+              Marcas locales que confían en nosotros[cite: 6]
+            </span>
+            <div class="flex flex-wrap items-center justify-center gap-6 text-sm font-bold tracking-wider text-slate-300 uppercase">
+              <span>TOY PIOLA JUGUETERÍA[cite: 6]</span>
+              <span>·</span>
+              <span>AMA & POLA[cite: 6]</span>
+              <span>·</span>
+              <span>DROPIX 3D[cite: 6]</span>
+              <span>·</span>
+              <span>EL CÓNDOR[cite: 6]</span>
+              <span>·</span>
+              <span>STARCEL[cite: 6]</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6. SOCIAL-PROOF (RESEÑAS UNIFICADAS CON FONDO BLANCO)                    -->
+  <!-- ========================================================================= -->
+  <section id="testimonios" class="py-24 bg-slate-50 text-slate-900 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold uppercase tracking-widest mb-3">
+            5.0 / 5.0 EN GOOGLE · +120 VALORACIONES[cite: 5]
+          </div>
+          <h2 class="font-display uppercase text-3xl sm:text-5xl font-bold tracking-tight text-blue-700">
+            LA PALABRA DE QUIENES <span class="text-slate-900">VENDEN Y ENVÍAN EN MDQ</span>[cite: 5]
+          </h2>
+        </div>
+
+        <a href="https://maps.google.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-300 hover:border-slate-400 bg-white text-xs font-bold text-slate-800 transition-all shadow-sm">
+          <span>VER EN GOOGLE MAPS[cite: 5]</span>
+          <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex text-amber-400 gap-0.5">★★★★★</div>
+              <span class="text-[11px] font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full">Hace 13 semanas[cite: 5]</span>
+            </div>
+            <h3 class="font-display text-lg uppercase tracking-tight text-slate-900 leading-snug">
+              Resolvieron mi problema con la mejor predisposición[cite: 5]
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              "Excelente el servicio, rápidos, muy atentos, resolvieron mi problema con la mejor predisposición, los recomiendo ampliamente."[cite: 5]
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-6 mt-4 border-t border-slate-100">
+            <div class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-xs flex items-center justify-center">K[cite: 5]</div>
+            <span class="text-xs font-bold text-slate-900">Karen Herrera[cite: 5]</span>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex text-amber-400 gap-0.5">★★★★★</div>
+              <span class="text-[11px] font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full">Hace 48 semanas[cite: 5]</span>
+            </div>
+            <h3 class="font-display text-lg uppercase tracking-tight text-slate-900 leading-snug">
+              Impecable para llevar pedidos a nuestros clientes[cite: 5]
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              "Lo usé varias veces para llevar pedidos a nuestros clientes. Impecable el servicio. Además hacen depósitos en cajeros sin problemas. Unos genios."[cite: 5]
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-6 mt-4 border-t border-slate-100">
+            <div class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-xs flex items-center justify-center">A[cite: 5]</div>
+            <span class="text-xs font-bold text-slate-900">Agustin Torres[cite: 5]</span>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex text-amber-400 gap-0.5">★★★★★</div>
+              <span class="text-[11px] font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full">Hace 37 semanas[cite: 5]</span>
+            </div>
+            <h3 class="font-display text-lg uppercase tracking-tight text-slate-900 leading-snug">
+              El mejor servicio premium de la zona[cite: 5]
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              "El mejor servicio premium de la zona en Mar del Plata. 100% recomendable por puntualidad y trato."[cite: 5]
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-6 mt-4 border-t border-slate-100">
+            <div class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-xs flex items-center justify-center">A[cite: 5]</div>
+            <span class="text-xs font-bold text-slate-900">Alexis Bogarin[cite: 5]</span>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex text-amber-400 gap-0.5">★★★★★</div>
+              <span class="text-[11px] font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full">Hace 32 semanas[cite: 5]</span>
+            </div>
+            <h3 class="font-display text-lg uppercase tracking-tight text-slate-900 leading-snug">
+              Atención de primera, rápido, confiable y seguro[cite: 5]
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              "Excelente servicio, atención de primera, rápido, confiable y seguro. Recomendado 100% para envíos puntuales."[cite: 5]
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-6 mt-4 border-t border-slate-100">
+            <div class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-xs flex items-center justify-center">L[cite: 5]</div>
+            <span class="text-xs font-bold text-slate-900">Lorenzo Elizagoyen[cite: 5]</span>
+          </div>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex text-amber-400 gap-0.5">★★★★★</div>
+              <span class="text-[11px] font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full">Hace 48 semanas[cite: 5]</span>
+            </div>
+            <h3 class="font-display text-lg uppercase tracking-tight text-slate-900 leading-snug">
+              ¡La mejor mensajería de MDP![cite: 5]
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              "La mejor mensajería de Mar del Plata. Cumplen siempre con lo prometido y no te dejan tirado."[cite: 5]
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-6 mt-4 border-t border-slate-100">
+            <div class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-xs flex items-center justify-center">E[cite: 5]</div>
+            <span class="text-xs font-bold text-slate-900">Emiliano Garri[cite: 5]</span>
+          </div>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex text-amber-400 gap-0.5">★★★★★</div>
+              <span class="text-[11px] font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full">Hace 48 semanas[cite: 5]</span>
+            </div>
+            <h3 class="font-display text-lg uppercase tracking-tight text-slate-900 leading-snug">
+              10 de 10, responsables por sobre todas las cosas[cite: 5]
+            </h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              "10 de 10 muy buenos en lo que hacen, responsables por sobre todas las cosas, super recomendable para tu negocio."[cite: 5]
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-6 mt-4 border-t border-slate-100">
+            <div class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-xs flex items-center justify-center">N[cite: 5]</div>
+            <span class="text-xs font-bold text-slate-900">NahuAri[cite: 5]</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 7. CTA-SECTION (COTIZADOR INMEDIATO Y FORMULARIO WHATSAPP)                 -->
+  <!-- ========================================================================= -->
+  <section id="cotizador" class="py-24 bg-[#060B18] relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="relative rounded-3xl border border-white/15 bg-gradient-to-b from-white/10 to-white/[0.02] p-8 md:p-14 backdrop-blur-xl shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-yellow/30 bg-brand-yellow/10 text-brand-yellow text-xs font-bold uppercase tracking-wider">
+              Cotización Inmediata[cite: 4]
+            </div>
+
+            <h2 class="font-display uppercase text-3xl sm:text-5xl font-bold tracking-tight text-white leading-tight">
+              ¿LISTO PARA ESCALAR LA LOGÍSTICA DE <span class="text-brand-yellow">TU E-COMMERCE?</span>[cite: 4]
+            </h2>
+
+            <p class="text-slate-300 text-base leading-relaxed">
+              Olvidate de la gestión de paquetes en Mar del Plata. Completá tus datos y te respondemos por WhatsApp en minutos.[cite: 4]
+            </p>
+
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/20 text-xs font-bold text-blue-400">
+              <span>ATENCIÓN COMERCIAL:</span>
+              <span class="text-white">&lt; 5 MIN[cite: 4]</span>
+            </div>
+          </div>
+
+          <!-- Formulario Directo -->
+          <div class="lg:col-span-6">
+            <form action="https://wa.me/542236602699" method="GET" target="_blank" class="rounded-2xl border border-white/15 bg-[#0B1528] p-7 space-y-5 shadow-xl">
+              
+              <div>
+                <label for="name" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Tu Nombre[cite: 4]</label>
+                <div class="relative">
+                  <input type="text" id="name" placeholder="Ingresá tu nombre" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow transition-all">[cite: 4]
+                </div>
+              </div>
+
+              <div>
+                <label for="business" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Empresa / Negocio[cite: 4]</label>
+                <div class="relative">
+                  <input type="text" id="business" placeholder="Nombre de tu emprendimiento" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow transition-all">[cite: 4]
+                </div>
+              </div>
+
+              <div>
+                <label for="volume" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Volumen Estimado Mensual[cite: 4]</label>
+                <select id="volume" class="w-full bg-[#0E1A33] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow transition-all">
+                  <option value="">Seleccioná una opción[cite: 4]</option>
+                  <option value="1">Menos de 50 envíos al mes</option>
+                  <option value="2">50 a 200 envíos al mes</option>
+                  <option value="3">Más de 200 envíos al mes (Grandes cuentas)</option>
+                </select>
+              </div>
+
+              <button type="submit" class="w-full inline-flex items-center justify-center gap-2 bg-brand-yellow text-slate-950 font-bold py-3.5 px-6 rounded-xl hover:bg-brand-yellow-hover transition-all shadow-md shadow-brand-yellow/10 mt-2">
+                <span>HABLAR POR WHATSAPP[cite: 4]</span>
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>[cite: 4]
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 8. CARRUSEL-REDES (TARJETAS SOCIALES COHESIONADAS)                        -->
+  <!-- ========================================================================= -->
+  <section class="py-20 bg-[#080E1E] border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-semibold text-slate-300 uppercase tracking-widest mb-3">
+        Nuestra Comunidad Digital[cite: 3]
+      </div>
+      <h2 class="font-display uppercase text-3xl sm:text-5xl font-bold tracking-tight text-white mb-3">
+        SEGUÍ NUESTRO <span class="text-brand-yellow">MOVIMIENTO</span>[cite: 3]
+      </h2>
+      <p class="text-slate-400 text-sm max-w-xl mx-auto mb-14">
+        Sumate a nuestros canales digitales y enterate al toque de todas las novedades operativas en Mar del Plata.[cite: 3]
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Facebook -->
+        <div class="rounded-3xl border border-white/10 bg-white/[0.02] p-8 text-left flex flex-col justify-between hover:border-white/20 transition-all">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Facebook Oficial[cite: 3]</span>
+              <div class="w-8 h-8 rounded-full bg-blue-600/20 text-blue-400 flex items-center justify-center">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>[cite: 3]
+              </div>
+            </div>
+            <h3 class="font-display text-2xl uppercase tracking-tight text-white">FACEBOOK[cite: 3]</h3>
+            <span class="block text-xs font-mono text-slate-400">Envíos DosRuedas[cite: 3]</span>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Seguí nuestro día a día, novedades operativas y la comunidad comercial en Mar del Plata.[cite: 3]
+            </p>
+          </div>
+          <div class="pt-8">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white text-xs font-bold transition-all">
+              <span>SEGUIR COMUNIDAD[cite: 3]</span>
+              <svg class="w-3.5 h-3.5 text-slate-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>[cite: 3]
+            </a>
+          </div>
+        </div>
+
+        <!-- Instagram -->
+        <div class="rounded-3xl border border-white/10 bg-white/[0.02] p-8 text-left flex flex-col justify-between hover:border-white/20 transition-all">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Instagram MDQ[cite: 3]</span>
+              <div class="w-8 h-8 rounded-full bg-pink-600/20 text-pink-400 flex items-center justify-center">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>[cite: 3]
+              </div>
+            </div>
+            <h3 class="font-display text-2xl uppercase tracking-tight text-white">INSTAGRAM[cite: 3]</h3>
+            <span class="block text-xs font-mono text-slate-400">@enviosdosruedas[cite: 3]</span>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Mirá el detrás de escena de nuestros riders y la flota recorriendo las calles de MDQ.[cite: 3]
+            </p>
+          </div>
+          <div class="pt-8">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white text-xs font-bold transition-all">
+              <span>VER CONTENIDO[cite: 3]</span>
+              <svg class="w-3.5 h-3.5 text-slate-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>[cite: 3]
+            </a>
+          </div>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="rounded-3xl border border-white/10 bg-white/[0.02] p-8 text-left flex flex-col justify-between hover:border-white/20 transition-all">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">WhatsApp Directo[cite: 3]</span>
+              <div class="w-8 h-8 rounded-full bg-emerald-600/20 text-emerald-400 flex items-center justify-center">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>[cite: 3]
+              </div>
+            </div>
+            <h3 class="font-display text-2xl uppercase tracking-tight text-white">WHATSAPP[cite: 3]</h3>
+            <span class="block text-xs font-mono text-slate-400">+54 223 660-2699[cite: 2, 3]</span>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Escribinos directamente para consultas, contrataciones o soporte express al toque.[cite: 3]
+            </p>
+          </div>
+          <div class="pt-8">
+            <a href="https://wa.me/542236602699" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white text-xs font-bold transition-all">
+              <span>INICIAR CHAT[cite: 3]</span>
+              <svg class="w-3.5 h-3.5 text-slate-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>[cite: 3]
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 9. OPTIMIZED-FOOTER                                                       -->
+  <!-- ========================================================================= -->
+  <footer id="contacto" class="bg-[#040812] border-t border-white/10 pt-16 pb-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <!-- Bloque Superior de Contacto Rápido -->
+      <div class="rounded-3xl border border-white/10 bg-white/[0.02] p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <span class="text-[10px] font-mono text-brand-yellow uppercase tracking-widest">Operaciones Activas Mar del Plata 2026[cite: 2]</span>
+          <h4 class="font-display text-2xl uppercase tracking-tight text-white mt-1">
+            ¿TENÉS ENVÍOS PARA HOY? LOS ENTREGAMOS A TIEMPO.[cite: 2]
+          </h4>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="#cotizador" class="inline-flex items-center gap-2 bg-brand-yellow text-slate-950 font-bold px-5 py-2.5 rounded-full hover:bg-brand-yellow-hover transition-all">
+            <span>COTIZÁ TU ENVÍO[cite: 2]</span>
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
+          </a>
+          <a href="https://wa.me/542236602699" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-white/20 bg-white/5 hover:bg-white/10 text-white font-medium px-5 py-2.5 rounded-full transition-all">
+            <span>CHATEÁ CON NOSOTROS[cite: 2]</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Columnas del Footer -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+        
+        <!-- Columna 1: Marca y Trayectoria -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="font-display text-xl uppercase tracking-tight text-white">ENVÍOS DOSRUEDAS[cite: 2]</span>
+          </div>
+          <p class="text-[10px] text-slate-400 font-mono uppercase tracking-widest">
+            Tu solución confiable · Mar del Plata[cite: 2]
+          </p>
+          <p class="text-slate-400 leading-relaxed text-xs max-w-sm">
+            Con más de 7 años de trayectoria en Mar del Plata, transformamos el despacho de tus productos en un motor de crecimiento para emprendedores, PyMEs y comercios locales con flota propia y compromiso humano.[cite: 2]
+          </p>
+          <div class="pt-2">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl border border-white/10 bg-white/5 text-[11px] text-slate-300">
+              <svg class="w-3.5 h-3.5 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+              <span>Centro de Depósito y Logística Local · Friuli 1972[cite: 2]</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna 2: Enlaces de Servicio -->
+        <div class="md:col-span-3 space-y-3">
+          <h5 class="text-xs font-bold text-white uppercase tracking-wider">SERVICIOS Y COTIZADORES[cite: 2]</h5>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="#cotizador" class="hover:text-white transition-colors">Cotizá Express o LowCost[cite: 2]</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">Envíos Express[cite: 2]</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">Envíos LowCost[cite: 2]</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">Mercado Envíos Flex[cite: 2]</a></li>
+            <li><a href="#segmentos" class="hover:text-white transition-colors">Cuenta Corriente Flexible[cite: 2]</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">E-commerce 24HS[cite: 2]</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">E-commerce Same Day[cite: 2]</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Base de Operaciones MDQ -->
+        <div class="md:col-span-4 space-y-3">
+          <h5 class="text-xs font-bold text-white uppercase tracking-wider">BASE DE OPERACIONES MDQ[cite: 2]</h5>
+          <div class="space-y-2.5">
+            <div class="p-3 rounded-xl border border-white/5 bg-white/[0.02]">
+              <span class="block text-[10px] text-slate-400 uppercase">Centro de Distribución[cite: 2]</span>
+              <span class="text-white font-medium">Friuli 1972, Mar del Plata[cite: 2]</span>
+            </div>
+            <div class="p-3 rounded-xl border border-white/5 bg-white/[0.02]">
+              <span class="block text-[10px] text-slate-400 uppercase">Línea Directa y WhatsApp[cite: 2]</span>
+              <span class="text-white font-medium">+54 223 660-2699[cite: 2]</span>
+            </div>
+            <div class="p-3 rounded-xl border border-white/5 bg-white/[0.02]">
+              <span class="block text-[10px] text-slate-400 uppercase">Horarios de Despacho[cite: 2]</span>
+              <span class="text-slate-300 block">Lunes a Viernes: 09:00 a 18:00 hs[cite: 2]</span>
+              <span class="text-slate-300 block">Sábados: 10:00 a 15:00 hs[cite: 2]</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra Inferior de Copyright y Legales -->
+      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+        <div>
+          © 2026 Envíos DosRuedas · Mar del Plata, Argentina.[cite: 2]
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-white transition-colors">Términos y Condiciones[cite: 2]</a>
+          <a href="#" class="hover:text-white transition-colors">Política de Privacidad[cite: 2]</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

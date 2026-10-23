@@ -1,0 +1,119 @@
+# ==========================================
+# 0pruebas - Git Ignore Configuration
+# Diseñado de forma modular para pruebas y experimentación continua
+# ==========================================
+
+# ------------------------------------------
+# 1. Dependencias y Gestores de Paquetes
+# ------------------------------------------
+node_modules/
+jspm_packages/
+.pnp/
+.pnp.js
+
+# Logs de depuración de Node / npm / yarn / pnpm
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------
+# 2. Puppeteer, Navegadores y Salidas de Scraping
+# ------------------------------------------
+# Caché de navegadores descargados por Puppeteer
+.cache/
+.cache/puppeteer/
+.local-chromium/
+
+# Salidas y descargas dinámicas del scraper
+# (Permite mantener scripts .js, .ts, .json y configuraciones intactas)
+scrapear/output/
+scrapear/temp/
+scrapear/downloads/
+scrapear/*.tmp
+scrapear/*.temp.*
+
+# Capturas de pantalla y PDFs generados durante scraping/pruebas
+screenshots/
+*.screenshot.png
+*.screenshot.jpg
+test-results/
+coverage/
+
+# Directorios de trabajo temporal para experimentos descartables
+temp/
+tmp/
+output/
+dist/
+build/
+
+# ------------------------------------------
+# 3. Variables de Entorno y Secretos
+# ------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.pem
+*.key
+
+# Preservar plantilla de ejemplo si se crea
+!.env.example
+
+# ------------------------------------------
+# 4. Editores de Código e IDEs
+# ------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ------------------------------------------
+# 5. Archivos del Sistema Operativo
+# ------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+
+# ------------------------------------------
+# 6. Herramientas de IA & Stitch (Modulares / Experimentales)
+# ------------------------------------------
+# Cachés y temporales de Stitch / Agentes
+.stitch/cache/
+.stitch/temp/
+.agents/*/temp/
+.agents/*/cache/
+
+# [NOTA PARA PRUEBAS]:
+# Si deseas que las skills instaladas NO se suban al repositorio y se manejen
+# únicamente mediante 'skills-lock.json', descomenta la siguiente línea:
+# .agents/skills/
+
+# Si deseas ignorar completamente los metadatos de Stitch, descomenta:
+# **/.stitch/

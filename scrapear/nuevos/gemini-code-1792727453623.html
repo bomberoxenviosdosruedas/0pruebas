@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envíos DosRuedas | Mensajería y Logística en Mar del Plata</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter para UI y Montserrat/Oswald para Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Oswald', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              yellow: '#FFDD00',
+              'yellow-hover': '#F5D000',
+              dark: '#070D1E',
+              surface: 'rgba(255, 255, 255, 0.04)',
+            }
+          },
+          animation: {
+            'float-slow': 'float 5s ease-in-out infinite',
+            'pulse-subtle': 'pulseSubtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+            pulseSubtle: {
+              '0%, 100%': { opacity: '1' },
+              '50%': { opacity: '0.4' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Grilla milimetrada sutil para la estética técnica de logística */
+    .bg-grid-pattern {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+  </style>
+</head>
+<body class="bg-[#060B18] text-slate-100 font-sans antialiased selection:bg-brand-yellow selection:text-black min-h-screen">
+
+  <!-- ========================================================================= -->
+  <!-- HEADER REFACTORIZADO: ELEVACIÓN TRANSLÚCIDA Y ROL DE TOKENS PULIDO        -->
+  <!-- ========================================================================= -->
+  <header class="sticky top-0 z-50 w-full border-b border-white/10 bg-[#060B18]/85 backdrop-blur-md transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Marca / Logotipo -->
+      <a href="#" class="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow rounded-lg p-1">
+        <div class="relative w-11 h-11 rounded-full bg-slate-900 border border-white/20 p-0.5 overflow-hidden flex items-center justify-center shadow-inner group-hover:border-white/40 transition-colors">
+          <!-- Placeholder de Isotipo oficial -->
+          <svg class="w-6 h-6 text-brand-yellow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="5.5" cy="17.5" r="3.5"/>
+            <circle cx="18.5" cy="17.5" r="3.5"/>
+            <path d="M15 6h-5l-4 8h12l-3-8z"/>
+            <circle cx="12" cy="6" r="1.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display text-2xl tracking-tight leading-none text-white uppercase group-hover:text-slate-200 transition-colors">
+            ENVÍOS <span class="text-brand-yellow">DOSRUEDAS</span>
+          </span>
+          <span class="text-[10px] tracking-widest text-slate-400 uppercase font-semibold mt-0.5">Mar del Plata</span>
+        </div>
+      </a>
+
+      <!-- Menú de Navegación Desktop -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#inicio" class="text-white hover:text-brand-yellow transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow rounded px-1">
+          Inicio
+        </a>
+        
+        <div class="relative group">
+          <button type="button" class="flex items-center gap-1.5 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow rounded px-1">
+            <span>Servicios</span>
+            <svg class="w-4 h-4 text-slate-400 group-hover:text-white transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+
+        <a href="#cobertura" class="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow rounded px-1">
+          Cobertura
+        </a>
+        <a href="#contacto" class="hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow rounded px-1">
+          Contacto
+        </a>
+      </nav>
+
+      <!-- Acción Rápida: Teléfono y Botón Principal (Monopolio de Amarillo) -->
+      <div class="flex items-center gap-5">
+        <a href="tel:+542236602699" class="hidden lg:flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors font-medium tabular-nums">
+          <svg class="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <span>223 660-2699</span>
+        </a>
+
+        <a href="#cotizador" class="inline-flex items-center justify-center gap-2 bg-brand-yellow text-slate-950 font-semibold px-5 py-2.5 rounded-full text-sm shadow-md shadow-brand-yellow/10 hover:bg-brand-yellow-hover hover:scale-[1.02] active:scale-[0.98] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow focus-visible:ring-offset-2 focus-visible:ring-offset-[#060B18]">
+          <span>Cotizá tu envío</span>
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- HERO ANIMADO: ALTO CONTRASTE, RETÍCULA Y EVIDENCIA LOGÍSTICA              -->
+  <!-- ========================================================================= -->
+  <section class="relative overflow-hidden bg-grid-pattern pt-12 pb-20 lg:pt-20 lg:pb-28">
+    
+    <!-- Luces de atmósfera suaves (sin manchar el contraste central) -->
+    <div class="pointer-events-none absolute -top-40 right-1/4 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl"></div>
+    <div class="pointer-events-none absolute bottom-0 left-10 w-72 h-72 bg-brand-yellow/5 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Columna Izquierda: Copywriting de conversión y llamada a la acción -->
+        <div class="lg:col-span-7 space-y-7 text-left">
+          
+          <!-- Badge de Confianza Operativa -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-xs font-medium text-slate-300">
+            <span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse-subtle"></span>
+            <span class="tracking-wide">Flota propia activa · Todo Mar del Plata</span>
+          </div>
+
+          <!-- Titular Principal con tipografía Display condensada pero balanceada -->
+          <h1 class="font-display uppercase text-4xl sm:text-6xl lg:text-[4rem] font-bold tracking-tight text-white leading-[1.05] text-balance">
+            El motor de tu <span class="text-brand-yellow">última milla.</span><br>
+            Entregas seguras en el día.
+          </h1>
+
+          <!-- Bajada clara con beneficios palpables -->
+          <p class="text-slate-300 text-base sm:text-lg max-w-xl leading-relaxed text-balance">
+            Mensajería urbana y logística e-commerce sin tercerización. Llegamos a cada punto de Mar del Plata con repartidores dedicados y seguimiento directo vía WhatsApp.
+          </p>
+
+          <!-- Botones de Acción: Jerarquía Clara (Primario Amarillo vs Secundario Borde) -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#cotizador" class="inline-flex items-center justify-center gap-2 bg-brand-yellow text-slate-950 font-semibold text-base px-7 py-3.5 rounded-full shadow-lg shadow-brand-yellow/15 hover:bg-brand-yellow-hover hover:scale-[1.02] active:scale-[0.98] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow focus-visible:ring-offset-2 focus-visible:ring-offset-[#060B18]">
+              <span>Cotizá tu envío</span>
+              <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
+              </svg>
+            </a>
+
+            <a href="#servicios" class="inline-flex items-center justify-center gap-2 border border-white/20 bg-white/5 hover:bg-white/10 text-white font-medium text-base px-6 py-3.5 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
+              <span>Ver servicios</span>
+              <svg class="w-4 h-4 text-slate-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Micro-Trust Signals -->
+          <div class="pt-4 flex items-center gap-6 text-xs text-slate-400 border-t border-white/10">
+            <div class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Retiro en tu local</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Mercado Envíos Flex</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Base Operativa Friuli 1972</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Columna Derecha: Tarjeta Ilustrativa Isométrica y Badges de Operación -->
+        <div class="lg:col-span-5 relative flex justify-center items-center">
+          
+          <!-- Contenedor con animación flotante suave -->
+          <div class="relative w-full max-w-md animate-float-slow">
+            
+            <!-- Marco de la tarjeta con estilo Blueprint / Glassmorphism sobrio -->
+            <div class="relative rounded-3xl border border-white/15 bg-gradient-to-b from-white/10 to-white/[0.02] p-6 backdrop-blur-xl shadow-2xl">
+              
+              <!-- Simulación de la vista isométrica / Mapa de Mar del Plata -->
+              <div class="relative w-full aspect-[4/3] rounded-2xl bg-[#0B1528] border border-white/10 overflow-hidden flex items-center justify-center">
+                
+                <!-- Retícula de calles esquemática -->
+                <svg class="absolute inset-0 w-full h-full opacity-20" viewBox="0 0 100 100">
+                  <path d="M0,20 L100,20 M0,50 L100,50 M0,80 L100,80" stroke="white" stroke-width="0.5"/>
+                  <path d="M25,0 L25,100 M60,0 L60,100 M85,0 L85,100" stroke="white" stroke-width="0.5"/>
+                  <path d="M10,90 Q50,40 90,20" fill="none" stroke="#FFDD00" stroke-width="1.5" stroke-dasharray="3,3"/>
+                </svg>
+
+                <!-- Escudo Central Isométrico -->
+                <div class="relative z-10 flex flex-col items-center justify-center p-6 rounded-2xl bg-[#0E1A33]/90 border border-white/20 shadow-xl">
+                  <div class="w-14 h-14 rounded-full bg-brand-yellow/10 border border-brand-yellow/30 flex items-center justify-center text-brand-yellow mb-2">
+                    <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                      <polyline points="2 17 12 22 22 17"/>
+                      <polyline points="2 12 12 17 22 12"/>
+                    </svg>
+                  </div>
+                  <span class="font-display text-xl uppercase tracking-tight text-white">ENVÍOS DOSRUEDAS</span>
+                  <span class="text-[11px] font-mono text-slate-400 mt-1">HUB LOGÍSTICO MDQ</span>
+                </div>
+
+              </div>
+
+              <!-- Badge Flotante Superior: Garantía de Entrega -->
+              <div class="absolute -top-4 -right-4 bg-slate-900/90 border border-white/20 px-4 py-2 rounded-xl backdrop-blur-md shadow-xl flex items-center gap-2.5">
+                <div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+                <div class="text-left">
+                  <div class="text-[10px] text-slate-400 font-semibold uppercase leading-none">Entrega garantizada</div>
+                  <div class="text-xs font-bold text-white mt-0.5">En el día en todo MDQ</div>
+                </div>
+              </div>
+
+              <!-- Badge Flotante Inferior: Base Central -->
+              <div class="absolute -bottom-4 -left-4 bg-slate-900/90 border border-white/20 px-4 py-2.5 rounded-xl backdrop-blur-md shadow-xl flex items-center gap-3">
+                <div class="p-1.5 rounded-lg bg-white/5 text-slate-300">
+                  <svg class="w-4 h-4 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div class="text-left">
+                  <div class="text-[10px] text-slate-400 font-semibold uppercase leading-none">Base Operativa</div>
+                  <div class="text-xs font-semibold text-white mt-0.5">Friuli 1972 · Mar del Plata</div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- BARRA DE BENEFICIOS OPERATIVOS (TICKER)                                   -->
+  <!-- ========================================================================= -->
+  <aside aria-label="Beneficios operativos" class="border-y border-white/10 bg-[#050914] py-3.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center justify-between gap-4 text-xs tracking-wider uppercase font-semibold text-slate-400">
+        <span class="flex items-center gap-2"><span class="text-brand-yellow">◆</span> Envíos en el día</span>
+        <span class="flex items-center gap-2"><span class="text-brand-yellow">◆</span> Flota propia</span>
+        <span class="flex items-center gap-2"><span class="text-brand-yellow">◆</span> Cero tercerización</span>
+        <span class="flex items-center gap-2"><span class="text-brand-yellow">◆</span> Todo Mar del Plata</span>
+        <span class="flex items-center gap-2"><span class="text-brand-yellow">◆</span> Retiro en tu local</span>
+      </div>
+    </div>
+  </aside>
+
+</body>
+</html>

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es" class="dark scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envíos DosRuedas - Logística Urbana y Última Milla en Mar del Plata | Estilo Mercury</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            mercury: {
+              canvas: '#080D1A',
+              card: '#111A2E',
+              elevated: '#16223D',
+              surface: '#1A294A',
+              border: 'rgba(226, 227, 237, 0.10)',
+              borderStrong: 'rgba(226, 227, 237, 0.18)',
+              textIvory: '#EDEDF3',
+              textAsh: '#94A3B8',
+              textMuted: '#64748B',
+            },
+            brand: {
+              blue: '#0950F6',
+              blueHover: '#1E63FF',
+              blueGlow: 'rgba(9, 80, 246, 0.25)',
+              yellow: '#FFEC01',
+              yellowHover: '#FFF240',
+              yellowMuted: 'rgba(255, 236, 1, 0.15)',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          borderRadius: {
+            'card': '12px',
+            'pill': '9999px',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #080D1A;
+      color: #EDEDF3;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: -0.01em;
+    }
+
+    .ambient-glow {
+      background: radial-gradient(circle at 50% 0%, rgba(9, 80, 246, 0.18) 0%, transparent 70%);
+    }
+
+    .card-lift {
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+    }
+
+    .card-lift:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(9, 80, 246, 0.3);
+      border-color: rgba(9, 80, 246, 0.4);
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 35s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+
+<body class="bg-mercury-canvas text-mercury-textIvory selection:bg-brand-blue selection:text-white antialiased overflow-x-hidden">
+
+  <!-- ========================================== -->
+  <!-- HEADER - Mercury Style (Floating Obsidian Bar) -->
+  <!-- ========================================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#080D1A]/85 backdrop-blur-md border-b border-mercury-border">
+    <div class="max-w-[1240px] mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-[68px]">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-brand-blue to-[#2B6CFF] flex items-center justify-center shadow-lg shadow-brand-blue/20">
+            <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18.5" cy="17.5" r="3.5" />
+              <circle cx="5.5" cy="17.5" r="3.5" />
+              <circle cx="15" cy="5" r="1" />
+              <path d="M12 17.5V14l-3-3 4-3 2 3h2" />
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-[17px] font-semibold tracking-tight text-mercury-textIvory flex items-center gap-1.5">
+              Envíos <span class="text-brand-blue font-bold">DosRuedas</span>
+            </span>
+            <span class="text-[10px] font-mono uppercase tracking-wider text-mercury-textAsh -mt-0.5">Mar del Plata</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-1 bg-mercury-card/70 border border-mercury-border px-3 py-1.5 rounded-full">
+          <a href="#" class="px-4 py-1.5 rounded-full text-[13px] font-medium text-mercury-textIvory bg-mercury-surface hover:text-white transition-colors">Inicio</a>
+          <a href="#servicios" class="px-4 py-1.5 rounded-full text-[13px] font-medium text-mercury-textAsh hover:text-mercury-textIvory transition-colors">Servicios</a>
+          <a href="#emprendedores" class="px-4 py-1.5 rounded-full text-[13px] font-medium text-mercury-textAsh hover:text-mercury-textIvory transition-colors">Soluciones</a>
+          <a href="#opiniones" class="px-4 py-1.5 rounded-full text-[13px] font-medium text-mercury-textAsh hover:text-mercury-textIvory transition-colors">Opiniones</a>
+          <a href="#contacto" class="px-4 py-1.5 rounded-full text-[13px] font-medium text-mercury-textAsh hover:text-mercury-textIvory transition-colors">Contacto</a>
+        </nav>
+
+        <!-- Action & Contact -->
+        <div class="flex items-center gap-4">
+          <a href="tel:+542236602699" class="hidden md:flex items-center gap-2 text-mercury-textAsh hover:text-mercury-textIvory text-[13px] font-mono transition-colors">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            223 660-2699
+          </a>
+          <a href="/cotizar" class="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blueHover text-white text-[13px] font-semibold px-5 py-2.5 rounded-full shadow-lg shadow-brand-blue/25 hover:shadow-brand-blue/40 transition-all">
+            <span>Cotizá tu envío</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-[68px]">
+
+    <!-- ========================================== -->
+    <!-- HERO SECTION - Mercury Dark Luxury Focus -->
+    <!-- ========================================== -->
+    <section class="relative min-h-[720px] flex items-center overflow-hidden ambient-glow border-b border-mercury-border">
+      <div class="max-w-[1240px] mx-auto px-6 lg:px-8 py-20 lg:py-28 w-full relative z-10 grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-7">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-mercury-card border border-mercury-border text-[12px] font-medium">
+            <span class="w-2 h-2 rounded-full bg-brand-yellow"></span>
+            <span class="text-mercury-textAsh">Flota propia en Mar del Plata</span>
+            <span class="text-mercury-textAsh/40">|</span>
+            <span class="text-brand-yellow font-mono text-[11px]">Cero tercerización</span>
+          </div>
+
+          <h1 class="text-[44px] sm:text-[56px] lg:text-[62px] font-semibold tracking-tight text-mercury-textIvory leading-[1.08]">
+            El motor logístico de tu <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-[#4B85FF]">última milla</span> en MDQ.
+          </h1>
+
+          <p class="text-mercury-textAsh text-[17px] sm:text-[18px] leading-relaxed max-w-[54ch]">
+            Mensajería profesional y paquetería e-commerce en el día. Repartidores propios, trazabilidad punto a punto y máxima puntualidad en cada entrega urbana.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="/cotizar" class="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blueHover text-white text-[15px] font-semibold px-7 py-3.5 rounded-full shadow-xl shadow-brand-blue/30 transition-all">
+              <span>Cotizá online ahora</span>
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#servicios" class="inline-flex items-center gap-2 bg-mercury-card hover:bg-mercury-surface text-mercury-textIvory text-[15px] font-medium px-6 py-3.5 rounded-full border border-mercury-border transition-colors">
+              Explorar servicios
+            </a>
+          </div>
+
+          <div class="pt-6 grid grid-cols-3 gap-6 border-t border-mercury-border">
+            <div>
+              <p class="text-[26px] font-semibold text-mercury-textIvory">100%</p>
+              <p class="text-[12px] font-mono text-mercury-textAsh uppercase">Flota propia</p>
+            </div>
+            <div>
+              <p class="text-[26px] font-semibold text-brand-yellow">+120</p>
+              <p class="text-[12px] font-mono text-mercury-textAsh uppercase">Reseñas 5.0 Google</p>
+            </div>
+            <div>
+              <p class="text-[26px] font-semibold text-mercury-textIvory">15:00 hs</p>
+              <p class="text-[12px] font-mono text-mercury-textAsh uppercase">Corte Flex en el día</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Card Mockup -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative bg-gradient-to-b from-mercury-card to-[#0C1424] rounded-card p-6 border border-mercury-borderStrong shadow-2xl space-y-5">
+            <div class="flex items-center justify-between border-b border-mercury-border pb-4">
+              <div class="flex items-center gap-2.5">
+                <div class="w-3 h-3 rounded-full bg-emerald-400/80"></div>
+                <span class="text-[13px] font-mono font-medium text-mercury-textIvory">BASE CENTRAL FRIULI 1972</span>
+              </div>
+              <span class="text-[11px] font-mono bg-brand-yellow/15 text-brand-yellow px-2.5 py-0.5 rounded-full border border-brand-yellow/30">ACTIVO</span>
+            </div>
+
+            <!-- Route Visualization Box -->
+            <div class="bg-[#080D1A] rounded-card p-5 border border-mercury-border relative overflow-hidden space-y-4">
+              <div class="flex justify-between items-center text-[12px]">
+                <span class="text-mercury-textAsh">Ruta activa Mar del Plata</span>
+                <span class="text-brand-blue font-mono">14 paquetes en tránsito</span>
+              </div>
+              
+              <div class="h-2 w-full bg-mercury-card rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-brand-blue to-brand-yellow w-3/4 rounded-full"></div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3 pt-2">
+                <div class="bg-mercury-card/60 p-3 rounded-lg border border-mercury-border">
+                  <p class="text-[11px] text-mercury-textAsh">Tiempo promedio</p>
+                  <p class="text-[15px] font-semibold text-mercury-textIvory mt-0.5">38 minutos</p>
+                </div>
+                <div class="bg-mercury-card/60 p-3 rounded-lg border border-mercury-border">
+                  <p class="text-[11px] text-mercury-textAsh">Modalidad</p>
+                  <p class="text-[15px] font-semibold text-brand-yellow mt-0.5">En el día (Same Day)</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Micro feature banner -->
+            <div class="flex items-center justify-between text-[13px] px-2 text-mercury-textAsh">
+              <span class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Remito digital instantáneo
+              </span>
+              <span class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Cobranza en destino
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Marquee Ticker -->
+      <div class="absolute bottom-0 left-0 right-0 bg-[#060A14] border-t border-mercury-border py-2.5 overflow-hidden">
+        <div class="marquee-track font-mono text-[11px] tracking-wider text-mercury-textAsh uppercase">
+          <span class="mx-6">· Envíos en el día</span>
+          <span class="mx-6">· Flota propia sin intermediarios</span>
+          <span class="mx-6">· Todo Mar del Plata urbana</span>
+          <span class="mx-6">· Retiro en tu comercio</span>
+          <span class="mx-6">· Mercado Envíos Flex homologado</span>
+          <span class="mx-6">· Cobro contrareembolso</span>
+          <span class="mx-6">· Envíos en el día</span>
+          <span class="mx-6">· Flota propia sin intermediarios</span>
+          <span class="mx-6">· Todo Mar del Plata urbana</span>
+          <span class="mx-6">· Retiro en tu comercio</span>
+          <span class="mx-6">· Mercado Envíos Flex homologado</span>
+          <span class="mx-6">· Cobro contrareembolso</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SEGMENTOS - Modular Segment Cards -->
+    <!-- ========================================== -->
+    <section class="py-24 max-w-[1240px] mx-auto px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <span class="text-brand-blue font-mono text-[12px] tracking-widest uppercase">Soluciones a medida</span>
+        <h2 class="text-[32px] sm:text-[40px] font-semibold tracking-tight text-mercury-textIvory leading-tight">
+          ¿Cómo podemos impulsar tu operativa hoy?
+        </h2>
+        <p class="text-mercury-textAsh text-[15px]">
+          Seleccioná tu tipo de negocio y conocé el modelo logístico diseñado para maximizar tus ventas locales.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Segment 1: Mercado Libre (Featured) -->
+        <div class="bg-mercury-card rounded-card p-6 border border-brand-blue/50 shadow-lg shadow-brand-blue/10 card-lift flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="w-10 h-10 rounded-full bg-brand-blue/15 text-brand-blue flex items-center justify-center font-bold text-[18px]">⚡</span>
+              <span class="font-mono text-[10px] px-2.5 py-1 rounded-full bg-brand-yellow/15 text-brand-yellow border border-brand-yellow/20">MERCADOLIBRE FLEX</span>
+            </div>
+            <h3 class="text-[20px] font-semibold text-mercury-textIvory leading-snug">¿Vendés por Mercado Libre?</h3>
+            <p class="text-mercury-textAsh text-[13.5px] leading-relaxed">
+              Entregá el mismo día con Flex en Mar del Plata. Horario de corte 15:00 hs y múltiples retiros para mantener tu reputación en verde.
+            </p>
+          </div>
+          <a href="/servicios" class="mt-6 inline-flex w-full items-center justify-between bg-brand-blue hover:bg-brand-blueHover text-white text-[13px] font-semibold px-4 py-2.5 rounded-full transition-colors">
+            <span>Ver solución Flex</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Segment 2: E-Commerce & Depósito -->
+        <div class="bg-mercury-card rounded-card p-6 border border-mercury-border card-lift flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="w-10 h-10 rounded-full bg-mercury-surface text-mercury-textIvory flex items-center justify-center text-[18px]">📦</span>
+              <span class="font-mono text-[10px] px-2.5 py-1 rounded-full bg-mercury-surface text-mercury-textAsh">E-COMMERCE / SAME DAY</span>
+            </div>
+            <h3 class="text-[20px] font-semibold text-mercury-textIvory leading-snug">¿Tenés tienda con stock en depósito?</h3>
+            <p class="text-mercury-textAsh text-[13.5px] leading-relaxed">
+              Despacho en 24hs o Same-Day antes de las 19:00 hs. Depósito en Friuli 1972, picking con QR y empaque integral.
+            </p>
+          </div>
+          <a href="/servicios" class="mt-6 inline-flex w-full items-center justify-between bg-mercury-surface hover:bg-mercury-elevated text-mercury-textIvory text-[13px] font-medium px-4 py-2.5 rounded-full border border-mercury-border transition-colors">
+            <span>Ver planes de stock</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Segment 3: Comercios y Empresas -->
+        <div class="bg-mercury-card rounded-card p-6 border border-mercury-border card-lift flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="w-10 h-10 rounded-full bg-mercury-surface text-mercury-textIvory flex items-center justify-center text-[18px]">🏬</span>
+              <span class="font-mono text-[10px] px-2.5 py-1 rounded-full bg-mercury-surface text-mercury-textAsh">COMERCIOS</span>
+            </div>
+            <h3 class="text-[20px] font-semibold text-mercury-textIvory leading-snug">¿Hacés envíos comerciales diarios?</h3>
+            <p class="text-mercury-textAsh text-[13.5px] leading-relaxed">
+              Reparto económico programado: solicitá antes de las 13:00 hs y se entrega en el día con tarifa plana y remito online.
+            </p>
+          </div>
+          <a href="/servicios" class="mt-6 inline-flex w-full items-center justify-between bg-mercury-surface hover:bg-mercury-elevated text-mercury-textIvory text-[13px] font-medium px-4 py-2.5 rounded-full border border-mercury-border transition-colors">
+            <span>Paquetería LowCost</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Segment 4: Urgentes & Express -->
+        <div class="bg-mercury-card rounded-card p-6 border border-mercury-border card-lift flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="w-10 h-10 rounded-full bg-mercury-surface text-mercury-textIvory flex items-center justify-center text-[18px]">⏱️</span>
+              <span class="font-mono text-[10px] px-2.5 py-1 rounded-full bg-mercury-surface text-mercury-textAsh">URGENTE / EXPRESS</span>
+            </div>
+            <h3 class="text-[20px] font-semibold text-mercury-textIvory leading-snug">¿Necesitás un envío urgente hoy?</h3>
+            <p class="text-mercury-textAsh text-[13.5px] leading-relaxed">
+              Cadetería punto a punto en moto con franja horaria acotada de 3 horas. Pedido prioritario con asignación inmediata.
+            </p>
+          </div>
+          <a href="/cotizar" class="mt-6 inline-flex w-full items-center justify-between bg-mercury-surface hover:bg-mercury-elevated text-mercury-textIvory text-[13px] font-medium px-4 py-2.5 rounded-full border border-mercury-border transition-colors">
+            <span>Cotizar Express</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SERVICES OVERVIEW - Mercury Dark Minimal Surface -->
+    <!-- ========================================== -->
+    <section id="servicios" class="py-24 bg-[#0A101E] border-y border-mercury-border">
+      <div class="max-w-[1240px] mx-auto px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <span class="font-mono text-[12px] text-brand-blue uppercase tracking-widest">Catálogo Operativo</span>
+            <h2 class="text-[32px] sm:text-[40px] font-semibold tracking-tight text-mercury-textIvory mt-2">
+              Soluciones estructuradas para cada escala
+            </h2>
+          </div>
+          <p class="text-mercury-textAsh text-[14px] max-w-md">
+            Tarifas planas transparentes por distancia, sin sorpresas ni costos ocultos en Mar del Plata.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-6 items-stretch">
+          
+          <!-- Service 1 -->
+          <div class="bg-mercury-card rounded-card p-8 border border-mercury-border flex flex-col justify-between card-lift">
+            <div class="space-y-4">
+              <span class="inline-block font-mono text-[11px] px-3 py-1 rounded-full bg-brand-yellow/15 text-brand-yellow border border-brand-yellow/30">MERCADOLIBRE FLEX</span>
+              <h3 class="text-[24px] font-semibold text-mercury-textIvory">Envíos Flex Meli</h3>
+              <p class="text-mercury-textAsh text-[14px] leading-relaxed">
+                Integración directa con el sistema de Mercado Envíos Flex. Asegurá medalla Platinum con entregas en el mismo día.
+              </p>
+            </div>
+            <div class="pt-8 border-t border-mercury-border mt-6">
+              <div class="flex justify-between text-[13px] font-mono text-mercury-textAsh">
+                <span>Horario de corte:</span>
+                <span class="text-mercury-textIvory">15:00 hs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2: Featured -->
+          <div class="bg-gradient-to-b from-[#142347] to-mercury-card rounded-card p-8 border border-brand-blue/60 shadow-2xl shadow-brand-blue/15 flex flex-col justify-between relative card-lift">
+            <div class="space-y-4">
+              <div class="flex justify-between items-center">
+                <span class="font-mono text-[11px] px-3 py-1 rounded-full bg-brand-blue text-white">E-COMMERCE & FULFILLMENT</span>
+                <span class="text-brand-yellow text-[12px] font-mono">Friuli 1972</span>
+              </div>
+              <h3 class="text-[26px] font-semibold text-mercury-textIvory">Same Day & Depósito</h3>
+              <p class="text-mercury-textAsh text-[14px] leading-relaxed">
+                Guardamos tu mercadería en nuestra base central y despachamos de forma inmediata cada orden que ingrese en tu web.
+              </p>
+              
+              <div class="grid grid-cols-3 gap-2 pt-4">
+                <div class="bg-[#080D1A]/80 p-3 rounded-lg border border-mercury-border text-center">
+                  <p class="text-[10px] font-mono text-mercury-textAsh">MODALIDAD</p>
+                  <p class="text-[13px] font-semibold text-mercury-textIvory mt-1">Same Day</p>
+                </div>
+                <div class="bg-[#080D1A]/80 p-3 rounded-lg border border-mercury-border text-center">
+                  <p class="text-[10px] font-mono text-mercury-textAsh">TARIFA</p>
+                  <p class="text-[13px] font-semibold text-brand-yellow mt-1">Plana</p>
+                </div>
+                <div class="bg-[#080D1A]/80 p-3 rounded-lg border border-mercury-border text-center">
+                  <p class="text-[10px] font-mono text-mercury-textAsh">COBERTURA</p>
+                  <p class="text-[13px] font-semibold text-mercury-textIvory mt-1">Todo MDQ</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="/cotizar" class="mt-8 inline-flex items-center justify-center gap-2 bg-brand-blue hover:bg-brand-blueHover text-white text-[14px] font-semibold py-3 rounded-full transition-all">
+              <span>Cotizar servicio integral</span>
+            </a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="bg-mercury-card rounded-card p-8 border border-mercury-border flex flex-col justify-between card-lift">
+            <div class="space-y-4">
+              <span class="inline-block font-mono text-[11px] px-3 py-1 rounded-full bg-mercury-surface text-mercury-textAsh">PRIORIDAD PUNTO A PUNTO</span>
+              <h3 class="text-[24px] font-semibold text-mercury-textIvory">Envíos Express</h3>
+              <p class="text-mercury-textAsh text-[14px] leading-relaxed">
+                Mensajería rápida para documentación, trámites, paquetería crítica y entregas personales en franja de 3 horas.
+              </p>
+            </div>
+            <div class="pt-8 border-t border-mercury-border mt-6">
+              <div class="flex justify-between text-[13px] font-mono text-mercury-textAsh">
+                <span>Tiempo de aviso:</span>
+                <span class="text-mercury-textIvory">2 hs previas</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- EMPRENDEDORES & CUENTA CORRIENTE -->
+    <!-- ========================================== -->
+    <section id="emprendedores" class="py-24 max-w-[1240px] mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-brand-blue font-mono text-[12px] uppercase tracking-widest">Alianzas Comerciales</span>
+          <h2 class="text-[34px] sm:text-[44px] font-semibold tracking-tight text-mercury-textIvory leading-tight">
+            Cuenta Corriente Flexible para tu marca local.
+          </h2>
+          <p class="text-mercury-textAsh text-[16px] leading-relaxed">
+            Consolidá tus despachos sin preocuparte por el efectivo diario. Diseñado para emprendedores y marcas marplatenses que buscan previsibilidad y agilidad.
+          </p>
+
+          <div class="space-y-3.5 pt-2">
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded-full bg-brand-blue/20 text-brand-blue flex items-center justify-center shrink-0 mt-0.5">✓</div>
+              <p class="text-[14.5px] text-mercury-textIvory"><strong class="font-medium text-white">Sin volumen mínimo:</strong> Empezás con los envíos que tengas, sin exigencias arbitrarias.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded-full bg-brand-blue/20 text-brand-blue flex items-center justify-center shrink-0 mt-0.5">✓</div>
+              <p class="text-[14.5px] text-mercury-textIvory"><strong class="font-medium text-white">Facturación periódica:</strong> Aboná semanal, quincenal o mensualmente según tu flujo de caja.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded-full bg-brand-blue/20 text-brand-blue flex items-center justify-center shrink-0 mt-0.5">✓</div>
+              <p class="text-[14.5px] text-mercury-textIvory"><strong class="font-medium text-white">Contrareembolso integrado:</strong> Cobramos tus ventas en efectivo o transferencia al entregar.</p>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <a href="https://wa.me/542236602699" target="_blank" class="inline-flex items-center gap-2 bg-mercury-card hover:bg-mercury-surface text-mercury-textIvory text-[14px] font-semibold px-6 py-3 rounded-full border border-mercury-border transition-colors">
+              <span>Abrir cuenta corriente por WhatsApp</span>
+              <svg class="w-4 h-4 text-brand-yellow" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 space-y-4">
+          <div class="bg-mercury-card rounded-card p-6 border border-mercury-border space-y-3">
+            <div class="flex items-center justify-between">
+              <h4 class="text-[17px] font-semibold text-mercury-textIvory">Tarifas con descuento</h4>
+              <span class="font-mono text-[11px] text-brand-yellow">PROGRAMA PARTNER</span>
+            </div>
+            <p class="text-[13px] text-mercury-textAsh leading-relaxed">
+              Accedé a valores preferenciales con franjas de retiro coordinadas directamente desde tu taller o local comercial.
+            </p>
+          </div>
+
+          <div class="bg-mercury-card rounded-card p-6 border border-mercury-border space-y-3">
+            <div class="flex items-center justify-between">
+              <h4 class="text-[17px] font-semibold text-mercury-textIvory">Gestión sin fricción</h4>
+              <span class="font-mono text-[11px] text-brand-blue">REMITOS DIGITALES</span>
+            </div>
+            <p class="text-[13px] text-mercury-textAsh leading-relaxed">
+              Cada entrega cuenta con firma digital y comprobante fotográfico enviado a tu panel o WhatsApp al instante.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Bar -->
+      <div class="mt-20 pt-10 border-t border-mercury-border flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <span class="font-mono text-[11px] uppercase tracking-wider text-mercury-textAsh">Marcas que operan con nosotros:</span>
+        <div class="flex flex-wrap gap-8 text-[14px] font-medium text-mercury-textAsh tracking-wide">
+          <span>Toy Piola Juguetería</span>
+          <span>Ama & Pola</span>
+          <span>Dropix 3D</span>
+          <span>El Cóndor</span>
+          <span>Starcel</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SOCIAL PROOF - 5.0 Google Reviews -->
+    <!-- ========================================== -->
+    <section id="opiniones" class="py-24 bg-[#0A101E] border-t border-mercury-border">
+      <div class="max-w-[1240px] mx-auto px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mercury-card border border-mercury-border text-[12px] font-mono text-brand-yellow mb-3">
+              <span>★ 5.0 en Google</span>
+              <span class="text-mercury-textAsh">· +120 valoraciones auditadas</span>
+            </div>
+            <h2 class="text-[32px] sm:text-[40px] font-semibold tracking-tight text-mercury-textIvory">
+              La voz de quienes despachan a diario
+            </h2>
+          </div>
+          <a href="https://maps.google.com" target="_blank" class="inline-flex items-center gap-2 text-[13px] font-medium text-mercury-textAsh hover:text-mercury-textIvory transition-colors">
+            Ver todas las reseñas en Google Maps
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+          </a>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          
+          <div class="bg-mercury-card rounded-card p-6 border border-mercury-border card-lift flex flex-col justify-between space-y-6">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-brand-yellow tracking-widest text-[13px]">★★★★★</span>
+                <span class="font-mono text-[10px] text-mercury-textAsh">Hace 13 semanas</span>
+              </div>
+              <h4 class="text-[16px] font-medium text-mercury-textIvory">"Resolvieron mi problema con la mejor predisposición"</h4>
+              <p class="text-[13.5px] text-mercury-textAsh leading-relaxed">
+                Excelente el servicio, rápidos, muy atentos, resolvieron mi problema con la mejor predisposición, los recomiendo ampliamente.
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-mercury-border">
+              <div class="w-8 h-8 rounded-full bg-brand-blue/20 text-brand-blue flex items-center justify-center font-bold text-[12px]">K</div>
+              <span class="text-[13px] font-medium text-mercury-textIvory">Karen Herrera</span>
+            </div>
+          </div>
+
+          <div class="bg-mercury-card rounded-card p-6 border border-brand-blue/40 card-lift flex flex-col justify-between space-y-6">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-brand-yellow tracking-widest text-[13px]">★★★★★</span>
+                <span class="font-mono text-[10px] text-mercury-textAsh">Hace 48 semanas</span>
+              </div>
+              <h4 class="text-[16px] font-medium text-mercury-textIvory">"Impecable para llevar pedidos a nuestros clientes"</h4>
+              <p class="text-[13.5px] text-mercury-textAsh leading-relaxed">
+                Lo usé varias veces para llevar pedidos a nuestros clientes. Impecable el servicio. Además hacen depósitos en cajeros sin problemas.
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-mercury-border">
+              <div class="w-8 h-8 rounded-full bg-brand-yellow/20 text-brand-yellow flex items-center justify-center font-bold text-[12px]">A</div>
+              <span class="text-[13px] font-medium text-mercury-textIvory">Agustin Torres</span>
+            </div>
+          </div>
+
+          <div class="bg-mercury-card rounded-card p-6 border border-mercury-border card-lift flex flex-col justify-between space-y-6">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-brand-yellow tracking-widest text-[13px]">★★★★★</span>
+                <span class="font-mono text-[10px] text-mercury-textAsh">Hace 37 semanas</span>
+              </div>
+              <h4 class="text-[16px] font-medium text-mercury-textIvory">"El mejor servicio premium de la zona"</h4>
+              <p class="text-[13.5px] text-mercury-textAsh leading-relaxed">
+                El mejor servicio premium de la zona en Mar del Plata. 100% recomendable por puntualidad y trato cordial de los cadetes.
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-mercury-border">
+              <div class="w-8 h-8 rounded-full bg-brand-blue/20 text-brand-blue flex items-center justify-center font-bold text-[12px]">A</div>
+              <span class="text-[13px] font-medium text-mercury-textIvory">Alexis Bogarin</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- CTA SECTION - Elevated Dark Conversion -->
+    <!-- ========================================== -->
+    <section id="contacto" class="py-24 max-w-[1240px] mx-auto px-6 lg:px-8">
+      <div class="relative bg-gradient-to-tr from-[#0D1526] via-mercury-card to-[#121E36] rounded-card p-10 lg:p-14 border border-mercury-borderStrong overflow-hidden">
+        <div class="max-w-2xl space-y-6 relative z-10">
+          <span class="font-mono text-[11px] text-brand-yellow px-3 py-1 rounded-full bg-brand-yellow/10 border border-brand-yellow/20">RESPUESTA EN MINUTOS</span>
+          <h2 class="text-[34px] sm:text-[44px] font-semibold text-mercury-textIvory leading-tight">
+            ¿Listo para escalar la logística de tu e-commerce?
+          </h2>
+          <p class="text-mercury-textAsh text-[16px] leading-relaxed">
+            Coordinamos tu primer retiro en el día. Escribinos directamente por WhatsApp y te cotizamos según tu zona de despacho.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="https://wa.me/542236602699" target="_blank" class="inline-flex items-center gap-2.5 bg-brand-blue hover:bg-brand-blueHover text-white text-[15px] font-semibold px-7 py-3.5 rounded-full shadow-xl shadow-brand-blue/30 transition-all">
+              <span>Conversar por WhatsApp</span>
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="tel:+542236602699" class="inline-flex items-center gap-2 bg-mercury-card hover:bg-mercury-surface text-mercury-textIvory text-[15px] font-medium px-6 py-3.5 rounded-full border border-mercury-border transition-colors">
+              Llamar al 223 660-2699
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- REDES & COMUNIDAD -->
+    <!-- ========================================== -->
+    <section class="py-16 border-t border-mercury-border bg-[#060A14]">
+      <div class="max-w-[1240px] mx-auto px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-6">
+          
+          <a href="#" class="bg-mercury-card p-6 rounded-card border border-mercury-border card-lift flex items-center justify-between group">
+            <div class="space-y-1">
+              <span class="font-mono text-[11px] text-mercury-textAsh">COMUNIDAD</span>
+              <p class="text-[17px] font-semibold text-mercury-textIvory group-hover:text-brand-blue transition-colors">Facebook</p>
+              <p class="text-[12px] text-mercury-textAsh">Envíos DosRuedas MDP</p>
+            </div>
+            <span class="text-mercury-textAsh group-hover:translate-x-1 transition-transform">→</span>
+          </a>
+
+          <a href="https://instagram.com" target="_blank" class="bg-mercury-card p-6 rounded-card border border-mercury-border card-lift flex items-center justify-between group">
+            <div class="space-y-1">
+              <span class="font-mono text-[11px] text-mercury-textAsh">DIARIO OPERATIVO</span>
+              <p class="text-[17px] font-semibold text-mercury-textIvory group-hover:text-brand-blue transition-colors">Instagram</p>
+              <p class="text-[12px] text-mercury-textAsh">@enviosdosruedas</p>
+            </div>
+            <span class="text-mercury-textAsh group-hover:translate-x-1 transition-transform">→</span>
+          </a>
+
+          <a href="https://wa.me/542236602699" target="_blank" class="bg-mercury-card p-6 rounded-card border border-mercury-border card-lift flex items-center justify-between group">
+            <div class="space-y-1">
+              <span class="font-mono text-[11px] text-brand-yellow">ATENCIÓN DIRECTA</span>
+              <p class="text-[17px] font-semibold text-mercury-textIvory group-hover:text-brand-yellow transition-colors">WhatsApp</p>
+              <p class="text-[12px] text-mercury-textAsh">+54 223 660-2699</p>
+            </div>
+            <span class="text-mercury-textAsh group-hover:translate-x-1 transition-transform">→</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- FOOTER - Mercury Refined Dark -->
+  <!-- ========================================== -->
+  <footer class="bg-mercury-canvas border-t border-mercury-border py-14">
+    <div class="max-w-[1240px] mx-auto px-6 lg:px-8 space-y-10">
+      
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center text-white font-bold text-[12px]">DR</div>
+          <span class="text-[18px] font-semibold text-mercury-textIvory">Envíos DosRuedas</span>
+        </div>
+        <p class="text-[13px] font-mono text-mercury-textAsh">
+          Base Operativa Friuli 1972 · Mar del Plata, Buenos Aires, Argentina
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-6 border-t border-mercury-border text-[12.5px] text-mercury-textAsh">
+        <p>© 2026 Envíos DosRuedas. Todos los derechos reservados.</p>
+        <div class="flex items-center gap-6">
+          <a href="/servicios" class="hover:text-mercury-textIvory transition-colors">Servicios</a>
+          <a href="/cotizar" class="hover:text-mercury-textIvory transition-colors">Cotizador</a>
+          <a href="#" class="hover:text-mercury-textIvory transition-colors">Términos de servicio</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
